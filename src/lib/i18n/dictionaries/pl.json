@@ -1,0 +1,464 @@
+{
+  "brand": "uttlo",
+  "tagline": "Proste narzędzia. Zrobione dobrze.",
+  "nav": {
+    "tools": "Narzędzia",
+    "language": "Język",
+    "home": "Strona główna",
+    "allTools": "Wszystkie narzędzia",
+    "popular": "Popularne"
+  },
+  "categories": {
+    "available": "Dostępne",
+    "tools": "Narzędzia",
+    "converters": "Konwertery",
+    "randomizers": "Losuj",
+    "calculators": "Kalkulatory"
+  },
+  "categoryPages": {
+    "tools": {
+      "title": "Narzędzia Online",
+      "subtitle": "Kolekcja darmowych narzędzi dla programistów i twórców",
+      "seoTitle": "Darmowe Narzędzia Online - Generator Haseł, Lorem Ipsum i więcej",
+      "seoDescription": "Bezpłatne narzędzia online dla programistów i twórców. Generator haseł, Lorem Ipsum, konwerter kolorów, formatter JSON i więcej. Wszystko działa w przeglądarce."
+    },
+    "converters": {
+      "title": "Konwertery Online",
+      "subtitle": "Szybka konwersja plików i formatów w przeglądarce",
+      "seoTitle": "Darmowe Konwertery Online - PDF, Obrazy, Dokumenty",
+      "seoDescription": "Bezpłatne konwertery online. Konwertuj PDF na JPG, PNG, Word i więcej. Szybka konwersja w przeglądarce bez wysyłania plików na serwer."
+    },
+    "randomizers": {
+      "title": "Generatory Losowe",
+      "subtitle": "Losuj liczby, cytaty i podejmuj decyzje",
+      "seoTitle": "Generator Liczb Losowych Online - Losuj Liczby, Cytaty, Tak/Nie",
+      "seoDescription": "Darmowe generatory losowe online. Losuj liczby, cytaty, karty tarota. Generator decyzji Tak/Nie. Szybkie i bezpieczne losowanie."
+    },
+    "calculators": {
+      "title": "Kalkulatory Online",
+      "subtitle": "Obliczenia matematyczne i zdrowotne",
+      "seoTitle": "Darmowe Kalkulatory Online - BMI, Proporcje i więcej",
+      "seoDescription": "Bezpłatne kalkulatory online. Oblicz BMI, proporcje, procenty i więcej. Szybkie i dokładne obliczenia w przeglądarce."
+    },
+    "allTools": "Wszystkie narzędzia",
+    "viewTool": "Otwórz narzędzie",
+    "relatedTools": "Powiązane narzędzia",
+    "backToCategory": "Wróć do kategorii",
+    "breadcrumbs": {
+      "home": "Strona główna"
+    }
+  },
+  "home": {
+    "title": "Darmowe Narzędzia Online",
+    "subtitle": "Kolekcja prostych i szybkich narzędzi dla każdego. Wszystko działa w przeglądarce - bezpiecznie i szybko.",
+    "whyUs": {
+      "title": "Dlaczego nasze narzędzia?",
+      "fast": {
+        "title": "Szybkie i darmowe",
+        "description": "Wszystkie narzędzia działają natychmiast, bez opłat i limitów."
+      },
+      "secure": {
+        "title": "Bezpieczne",
+        "description": "Dane przetwarzane są lokalnie w Twojej przeglądarce. Nic nie wysyłamy na serwer."
+      },
+      "noRegister": {
+        "title": "Bez rejestracji",
+        "description": "Korzystaj od razu, bez zakładania konta i podawania danych osobowych."
+      }
+    }
+  },
+  "tools": {
+    "password-generator": {
+      "name": "Generator Haseł",
+      "description": "Twórz silne i bezpieczne hasła z różnymi opcjami konfiguracji.",
+      "seoTitle": "Generator Haseł Online - Bezpieczne i Silne Hasła",
+      "seoDescription": "Darmowy generator silnych haseł online. Twórz bezpieczne hasła z wielkimi literami, cyframi i symbolami."
+    },
+    "uuid-generator": {
+      "name": "Generator UUID",
+      "description": "Generuj unikalne identyfikatory UUID v4 jednym kliknięciem.",
+      "seoTitle": "Generator UUID Online - Darmowy Generator Identyfikatorów",
+      "seoDescription": "Darmowy generator UUID v4 online. Twórz unikalne identyfikatory dla swoich projektów."
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generuj tekst zastępczy Lorem Ipsum do projektów.",
+      "seoTitle": "Generator Lorem Ipsum Online - Tekst Zastępczy",
+      "seoDescription": "Darmowy generator tekstu Lorem Ipsum. Twórz akapity, zdania i słowa do projektów.",
+      "paragraphs": "Akapity",
+      "sentences": "Zdania",
+      "words": "Słowa",
+      "count": "Ilość",
+      "generate": "Generuj Nowy Tekst"
+    },
+    "color-converter": {
+      "name": "Konwerter Kolorów",
+      "description": "Konwertuj kolory między formatami HEX, RGB, HSL.",
+      "seoTitle": "Konwerter Kolorów Online - HEX, RGB, HSL",
+      "seoDescription": "Darmowy konwerter kolorów online. Konwertuj między HEX, RGB i HSL."
+    },
+    "json-formatter": {
+      "name": "Formatter JSON",
+      "description": "Formatuj i waliduj dane JSON z podświetlaniem składni.",
+      "seoTitle": "Formatter JSON Online - Formatowanie i Walidacja",
+      "seoDescription": "Darmowy formatter JSON online. Formatuj, waliduj i przeglądaj dane JSON."
+    },
+    "base64": {
+      "name": "Base64",
+      "description": "Enkoduj i dekoduj tekst w formacie Base64.",
+      "seoTitle": "Enkoder/Dekoder Base64 Online",
+      "seoDescription": "Darmowy enkoder i dekoder Base64 online. Konwertuj tekst do i z Base64."
+    },
+    "hash-generator": {
+      "name": "Generator Hashy",
+      "description": "Generuj hashe MD5, SHA-1, SHA-256 dla tekstu.",
+      "seoTitle": "Generator Hashy Online - MD5, SHA-1, SHA-256",
+      "seoDescription": "Darmowy generator hashy online. Twórz hashe MD5, SHA-1, SHA-256 dla dowolnego tekstu."
+    },
+    "qr-generator": {
+      "name": "Generator QR",
+      "description": "Twórz kody QR dla linków, tekstu i innych danych.",
+      "seoTitle": "Generator Kodów QR Online",
+      "seoDescription": "Darmowy generator kodów QR online. Twórz kody QR dla linków, tekstu i danych kontaktowych."
+    },
+    "character-counter": {
+      "name": "Licznik Znaków",
+      "description": "Licz znaki, słowa, zdania i akapity w tekście.",
+      "seoTitle": "Licznik Znaków Online - Policz Znaki w Tekście | Darmowe Narzędzie",
+      "seoDescription": "Darmowy licznik znaków online. Licz znaki ze spacjami i bez, słowa, zdania, akapity. Idealne do SMS, Twittera, SEO i limitów tekstowych.",
+      "title": "Licznik Znaków",
+      "subtitle": "Policz znaki, słowa i więcej w tekście",
+      "placeholder": "Wpisz lub wklej tutaj swój tekst...",
+      "characters": "Znaki",
+      "charactersNoSpaces": "Znaki (bez spacji)",
+      "words": "Słowa",
+      "sentences": "Zdania",
+      "paragraphs": "Akapity",
+      "readingTime": "Czas czytania",
+      "speakingTime": "Czas mówienia",
+      "minutes": "min",
+      "seconds": "sek",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj tekst"
+    },
+    "word-counter": {
+      "name": "Licznik Słów",
+      "description": "Policz słowa, zdania i akapity w tekście.",
+      "seoTitle": "Licznik Słów Online - Policz Słowa w Tekście | Darmowe Narzędzie",
+      "seoDescription": "Darmowy licznik słów online. Szybko policz słowa, zdania, akapity. Sprawdź czas czytania i mówienia. Idealne dla pisarzy, studentów i copywriterów.",
+      "title": "Licznik Słów",
+      "subtitle": "Policz słowa i przeanalizuj tekst",
+      "placeholder": "Wpisz lub wklej tutaj swój tekst...",
+      "words": "Słowa",
+      "uniqueWords": "Unikalne słowa",
+      "characters": "Znaki",
+      "sentences": "Zdania",
+      "paragraphs": "Akapity",
+      "avgWordLength": "Średnia długość słowa",
+      "avgSentenceLength": "Średnia długość zdania",
+      "readingTime": "Czas czytania",
+      "speakingTime": "Czas mówienia",
+      "minutes": "min",
+      "seconds": "sek",
+      "wordsLabel": "słów",
+      "clear": "Wyczyść",
+      "copy": "Kopiuj tekst",
+      "topWords": "Najczęstsze słowa"
+    },
+    "dice-roll": {
+      "name": "Rzut Kostką",
+      "description": "Wirtualna kostka do gry. Rzuć kostką online!",
+      "seoTitle": "Rzut Kostką Online - Wirtualna Kostka do Gry | Darmowe Narzędzie",
+      "seoDescription": "Darmowy rzut kostką online. Wirtualna kostka do gier planszowych, RPG i losowań. Wybierz liczbę kostek i ścianek (D4, D6, D8, D10, D12, D20). Szybkie i uczciwe losowanie.",
+      "title": "Rzut Kostką",
+      "subtitle": "Wirtualna kostka do gry online",
+      "roll": "Rzuć kostką",
+      "rolling": "Rzucam...",
+      "result": "Wynik",
+      "total": "Suma",
+      "numberOfDice": "Liczba kostek",
+      "diceType": "Typ kostki",
+      "history": "Historia rzutów",
+      "clearHistory": "Wyczyść historię",
+      "sides": "ścianek",
+      "dice": "kostka",
+      "diceMultiple": "kostki",
+      "average": "Średnia",
+      "min": "Min",
+      "max": "Max"
+    },
+    "font-generator": {
+      "name": "Generator Czcionek",
+      "description": "Zamień tekst na stylowe czcionki Unicode. Kopiuj i wklejaj wszędzie!",
+      "seoTitle": "Generator Czcionek Online - Stylowe Fonty do Kopiowania | Darmowe Narzędzie",
+      "seoDescription": "Darmowy generator stylowych czcionek online. Zamień tekst na pogrubiony, kursywę, gothic, styl azjatycki i wiele innych. Kopiuj i wklej na Instagram, Facebook, Twitter.",
+      "title": "Generator Czcionek",
+      "subtitle": "Zamień tekst na stylowe czcionki do skopiowania",
+      "placeholder": "Wpisz swój tekst...",
+      "defaultText": "Twój tekst tutaj",
+      "fontSize": "Rozmiar czcionki",
+      "allFonts": "Wszystkie style",
+      "serif": "Szeryfowe",
+      "sansSerif": "Bezszeryfowe",
+      "display": "Dekoracyjne",
+      "handwriting": "Odręczne",
+      "monospace": "Monospace",
+      "copyFont": "Kopiuj",
+      "copied": "Skopiowano!",
+      "fontPairings": "Kombinacje czcionek",
+      "heading": "Nagłówek",
+      "body": "Treść",
+      "searchFonts": "Szukaj stylów...",
+      "noResults": "Nie znaleziono stylów",
+      "googleFonts": "Google Fonts"
+    },
+    "countdown-vacation": {
+      "name": "Odliczanie do Wakacji",
+      "description": "Sprawdź ile dni zostało do wakacji letnich!",
+      "seoTitle": "Odliczanie do Wakacji 2026 - Ile Dni do Wakacji? | Licznik Online",
+      "seoDescription": "Darmowe odliczanie do wakacji online. Sprawdź ile dni, godzin i minut zostało do wakacji letnich 2026. Licznik odliczający czas do końca roku szkolnego.",
+      "title": "Odliczanie do Wakacji",
+      "subtitle": "Ile czasu zostało do wakacji letnich?",
+      "days": "dni",
+      "hours": "godzin",
+      "minutes": "minut",
+      "seconds": "sekund",
+      "vacationStart": "Początek wakacji",
+      "timeLeft": "Pozostało",
+      "vacationStarted": "Wakacje już się zaczęły!",
+      "enjoy": "Ciesz się wolnym czasem!"
+    },
+    "countdown-christmas": {
+      "name": "Odliczanie do Świąt",
+      "description": "Sprawdź ile dni zostało do Bożego Narodzenia!",
+      "seoTitle": "Odliczanie do Świąt Bożego Narodzenia 2026 | Ile Dni do Gwiazdki?",
+      "seoDescription": "Darmowe odliczanie do świąt Bożego Narodzenia online. Sprawdź ile dni, godzin i minut zostało do Wigilii i Gwiazdki 2026. Świąteczny licznik czasu.",
+      "title": "Odliczanie do Świąt",
+      "subtitle": "Ile czasu zostało do Bożego Narodzenia?",
+      "days": "dni",
+      "hours": "godzin",
+      "minutes": "minut",
+      "seconds": "sekund",
+      "christmasDate": "Wigilia Bożego Narodzenia",
+      "timeLeft": "Pozostało do Wigilii",
+      "christmasNow": "Wesołych Świąt!",
+      "merryChristmas": "Świąteczny czas już nadszedł!"
+    },
+    "countdown-date": {
+      "name": "Odliczanie do Daty",
+      "description": "Ustaw własną datę i odliczaj czas do wydarzenia!",
+      "seoTitle": "Odliczanie do Daty Online - Licznik Czasu do Dowolnego Wydarzenia",
+      "seoDescription": "Darmowe odliczanie do wybranej daty online. Ustaw datę urodzin, ślubu, egzaminu lub innego wydarzenia i sprawdź ile czasu zostało.",
+      "title": "Odliczanie do Daty",
+      "subtitle": "Odliczaj czas do dowolnego wydarzenia",
+      "days": "dni",
+      "hours": "godzin",
+      "minutes": "minut",
+      "seconds": "sekund",
+      "selectDate": "Wybierz datę",
+      "eventName": "Nazwa wydarzenia (opcjonalnie)",
+      "eventPlaceholder": "np. Moje urodziny",
+      "timeLeft": "Pozostało",
+      "dateReached": "Data już minęła!",
+      "timeSince": "Od tego wydarzenia minęło"
+    },
+    "youtube-converter": {
+      "name": "Konwerter YouTube",
+      "description": "Konwertuj filmy z YouTube do różnych formatów.",
+      "seoTitle": "Konwerter YouTube Online - Pobierz filmy z YT",
+      "seoDescription": "Darmowy konwerter YouTube online. Konwertuj i pobieraj filmy z YouTube w różnych formatach."
+    },
+    "mp3-converter": {
+      "name": "Konwerter MP3",
+      "description": "Konwertuj pliki audio do formatu MP3.",
+      "seoTitle": "Konwerter MP3 Online - Darmowa konwersja audio",
+      "seoDescription": "Darmowy konwerter MP3 online. Konwertuj pliki audio do formatu MP3 szybko i bezpłatnie."
+    },
+    "pdf-to-word": {
+      "name": "PDF na Word",
+      "description": "Konwertuj dokumenty PDF do edytowalnych plików Word.",
+      "seoTitle": "Konwerter PDF na Word Online - PDF do DOCX",
+      "seoDescription": "Darmowy konwerter PDF na Word online. Konwertuj pliki PDF do edytowalnych dokumentów Word."
+    },
+    "word-to-pdf": {
+      "name": "Word na PDF",
+      "description": "Konwertuj dokumenty Word do formatu PDF.",
+      "seoTitle": "Konwerter Word na PDF Online - DOCX do PDF",
+      "seoDescription": "Darmowy konwerter Word na PDF online. Konwertuj dokumenty Word do formatu PDF szybko i łatwo."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF na JPG",
+      "description": "Konwertuj strony PDF do obrazów JPG.",
+      "seoTitle": "Konwerter PDF na JPG Online - PDF do obrazów",
+      "seoDescription": "Darmowy konwerter PDF na JPG online. Konwertuj strony dokumentów PDF do obrazów JPG wysokiej jakości. Szybka konwersja w przeglądarce bez przesyłania plików na serwer.",
+      "uploadTitle": "Konwertuj PDF na JPG",
+      "uploadDescription": "Przeciągnij plik PDF lub kliknij aby wybrać",
+      "dropHere": "Upuść plik PDF tutaj",
+      "selectFile": "Wybierz plik PDF",
+      "orDragDrop": "lub przeciągnij i upuść",
+      "maxSize": "Maksymalny rozmiar: 50 MB",
+      "quality": "Jakość",
+      "scale": "Skala",
+      "processing": "Przetwarzanie...",
+      "page": "Strona",
+      "downloadPage": "Pobierz stronę",
+      "downloadAll": "Pobierz wszystko (ZIP)",
+      "converting": "Konwertowanie strony",
+      "of": "z",
+      "newFile": "Nowy plik"
+    },
+    "pdf-to-png": {
+      "name": "PDF na PNG",
+      "description": "Konwertuj strony PDF do obrazów PNG.",
+      "seoTitle": "Konwerter PDF na PNG Online - PDF do obrazów PNG",
+      "seoDescription": "Darmowy konwerter PDF na PNG online. Konwertuj strony dokumentów PDF do obrazów PNG z pełną przezroczystością. Szybka konwersja w przeglądarce.",
+      "uploadTitle": "Konwertuj PDF na PNG",
+      "uploadDescription": "Przeciągnij plik PDF lub kliknij aby wybrać",
+      "dropHere": "Upuść plik PDF tutaj",
+      "selectFile": "Wybierz plik PDF",
+      "orDragDrop": "lub przeciągnij i upuść",
+      "maxSize": "Maksymalny rozmiar: 50 MB",
+      "scale": "Skala",
+      "processing": "Przetwarzanie...",
+      "page": "Strona",
+      "downloadPage": "Pobierz stronę",
+      "downloadAll": "Pobierz wszystko (ZIP)",
+      "converting": "Konwertowanie strony",
+      "of": "z",
+      "newFile": "Nowy plik"
+    },
+    "random-number": {
+      "name": "Losuj Liczbę",
+      "description": "Generuj losową liczbę w wybranym zakresie.",
+      "seoTitle": "Losuj Liczbę Online - Generator Liczb Losowych",
+      "seoDescription": "Darmowy generator liczb losowych online. Losuj liczbę w dowolnym zakresie szybko i łatwo.",
+      "min": "Minimum",
+      "max": "Maksimum",
+      "result": "Wylosowana liczba",
+      "generate": "Losuj Nową Liczbę",
+      "history": "Historia losowań"
+    },
+    "random-numbers": {
+      "name": "Losuj Liczby",
+      "description": "Losuj wiele liczb naraz w wybranym zakresie.",
+      "seoTitle": "Losuj Liczby Online - Generator Wielu Liczb Losowych",
+      "seoDescription": "Darmowy generator wielu liczb losowych online. Losuj kilka liczb naraz w dowolnym zakresie. Idealne do loterii, gier i losowań.",
+      "min": "Minimum",
+      "max": "Maksimum",
+      "count": "Ilość liczb",
+      "unique": "Bez powtórzeń",
+      "sorted": "Sortuj rosnąco",
+      "results": "Wylosowane liczby",
+      "generate": "Losuj Liczby",
+      "copyAll": "Kopiuj wszystkie"
+    },
+    "random-quote": {
+      "name": "Losuj Cytat",
+      "description": "Odkryj inspirujące cytaty losowo.",
+      "seoTitle": "Losuj Cytat Online - Losowe Cytaty Inspirujące",
+      "seoDescription": "Darmowy generator losowych cytatów online. Odkryj inspirujące cytaty znanych osób."
+    },
+    "random-bible": {
+      "name": "Losuj Cytat z Biblii",
+      "description": "Losuj wersety i cytaty z Biblii.",
+      "seoTitle": "Losuj Cytat z Biblii Online - Losowe Wersety Biblijne",
+      "seoDescription": "Darmowy generator losowych cytatów z Biblii. Odkryj wersety biblijne na każdy dzień."
+    },
+    "random-tarot": {
+      "name": "Losuj Kartę Tarota",
+      "description": "Wylosuj kartę tarota i poznaj jej znaczenie.",
+      "seoTitle": "Losuj Kartę Tarota Online - Wirtualne Karty Tarota",
+      "seoDescription": "Darmowe losowanie kart tarota online. Wylosuj kartę i poznaj jej znaczenie."
+    },
+    "random-yesno": {
+      "name": "Losuj Tak/Nie",
+      "description": "Pozwól losowi podjąć decyzję za Ciebie.",
+      "seoTitle": "Losuj Tak Nie Online - Generator Decyzji Tak lub Nie",
+      "seoDescription": "Darmowy generator decyzji tak/nie online. Pozwól losowi zdecydować za Ciebie. Idealne gdy nie możesz się zdecydować!",
+      "yes": "TAK",
+      "no": "NIE",
+      "askQuestion": "Zadaj pytanie (opcjonalnie)",
+      "questionPlaceholder": "Np. Czy powinienem to zrobić?",
+      "generate": "Losuj Odpowiedź",
+      "result": "Odpowiedź losu",
+      "tryAgain": "Spróbuj ponownie"
+    },
+    "proportion-calculator": {
+      "name": "Kalkulator Proporcji",
+      "description": "Oblicz brakującą wartość w proporcji A:B = C:X.",
+      "seoTitle": "Kalkulator Proporcji Online - Oblicz Proporcje",
+      "seoDescription": "Darmowy kalkulator proporcji online. Oblicz brakującą wartość w proporcji A:B = C:X. Szybkie i dokładne obliczenia matematyczne.",
+      "title": "Kalkulator Proporcji",
+      "subtitle": "Oblicz brakującą wartość X w proporcji",
+      "valueA": "Wartość A",
+      "valueB": "Wartość B",
+      "valueC": "Wartość C",
+      "valueX": "Wartość X (wynik)",
+      "calculate": "Oblicz",
+      "result": "Wynik",
+      "formula": "Wzór: A : B = C : X → X = (B × C) ÷ A",
+      "copy": "Kopiuj wynik",
+      "clear": "Wyczyść"
+    },
+    "bmi-calculator": {
+      "name": "Kalkulator BMI",
+      "description": "Oblicz wskaźnik masy ciała (BMI) i sprawdź kategorię wagi.",
+      "seoTitle": "Kalkulator BMI Online - Oblicz Wskaźnik Masy Ciała",
+      "seoDescription": "Darmowy kalkulator BMI online. Oblicz swój wskaźnik masy ciała i sprawdź czy Twoja waga jest prawidłowa. Szybkie i dokładne obliczenia.",
+      "title": "Kalkulator BMI",
+      "subtitle": "Oblicz swój wskaźnik masy ciała",
+      "weight": "Waga (kg)",
+      "height": "Wzrost (cm)",
+      "calculate": "Oblicz BMI",
+      "result": "Twoje BMI",
+      "category": "Kategoria",
+      "underweight": "Niedowaga",
+      "normal": "Waga prawidłowa",
+      "overweight": "Nadwaga",
+      "obese": "Otyłość",
+      "severelyObese": "Otyłość II stopnia",
+      "morbidlyObese": "Otyłość III stopnia",
+      "clear": "Wyczyść"
+    },
+    "weighted-average": {
+      "name": "Średnia Ważona",
+      "description": "Oblicz średnią ważoną dla ocen, wyników i innych danych.",
+      "seoTitle": "Kalkulator Średniej Ważonej Online - Oblicz Średnią Ważoną | Darmowe Narzędzie",
+      "seoDescription": "Darmowy kalkulator średniej ważonej online. Oblicz średnią ważoną ocen szkolnych, akademickich, wyników egzaminów. Szybkie i dokładne obliczenia z wagami.",
+      "title": "Kalkulator Średniej Ważonej",
+      "subtitle": "Oblicz średnią ważoną z uwzględnieniem wag",
+      "value": "Wartość",
+      "weight": "Waga",
+      "addRow": "Dodaj wiersz",
+      "removeRow": "Usuń",
+      "calculate": "Oblicz średnią",
+      "result": "Średnia ważona",
+      "sumOfWeights": "Suma wag",
+      "clear": "Wyczyść wszystko",
+      "copy": "Kopiuj wynik",
+      "example": "Przykład",
+      "loadExample": "Załaduj przykład ocen"
+    }
+  },
+  "common": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowano!",
+    "generate": "Generuj",
+    "clear": "Wyczyść",
+    "comingSoon": "Wkrótce",
+    "placeholder": "To narzędzie jest w przygotowaniu. Wróć wkrótce!"
+  },
+  "footer": {
+    "rights": "Wszelkie prawa zastrzeżone",
+    "privacy": "Polityka prywatności",
+    "contact": "Kontakt",
+    "about": "O nas",
+    "terms": "Regulamin",
+    "description": "Darmowe narzędzia online dla każdego. Generatory, konwertery, kalkulatory i losowania - wszystko w jednym miejscu.",
+    "categories": "Kategorie",
+    "popularTools": "Popularne narzędzia",
+    "legal": "Informacje prawne",
+    "madeWith": "Stworzone z",
+    "inPoland": "w Polsce"
+  }
+}
