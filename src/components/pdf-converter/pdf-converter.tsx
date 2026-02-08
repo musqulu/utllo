@@ -86,7 +86,7 @@ export function PdfConverter({ format, dictionary }: PdfConverterProps) {
         setProgress
       );
       setPages(convertedPages);
-      trackToolEvent(format === "jpeg" ? "pdf-to-jpg" : "pdf-to-png", "converters", "use");
+      trackToolEvent(format === "jpg" ? "pdf-to-jpg" : "pdf-to-png", "converters", "use");
     } catch (err) {
       console.error("Conversion error:", err);
       setError("Wystąpił błąd podczas konwersji. Spróbuj ponownie.");
