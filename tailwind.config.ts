@@ -19,6 +19,31 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)"],
       },
+      fontSize: {
+        h1: ["var(--h1)", { lineHeight: "var(--h1-lh)", letterSpacing: "var(--h1-ls)", fontWeight: "var(--h1-w)" }],
+        h2: ["var(--h2)", { lineHeight: "var(--h2-lh)", letterSpacing: "var(--h2-ls)", fontWeight: "var(--h2-w)" }],
+        h3: ["var(--h3)", { lineHeight: "var(--h3-lh)", letterSpacing: "var(--h3-ls)", fontWeight: "var(--h3-w)" }],
+        h4: ["var(--h4)", { lineHeight: "var(--h4-lh)", letterSpacing: "var(--h4-ls)", fontWeight: "var(--h4-w)" }],
+        h5: ["var(--h5)", { lineHeight: "var(--h5-lh)", letterSpacing: "var(--h5-ls)", fontWeight: "var(--h5-w)" }],
+        h6: ["var(--h6)", { lineHeight: "var(--h6-lh)", letterSpacing: "var(--h6-ls)", fontWeight: "var(--h6-w)" }],
+        lead: ["var(--lead)", { lineHeight: "var(--lead-lh)", fontWeight: "var(--lead-w)" }],
+        body: ["var(--body)", { lineHeight: "var(--body-lh)", fontWeight: "var(--body-w)" }],
+        small: ["var(--small)", { lineHeight: "var(--small-lh)", fontWeight: "var(--small-w)" }],
+        caption: ["var(--caption)", { lineHeight: "var(--caption-lh)", fontWeight: "var(--caption-w)" }],
+        label: ["var(--label)", { lineHeight: "var(--label-lh)", letterSpacing: "var(--label-ls)", fontWeight: "var(--label-w)" }],
+      },
+      letterSpacing: {
+        "tighter-heading": "-0.02em",
+        "tight-heading": "-0.01em",
+        "tight-label": "-0.005em",
+      },
+      lineHeight: {
+        "heading-tight": "1.10",
+        "heading-normal": "1.20",
+        "heading-relaxed": "1.30",
+        "body-relaxed": "1.65",
+        "body-lead": "1.70",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

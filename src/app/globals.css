@@ -11,6 +11,7 @@
 
 @layer base {
   :root {
+    /* ── shadcn/ui color tokens ── */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -31,15 +32,40 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 243.4 75.4% 58.6%;
     --radius: 0.5rem;
-    
+
     /* Brand colors */
     --brand-primary: 222.2 47.4% 11.2%;
     --brand-accent: 243.4 75.4% 58.6%;
     --brand-success: 142.1 76.2% 36.3%;
     --brand-warning: 37.7 92.1% 50.2%;
+
+    /* ── Typography: Inter-only type scale ── */
+    /* --font-sans is set by next/font/google in layout.tsx — do not override here */
+
+    /* Text colors */
+    --text: rgba(0, 0, 0, 0.86);
+    --text-muted: rgba(0, 0, 0, 0.68);
+
+    /* Headings */
+    --h1: 44px; --h1-lh: 1.10; --h1-w: 800; --h1-ls: -0.02em;
+    --h2: 32px; --h2-lh: 1.15; --h2-w: 800; --h2-ls: -0.02em;
+    --h3: 24px; --h3-lh: 1.20; --h3-w: 700; --h3-ls: -0.01em;
+    --h4: 20px; --h4-lh: 1.25; --h4-w: 700; --h4-ls: -0.01em;
+    --h5: 18px; --h5-lh: 1.30; --h5-w: 600; --h5-ls: -0.005em;
+    --h6: 16px; --h6-lh: 1.35; --h6-w: 600; --h6-ls: -0.005em;
+
+    /* Body */
+    --body: 16px; --body-lh: 1.65; --body-w: 400;
+    --lead: 18px; --lead-lh: 1.70; --lead-w: 500;
+    --small: 14px; --small-lh: 1.55; --small-w: 400;
+    --caption: 12px; --caption-lh: 1.50; --caption-w: 500;
+
+    /* UI / Labels */
+    --label: 14px; --label-lh: 1.20; --label-w: 600; --label-ls: -0.005em;
   }
 
   .dark {
+    /* ── shadcn/ui dark color tokens ── */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -59,14 +85,127 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 243.4 75.4% 58.6%;
+
+    /* Dark typography text colors */
+    --text: rgba(255, 255, 255, 0.88);
+    --text-muted: rgba(255, 255, 255, 0.60);
   }
 }
 
+/* ── Base element styles ── */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background antialiased;
+    font-family: var(--font-sans);
+    font-size: var(--body);
+    line-height: var(--body-lh);
+    font-weight: var(--body-w);
+    color: var(--text);
+  }
+
+  /* Headings */
+  h1 {
+    font-size: var(--h1);
+    line-height: var(--h1-lh);
+    font-weight: var(--h1-w);
+    letter-spacing: var(--h1-ls);
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: var(--h2);
+    line-height: var(--h2-lh);
+    font-weight: var(--h2-w);
+    letter-spacing: var(--h2-ls);
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: var(--h3);
+    line-height: var(--h3-lh);
+    font-weight: var(--h3-w);
+    letter-spacing: var(--h3-ls);
+    margin-bottom: 14px;
+  }
+
+  h4 {
+    font-size: var(--h4);
+    line-height: var(--h4-lh);
+    font-weight: var(--h4-w);
+    letter-spacing: var(--h4-ls);
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    font-size: var(--h5);
+    line-height: var(--h5-lh);
+    font-weight: var(--h5-w);
+    letter-spacing: var(--h5-ls);
+    margin-bottom: 8px;
+  }
+
+  h6 {
+    font-size: var(--h6);
+    line-height: var(--h6-lh);
+    font-weight: var(--h6-w);
+    letter-spacing: var(--h6-ls);
+    margin-bottom: 8px;
+  }
+
+  /* Paragraph spacing */
+  p + p {
+    margin-top: 14px;
+  }
+}
+
+/* ── Utility classes ── */
+@layer components {
+  .lead {
+    font-size: var(--lead);
+    line-height: var(--lead-lh);
+    font-weight: var(--lead-w);
+  }
+
+  .text-small {
+    font-size: var(--small);
+    line-height: var(--small-lh);
+    font-weight: var(--small-w);
+  }
+
+  .caption {
+    font-size: var(--caption);
+    line-height: var(--caption-lh);
+    font-weight: var(--caption-w);
+    color: var(--text-muted);
+  }
+
+  .ui-label {
+    font-size: var(--label);
+    line-height: var(--label-lh);
+    font-weight: var(--label-w);
+    letter-spacing: var(--label-ls);
+  }
+
+  .prose-narrow {
+    max-width: 75ch;
+  }
+
+  .prose-ui {
+    max-width: 65ch;
+  }
+}
+
+/* ── Responsive: mobile type scale ── */
+@media (max-width: 640px) {
+  :root {
+    --h1: 32px;
+    --h2: 26px;
+    --h3: 20px;
+    --h4: 18px;
+    --lead: 17px;
   }
 }
