@@ -16,6 +16,8 @@ import { CalorieCalculator } from "@/components/calculators/calorie-calculator";
 import { BloodTypeCalculator } from "@/components/calculators/blood-type-calculator";
 import { InflationCalculator } from "@/components/calculators/inflation-calculator";
 import { DogYearsCalculator } from "@/components/calculators/dog-years-calculator";
+import { RomanNumeralsCalculator } from "@/components/calculators/roman-numerals-calculator";
+import { CatYearsCalculator } from "@/components/calculators/cat-years-calculator";
 
 const BASE_URL = "https://utllo.com";
 const CATEGORY = "calculators";
@@ -279,6 +281,52 @@ export default async function ToolPage({ params }: PageProps) {
               puppy: toolDict.puppy || "Szczeniak",
               young: toolDict.young || "Młody",
               adult: toolDict.adult || "Dorosły",
+              senior: toolDict.senior || "Senior",
+              geriatric: toolDict.geriatric || "Wiekowy",
+            }}
+          />
+        );
+      case "roman-numerals":
+        return (
+          <RomanNumeralsCalculator
+            dictionary={{
+              title: toolDict.title || "Kalkulator Cyfr Rzymskich",
+              subtitle: toolDict.subtitle || "Przelicz liczby arabskie na rzymskie i odwrotnie",
+              arabicToRoman: toolDict.arabicToRoman || "Arabskie → Rzymskie",
+              romanToArabic: toolDict.romanToArabic || "Rzymskie → Arabskie",
+              inputArabic: toolDict.inputArabic || "Liczba arabska (1-3999)",
+              inputRoman: toolDict.inputRoman || "Cyfra rzymska",
+              placeholderArabic: toolDict.placeholderArabic || "np. 2024",
+              placeholderRoman: toolDict.placeholderRoman || "np. MMXXIV",
+              result: toolDict.result || "Wynik",
+              copy: toolDict.copy || "Kopiuj",
+              copied: toolDict.copied || "Skopiowano!",
+              clear: toolDict.clear || "Wyczyść",
+              invalidNumber: toolDict.invalidNumber || "Wpisz liczbę od 1 do 3999",
+              invalidRoman: toolDict.invalidRoman || "Nieprawidłowa cyfra rzymska",
+              referenceTable: toolDict.referenceTable || "Tabela wartości",
+            }}
+          />
+        );
+      case "cat-years-calculator":
+        return (
+          <CatYearsCalculator
+            dictionary={{
+              title: toolDict.title || "Kocie Lata na Ludzkie",
+              subtitle: toolDict.subtitle || "Przelicz wiek Twojego kota na ludzkie lata",
+              catAge: toolDict.catAge || "Wiek kota (lata)",
+              calculate: toolDict.calculate || "Przelicz wiek",
+              clear: toolDict.clear || "Wyczyść",
+              humanYears: toolDict.humanYears || "Wiek w ludzkich latach",
+              lifeStage: toolDict.lifeStage || "Etap życia",
+              result: toolDict.result || "ludzkich lat",
+              lifeExpectancy: toolDict.lifeExpectancy || "Średnia długość życia",
+              indoor: toolDict.indoor || "Kot domowy",
+              outdoor: toolDict.outdoor || "Kot wychodzący",
+              kitten: toolDict.kitten || "Kociak",
+              junior: toolDict.junior || "Junior",
+              adult: toolDict.adult || "Dorosły",
+              mature: toolDict.mature || "Dojrzały",
               senior: toolDict.senior || "Senior",
               geriatric: toolDict.geriatric || "Wiekowy",
             }}
@@ -1420,6 +1468,456 @@ export default async function ToolPage({ params }: PageProps) {
                 Nasz kalkulator psich lat działa całkowicie w przeglądarce. Nie wymaga 
                 rejestracji ani wysyłania danych. Wyniki oparte są na danych 
                 weterynaryjnych i mają charakter orientacyjny - każdy pies starzeje się 
+                indywidualnie.
+              </p>
+            </div>
+          </section>
+        );
+      case "roman-numerals":
+        return (
+          <section className="max-w-3xl mx-auto mt-16 space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold text-center mb-6">
+                Kalkulator Cyfr Rzymskich Online - Konwerter Liczb
+              </h2>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Nasz darmowy kalkulator cyfr rzymskich pozwala błyskawicznie przeliczać 
+                  liczby arabskie na rzymskie i odwrotnie. Wystarczy wpisać liczbę od 1 do 
+                  3999 lub cyfrę rzymską, aby natychmiast zobaczyć wynik konwersji.
+                </p>
+                <p>
+                  Cyfry rzymskie to system zapisu liczb stworzony w starożytnym Rzymie. 
+                  Mimo że mają ponad 2000 lat, są nadal powszechnie używane - na zegarach, 
+                  w tytułach filmów, numeracji rozdziałów, oznaczeniach wieków i wielu 
+                  innych miejscach.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">7 podstawowych symboli</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-center">Symbol</th>
+                      <th className="border p-3 text-center">I</th>
+                      <th className="border p-3 text-center">V</th>
+                      <th className="border p-3 text-center">X</th>
+                      <th className="border p-3 text-center">L</th>
+                      <th className="border p-3 text-center">C</th>
+                      <th className="border p-3 text-center">D</th>
+                      <th className="border p-3 text-center">M</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm">
+                    <tr>
+                      <td className="border p-3 text-center font-medium">Wartość</td>
+                      <td className="border p-3 text-center">1</td>
+                      <td className="border p-3 text-center">5</td>
+                      <td className="border p-3 text-center">10</td>
+                      <td className="border p-3 text-center">50</td>
+                      <td className="border p-3 text-center">100</td>
+                      <td className="border p-3 text-center">500</td>
+                      <td className="border p-3 text-center">1000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Jak działa zapis subtraktywny?</h3>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Liczby tworzy się przez dodawanie wartości symboli od lewej do prawej. 
+                  Jeśli jednak mniejszy symbol stoi przed większym, jego wartość jest 
+                  odejmowana. To tak zwany zapis subtraktywny:
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="p-4 bg-muted rounded-lg">
+                    <h4 className="font-medium mb-2">Zapis subtraktywny</h4>
+                    <ul className="text-sm space-y-1">
+                      <li><strong>IV</strong> = 5 - 1 = <strong>4</strong></li>
+                      <li><strong>IX</strong> = 10 - 1 = <strong>9</strong></li>
+                      <li><strong>XL</strong> = 50 - 10 = <strong>40</strong></li>
+                      <li><strong>XC</strong> = 100 - 10 = <strong>90</strong></li>
+                      <li><strong>CD</strong> = 500 - 100 = <strong>400</strong></li>
+                      <li><strong>CM</strong> = 1000 - 100 = <strong>900</strong></li>
+                    </ul>
+                  </div>
+                  <div className="p-4 bg-muted rounded-lg">
+                    <h4 className="font-medium mb-2">Przykłady</h4>
+                    <ul className="text-sm space-y-1">
+                      <li><strong>III</strong> = 1+1+1 = <strong>3</strong></li>
+                      <li><strong>XIV</strong> = 10+4 = <strong>14</strong></li>
+                      <li><strong>XLII</strong> = 40+2 = <strong>42</strong></li>
+                      <li><strong>MCMXCIX</strong> = 1000+900+90+9 = <strong>1999</strong></li>
+                      <li><strong>MMXXIV</strong> = 2000+20+4 = <strong>2024</strong></li>
+                      <li><strong>MMMCMXCIX</strong> = <strong>3999</strong></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Tabela cyfr rzymskich 1-100</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse text-sm">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-2">Arabska</th>
+                      <th className="border p-2">Rzymska</th>
+                      <th className="border p-2">Arabska</th>
+                      <th className="border p-2">Rzymska</th>
+                      <th className="border p-2">Arabska</th>
+                      <th className="border p-2">Rzymska</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className="border p-2 text-center">1</td><td className="border p-2 text-center font-medium">I</td>
+                      <td className="border p-2 text-center">10</td><td className="border p-2 text-center font-medium">X</td>
+                      <td className="border p-2 text-center">100</td><td className="border p-2 text-center font-medium">C</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">2</td><td className="border p-2 text-center font-medium">II</td>
+                      <td className="border p-2 text-center">20</td><td className="border p-2 text-center font-medium">XX</td>
+                      <td className="border p-2 text-center">200</td><td className="border p-2 text-center font-medium">CC</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">3</td><td className="border p-2 text-center font-medium">III</td>
+                      <td className="border p-2 text-center">30</td><td className="border p-2 text-center font-medium">XXX</td>
+                      <td className="border p-2 text-center">500</td><td className="border p-2 text-center font-medium">D</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">4</td><td className="border p-2 text-center font-medium">IV</td>
+                      <td className="border p-2 text-center">40</td><td className="border p-2 text-center font-medium">XL</td>
+                      <td className="border p-2 text-center">1000</td><td className="border p-2 text-center font-medium">M</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">5</td><td className="border p-2 text-center font-medium">V</td>
+                      <td className="border p-2 text-center">50</td><td className="border p-2 text-center font-medium">L</td>
+                      <td className="border p-2 text-center">2000</td><td className="border p-2 text-center font-medium">MM</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">6</td><td className="border p-2 text-center font-medium">VI</td>
+                      <td className="border p-2 text-center">60</td><td className="border p-2 text-center font-medium">LX</td>
+                      <td className="border p-2 text-center">2024</td><td className="border p-2 text-center font-medium">MMXXIV</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">7</td><td className="border p-2 text-center font-medium">VII</td>
+                      <td className="border p-2 text-center">70</td><td className="border p-2 text-center font-medium">LXX</td>
+                      <td className="border p-2 text-center">2026</td><td className="border p-2 text-center font-medium">MMXXVI</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">8</td><td className="border p-2 text-center font-medium">VIII</td>
+                      <td className="border p-2 text-center">80</td><td className="border p-2 text-center font-medium">LXXX</td>
+                      <td className="border p-2 text-center">3000</td><td className="border p-2 text-center font-medium">MMM</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-2 text-center">9</td><td className="border p-2 text-center font-medium">IX</td>
+                      <td className="border p-2 text-center">90</td><td className="border p-2 text-center font-medium">XC</td>
+                      <td className="border p-2 text-center">3999</td><td className="border p-2 text-center font-medium">MMMCMXCIX</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Gdzie dziś używamy cyfr rzymskich?</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Zegary i zegarki</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Klasyczne tarcze zegarowe używają cyfr rzymskich. Co ciekawe, 
+                    liczba 4 jest często zapisywana jako IIII zamiast IV.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Filmy i seriale</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Rok produkcji w napisach końcowych filmów jest tradycyjnie 
+                    zapisywany cyframi rzymskimi, np. MMXXIV (2024).
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Monarchowie i papieże</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Numery porządkowe władców zapisuje się cyframi rzymskimi: 
+                    Jan Paweł II, Elżbieta II, Ludwik XIV.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Wieki i stulecia</h4>
+                  <p className="text-sm text-muted-foreground">
+                    W języku polskim wieki oznaczamy cyframi rzymskimi: 
+                    XXI wiek, XV wiek, III wiek p.n.e.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Super Bowl i olimpiady</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Edycje Super Bowl są numerowane cyframi rzymskimi 
+                    (np. Super Bowl LVIII = 58). Olimpiady również stosują ten zapis.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Rozdziały i konspekty</h4>
+                  <p className="text-sm text-muted-foreground">
+                    W książkach, pracach naukowych i dokumentach rozdziały 
+                    i sekcje często numeruje się cyframi rzymskimi (I, II, III...).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Często zadawane pytania</h3>
+              <div className="space-y-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Dlaczego maksymalna liczba to 3999?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    W standardowym zapisie rzymskim najwyższym symbolem jest M (1000). 
+                    Maksymalnie można powtórzyć go trzykrotnie (MMM = 3000), a z resztą 
+                    symboli utworzyć MMMCMXCIX = 3999. Nie ma standardowego symbolu 
+                    dla 5000 ani wyżej, choć w starożytności stosowano specjalne oznaczenia.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jak zapisać 4 po rzymsku - IV czy IIII?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Poprawny współczesny zapis to IV (zapis subtraktywny). Jednak na 
+                    zegarach często spotykamy IIII zamiast IV. Istnieje kilka teorii - 
+                    symetria z VIII po drugiej stronie tarczy, czytelność, a także 
+                    tradycja sięgająca starożytnego Rzymu, gdzie oba zapisy były dopuszczalne.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy Rzymianie znali zero?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Nie. System rzymski nie posiada symbolu dla zera. Koncepcja zera jako 
+                    liczby dotarła do Europy z systemu hindusko-arabskiego dopiero 
+                    w średniowieczu. Dlatego nasz kalkulator obsługuje zakres od 1 do 3999.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jaka jest największa liczba w cyfrach rzymskich?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    W standardowym zapisie to MMMCMXCIX = 3999. Jednak Rzymianie stosowali 
+                    nadkreślenia (vinculum) do mnożenia przez 1000, co pozwalało zapisywać 
+                    znacznie większe liczby. Np. V z kreską nad spodem oznaczało 5000.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center text-sm text-muted-foreground">
+              <p>
+                Nasz kalkulator cyfr rzymskich działa całkowicie w przeglądarce. 
+                Nie wymaga rejestracji ani wysyłania danych. Wszystkie konwersje 
+                wykonywane są lokalnie na Twoim urządzeniu.
+              </p>
+            </div>
+          </section>
+        );
+      case "cat-years-calculator":
+        return (
+          <section className="max-w-3xl mx-auto mt-16 space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold text-center mb-6">
+                Kocie Lata na Ludzkie - Ile Naprawdę Lat Ma Twój Kot?
+              </h2>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Nasz darmowy kalkulator kocich lat pozwala dokładnie przeliczyć wiek 
+                  Twojego kota na ludzkie lata. W przeciwieństwie do popularnego mitu 
+                  &quot;pomnóż przez 7&quot;, nasz kalkulator wykorzystuje nowoczesną, 
+                  naukowo potwierdzoną nieliniową formułę, która uwzględnia fakt, że koty 
+                  starzeją się najszybciej w pierwszych dwóch latach życia.
+                </p>
+                <p>
+                  Pierwszy rok życia kota odpowiada aż 15 ludzkim latom, a dwuletni kot 
+                  to odpowiednik 24-letniego człowieka. Po drugim roku każdy kolejny rok 
+                  kota dodaje około 4 ludzkie lata. Dlatego prosty mnożnik &quot;×7&quot; 
+                  jest bardzo niedokładny.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Dlaczego mnożenie przez 7 nie działa?</h3>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Mit o mnożeniu przez 7 sugeruje, że roczny kot to odpowiednik 7-letniego 
+                  człowieka. W rzeczywistości roczny kot jest już dojrzały reprodukcyjnie, 
+                  co odpowiada raczej 15-letniemu nastolatkowi. Koty dojrzewają znacznie 
+                  szybciej niż ludzie w pierwszych latach, a potem starzenie zwalnia.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Tabela przeliczania kocich lat</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-center">Wiek kota</th>
+                      <th className="border p-3 text-center">Ludzkie lata</th>
+                      <th className="border p-3 text-center">Etap życia</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm">
+                    <tr><td className="border p-3 text-center">0.5</td><td className="border p-3 text-center">7.5</td><td className="border p-3 text-center">Kociak</td></tr>
+                    <tr><td className="border p-3 text-center">1</td><td className="border p-3 text-center">15</td><td className="border p-3 text-center">Junior</td></tr>
+                    <tr><td className="border p-3 text-center">2</td><td className="border p-3 text-center">24</td><td className="border p-3 text-center">Junior</td></tr>
+                    <tr><td className="border p-3 text-center">3</td><td className="border p-3 text-center">28</td><td className="border p-3 text-center">Dorosły</td></tr>
+                    <tr><td className="border p-3 text-center">5</td><td className="border p-3 text-center">36</td><td className="border p-3 text-center">Dorosły</td></tr>
+                    <tr><td className="border p-3 text-center">7</td><td className="border p-3 text-center">44</td><td className="border p-3 text-center">Dojrzały</td></tr>
+                    <tr><td className="border p-3 text-center">10</td><td className="border p-3 text-center">56</td><td className="border p-3 text-center">Dojrzały</td></tr>
+                    <tr><td className="border p-3 text-center">12</td><td className="border p-3 text-center">64</td><td className="border p-3 text-center">Senior</td></tr>
+                    <tr><td className="border p-3 text-center">15</td><td className="border p-3 text-center">76</td><td className="border p-3 text-center">Wiekowy</td></tr>
+                    <tr><td className="border p-3 text-center">18</td><td className="border p-3 text-center">88</td><td className="border p-3 text-center">Wiekowy</td></tr>
+                    <tr><td className="border p-3 text-center">20</td><td className="border p-3 text-center">96</td><td className="border p-3 text-center">Wiekowy</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Etapy życia kota</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Kociak (0-6 miesięcy)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Intensywny wzrost i rozwój. Kociak uczy się podstawowych umiejętności, 
+                    socjalizuje się i jest niezwykle aktywny. To okres szczepień i nauki.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Junior (6 mies. - 2 lata)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Kot osiąga dojrzałość płciową i pełny rozmiar. To &quot;nastoletni&quot; okres - 
+                    pełen energii, zabawy i eksploracji. Idealny czas na sterylizację.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Dorosły (3-6 lat)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Kot w pełni sił. Aktywny, ale spokojniejszy niż w okresie juniorskim. 
+                    Ustalone nawyki żywieniowe i zachowania. Regularne wizyty u weterynarza.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Dojrzały (7-10 lat)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Odpowiednik człowieka w średnim wieku (44-56 lat). Kot może zacząć 
+                    przybierać na wadze i mniej się ruszać. Ważne badania profilaktyczne.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Senior (11-14 lat)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Odpowiednik 60-72 lat człowieka. Mogą pojawić się problemy zdrowotne - 
+                    choroby nerek, nadczynność tarczycy, cukrzyca. Częstsze wizyty u weterynarza.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Wiekowy (15+ lat)</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Kot wymaga szczególnej opieki. Może mieć problemy z mobilnością, 
+                    wzrokiem i słuchem. Regularne badania co pół roku i dostosowana dieta.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Długość życia kota - co wpływa?</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Kot domowy vs wychodzący</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Koty domowe żyją średnio 12-18 lat, a niektóre nawet ponad 20 lat. 
+                    Koty wychodzące na zewnątrz żyją znacznie krócej - średnio 5-10 lat - 
+                    ze względu na zagrożenia (ruch drogowy, choroby, inne zwierzęta).
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Rasa a długowieczność</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Koty mieszane (dachowce) często żyją dłużej niż rasowe dzięki większej 
+                    różnorodności genetycznej. Najdłużej żyjące rasy to m.in. Syjamski, 
+                    Burmański i Ragdoll (15-20 lat). Krótszą żywotność mają np. Persy.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Dieta i waga</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Prawidłowa waga to klucz do długiego życia. Otyłość zwiększa ryzyko 
+                    cukrzycy, chorób stawów i serca. Zbilansowana dieta z odpowiednią 
+                    ilością białka i tauryny jest niezbędna.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Opieka weterynaryjna</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Regularne szczepienia, odrobaczanie i kontrole profilaktyczne 
+                    wydłużają życie kota. Sterylizacja/kastracja zmniejsza ryzyko 
+                    nowotworów i eliminuje problemy behawioralne.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Często zadawane pytania</h3>
+              <div className="space-y-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Ile lat ludzkich ma roczny kot?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Roczny kot odpowiada 15 ludzkim latom. To już nie jest kociak, 
+                    ale dojrzewający nastolatek. Dlatego roczne koty są już w pełni 
+                    samodzielne i dojrzałe reprodukcyjnie.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jaki jest najstarszy kot w historii?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Najstarszym udokumentowanym kotem była Creme Puff z Austin w Teksasie, 
+                    która dożyła 38 lat i 3 dni (1967-2005). To odpowiednik ponad 168 
+                    ludzkich lat! Przeciętnie jednak koty żyją 12-18 lat.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy koty i psy starzeją się tak samo?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Nie. Koty starzeją się inaczej niż psy. Koty nie mają tak dużych różnic 
+                    w starzeniu zależnych od rozmiaru jak psy (małe psy żyją dłużej niż duże). 
+                    Koty ogólnie żyją dłużej niż psy - średnio 12-18 lat w porównaniu 
+                    z 10-13 latami psa.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jak rozpoznać, że kot się starzeje?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Objawy starzenia to m.in.: mniejsza aktywność, więcej snu, 
+                    utrata masy mięśniowej, siwienie sierści (szczególnie wokół pyska), 
+                    zmiany apetytu, częstsze picie wody i mniejsza elastyczność stawów.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center text-sm text-muted-foreground">
+              <p>
+                Nasz kalkulator kocich lat działa całkowicie w przeglądarce. Nie wymaga 
+                rejestracji ani wysyłania danych. Wyniki oparte są na danych 
+                weterynaryjnych i mają charakter orientacyjny - każdy kot starzeje się 
                 indywidualnie.
               </p>
             </div>

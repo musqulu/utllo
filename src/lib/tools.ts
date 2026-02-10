@@ -32,6 +32,10 @@ import {
   Moon,
   Flame,
   Monitor,
+  CaseSensitive,
+  Lock,
+  Crown,
+  Cat,
   LucideIcon,
 } from "lucide-react";
 
@@ -177,13 +181,27 @@ export const tools: Tool[] = [
     isReady: true,
     category: "tools",
   },
+  {
+    id: "amount-in-words",
+    slug: "kwota-slownie",
+    icon: CaseSensitive,
+    isReady: true,
+    category: "tools",
+  },
+  {
+    id: "caesar-cipher",
+    slug: "szyfr-cezara",
+    icon: Lock,
+    isReady: true,
+    category: "tools",
+  },
 
   // Konwertery (Converters)
   {
     id: "pdf-to-word",
     slug: "pdf-na-word",
     icon: FileText,
-    isReady: false,
+    isReady: true,
     category: "converters",
   },
   {
@@ -306,6 +324,20 @@ export const tools: Tool[] = [
     id: "dog-years-calculator",
     slug: "kalkulator-psich-lat",
     icon: Dog,
+    isReady: true,
+    category: "calculators",
+  },
+  {
+    id: "roman-numerals",
+    slug: "kalkulator-cyfr-rzymskich",
+    icon: Crown,
+    isReady: true,
+    category: "calculators",
+  },
+  {
+    id: "cat-years-calculator",
+    slug: "kalkulator-kocich-lat",
+    icon: Cat,
     isReady: true,
     category: "calculators",
   },

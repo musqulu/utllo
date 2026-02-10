@@ -14,6 +14,8 @@ import { CountdownVacation } from "@/components/countdown/countdown-vacation";
 import { CountdownChristmas } from "@/components/countdown/countdown-christmas";
 import { CountdownDate } from "@/components/countdown/countdown-date";
 import { WhiteScreenTool } from "@/components/white-screen/white-screen-tool";
+import { AmountInWords } from "@/components/amount-in-words/amount-in-words";
+import { CaesarCipher } from "@/components/caesar-cipher/caesar-cipher";
 
 const BASE_URL = "https://utllo.com";
 const CATEGORY = "tools";
@@ -205,6 +207,41 @@ export default async function ToolPage({ params }: PageProps) {
               clickToExit: (toolDict as any).clickToExit || "Kliknij aby wyjść",
               presets: (toolDict as any).presets || "Gotowe kolory",
               currentColor: (toolDict as any).currentColor || "Aktualny kolor",
+            }}
+          />
+        );
+      case "amount-in-words":
+        return (
+          <AmountInWords
+            dictionary={{
+              title: (toolDict as any).title || "Kwota Słownie",
+              subtitle: (toolDict as any).subtitle || "Zamień dowolną liczbę lub kwotę na zapis słowny po polsku",
+              inputLabel: (toolDict as any).inputLabel || "Wpisz liczbę",
+              inputPlaceholder: (toolDict as any).inputPlaceholder || "np. 1234.56",
+              result: (toolDict as any).result || "Wynik słownie",
+              copy: (toolDict as any).copy || "Kopiuj",
+              copied: (toolDict as any).copied || "Skopiowano!",
+              clear: (toolDict as any).clear || "Wyczyść",
+              currency: (toolDict as any).currency || "Tryb walutowy (PLN)",
+              numberOnly: (toolDict as any).numberOnly || "Tylko liczba",
+            }}
+          />
+        );
+      case "caesar-cipher":
+        return (
+          <CaesarCipher
+            dictionary={{
+              title: (toolDict as any).title || "Szyfr Cezara",
+              subtitle: (toolDict as any).subtitle || "Szyfruj i deszyfruj tekst przesunięciem liter alfabetu",
+              inputLabel: (toolDict as any).inputLabel || "Tekst do zaszyfrowania",
+              inputPlaceholder: (toolDict as any).inputPlaceholder || "Wpisz tekst...",
+              result: (toolDict as any).result || "Wynik",
+              shift: (toolDict as any).shift || "Przesunięcie",
+              encrypt: (toolDict as any).encrypt || "Szyfruj",
+              decrypt: (toolDict as any).decrypt || "Deszyfruj",
+              copy: (toolDict as any).copy || "Kopiuj",
+              copied: (toolDict as any).copied || "Skopiowano!",
+              clear: (toolDict as any).clear || "Wyczyść",
             }}
           />
         );
@@ -561,6 +598,380 @@ export default async function ToolPage({ params }: PageProps) {
               <p>
                 Licznik aktualizuje się automatycznie co sekundę. Wszystkie dane 
                 przechowywane są lokalnie w Twojej przeglądarce.
+              </p>
+            </div>
+          </section>
+        );
+      case "amount-in-words":
+        return (
+          <section className="max-w-3xl mx-auto mt-16 space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold text-center mb-6">
+                Kwota Słownie Online - Zamień Liczbę na Słowa po Polsku
+              </h2>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Nasz darmowy konwerter „kwota słownie" zamienia dowolną liczbę lub kwotę 
+                  pieniężną na zapis słowny w języku polskim. Narzędzie jest niezbędne przy 
+                  wystawianiu faktur, pisaniu umów, wypełnianiu czeków i przelewów bankowych, 
+                  gdzie kwota musi być zapisana zarówno cyframi, jak i słownie.
+                </p>
+                <p>
+                  Konwerter obsługuje tryb walutowy (złote i grosze) oraz tryb samej liczby. 
+                  Poprawnie odmienia wszystkie formy gramatyczne - od pojedynczych złotych 
+                  po miliardy i biliony.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Kiedy potrzebujesz zapisu kwoty słownie?</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Faktury VAT</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Na fakturach kwota do zapłaty powinna być zapisana słownie, 
+                    aby uniknąć pomyłek i fałszerstw.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Umowy i kontrakty</h4>
+                  <p className="text-sm text-muted-foreground">
+                    W dokumentach prawnych kwoty zapisuje się słownie dla jednoznaczności 
+                    i ochrony przed nieautoryzowanymi zmianami.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czeki i przelewy</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Banki wymagają zapisu kwoty słownie na czekach. 
+                    Przy przelewach słowny zapis pomaga uniknąć błędów.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Akty notarialne</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Notariusze wymagają zapisu kwot słownie w aktach sprzedaży 
+                    nieruchomości, darowiznach i innych czynnościach prawnych.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Przykłady zapisu kwot słownie</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-left">Liczba</th>
+                      <th className="border p-3 text-left">Zapis słownie (PLN)</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm">
+                    <tr>
+                      <td className="border p-3 font-medium">1,00 zł</td>
+                      <td className="border p-3">jeden złoty zero groszy</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3 font-medium">5,50 zł</td>
+                      <td className="border p-3">pięć złotych pięćdziesiąt groszy</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3 font-medium">23,00 zł</td>
+                      <td className="border p-3">dwadzieścia trzy złote zero groszy</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3 font-medium">100,00 zł</td>
+                      <td className="border p-3">sto złotych zero groszy</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3 font-medium">1 234,56 zł</td>
+                      <td className="border p-3">tysiąc dwieście trzydzieści cztery złote pięćdziesiąt sześć groszy</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3 font-medium">1 000 000,00 zł</td>
+                      <td className="border p-3">milion złotych zero groszy</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Odmiana polskich liczebników</h3>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Język polski ma skomplikowaną odmianę liczebników. Nasz konwerter 
+                  poprawnie obsługuje wszystkie formy gramatyczne:
+                </p>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse">
+                    <thead>
+                      <tr className="bg-muted">
+                        <th className="border p-3 text-left">Forma</th>
+                        <th className="border p-3 text-left">Złote</th>
+                        <th className="border p-3 text-left">Grosze</th>
+                        <th className="border p-3 text-left">Tysiące</th>
+                      </tr>
+                    </thead>
+                    <tbody className="text-sm">
+                      <tr>
+                        <td className="border p-3">1</td>
+                        <td className="border p-3">złoty</td>
+                        <td className="border p-3">grosz</td>
+                        <td className="border p-3">tysiąc</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3">2, 3, 4</td>
+                        <td className="border p-3">złote</td>
+                        <td className="border p-3">grosze</td>
+                        <td className="border p-3">tysiące</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3">5-21</td>
+                        <td className="border p-3">złotych</td>
+                        <td className="border p-3">groszy</td>
+                        <td className="border p-3">tysięcy</td>
+                      </tr>
+                      <tr>
+                        <td className="border p-3">22, 23, 24</td>
+                        <td className="border p-3">złote</td>
+                        <td className="border p-3">grosze</td>
+                        <td className="border p-3">tysiące</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Często zadawane pytania</h3>
+              <div className="space-y-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jaka jest maksymalna obsługiwana liczba?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Nasz konwerter obsługuje liczby do 999 bilionów (999 999 999 999 999). 
+                    To więcej niż wystarczające dla wszelkich zastosowań biznesowych i prawnych.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy mogę wpisać grosze?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Tak! W trybie walutowym wpisz kwotę z kropką lub przecinkiem jako 
+                    separatorem dziesiętnym, np. 1234.56 lub 1234,56. Część dziesiętna 
+                    zostanie automatycznie zaokrąglona do dwóch miejsc (groszy).
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy narzędzie obsługuje liczby ujemne?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Tak, zarówno w trybie walutowym, jak i liczbowym. Liczba ujemna 
+                    zostanie poprzedzona słowem „minus".
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy zapis jest poprawny gramatycznie?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Tak, nasz konwerter uwzględnia pełną odmianę polskich liczebników, 
+                    w tym formy: tysiąc/tysiące/tysięcy, milion/miliony/milionów, 
+                    złoty/złote/złotych, grosz/grosze/groszy.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center text-sm text-muted-foreground">
+              <p>
+                Nasz konwerter „kwota słownie" działa całkowicie w przeglądarce. 
+                Twoje dane nie są wysyłane na żaden serwer - wszystkie obliczenia 
+                wykonywane są lokalnie na Twoim urządzeniu.
+              </p>
+            </div>
+          </section>
+        );
+      case "caesar-cipher":
+        return (
+          <section className="max-w-3xl mx-auto mt-16 space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold text-center mb-6">
+                Szyfr Cezara Online - Szyfrowanie i Deszyfrowanie Tekstu
+              </h2>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Szyfr Cezara to jeden z najstarszych i najprostszych sposobów szyfrowania 
+                  tekstu. Nazwa pochodzi od Juliusza Cezara, który używał tego szyfru do 
+                  ochrony tajnych wiadomości wojskowych. Polega on na przesunięciu każdej 
+                  litery w tekście o ustaloną liczbę pozycji w alfabecie.
+                </p>
+                <p>
+                  Nasze darmowe narzędzie pozwala szyfrować i deszyfrować tekst za pomocą 
+                  szyfru Cezara z dowolnym przesunięciem od 1 do 25. Wystarczy wpisać tekst, 
+                  wybrać przesunięcie i natychmiast zobaczyć wynik.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Jak działa szyfr Cezara?</h3>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  Każda litera w tekście jest zastępowana literą znajdującą się o określoną 
+                  liczbę pozycji dalej w alfabecie. Na przykład przy przesunięciu o 3:
+                </p>
+                <div className="p-4 bg-muted rounded-lg font-mono text-sm overflow-x-auto">
+                  <div>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div>
+                  <div>↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓</div>
+                  <div>D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</div>
+                </div>
+                <p>
+                  Tak więc słowo <strong>ATAK</strong> z przesunięciem 3 staje się <strong>DWDN</strong>. 
+                  Deszyfrowanie odbywa się przez przesunięcie w odwrotnym kierunku.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Przykłady szyfrowania</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr className="bg-muted">
+                      <th className="border p-3 text-left">Tekst</th>
+                      <th className="border p-3 text-left">Przesunięcie</th>
+                      <th className="border p-3 text-left">Zaszyfrowany</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-sm">
+                    <tr>
+                      <td className="border p-3">HELLO</td>
+                      <td className="border p-3">3</td>
+                      <td className="border p-3">KHOOR</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3">POLSKA</td>
+                      <td className="border p-3">5</td>
+                      <td className="border p-3">UTRXPF</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3">SZYFR</td>
+                      <td className="border p-3">13 (ROT13)</td>
+                      <td className="border p-3">FMLSE</td>
+                    </tr>
+                    <tr>
+                      <td className="border p-3">TAJNA WIADOMOSC</td>
+                      <td className="border p-3">7</td>
+                      <td className="border p-3">AHQUH DPHDVTVZJ</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Do czego służy szyfr Cezara?</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Nauka kryptografii</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Szyfr Cezara to doskonały punkt wyjścia do nauki podstaw kryptografii 
+                    i szyfrowania. Jest prosty do zrozumienia i idealny na lekcje informatyki.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Zagadki i escape roomy</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Szyfr Cezara jest popularny w escape roomach, grach logicznych 
+                    i zagadkach. Łatwość deszyfrowania sprawia, że jest idealny do zabawy.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Proste ukrywanie tekstu</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Chociaż nie jest bezpieczny, szyfr Cezara może posłużyć do ukrycia 
+                    spoilerów, niespodzianek czy prostych wiadomości przed przypadkowym odczytaniem.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">ROT13 w internecie</h4>
+                  <p className="text-sm text-muted-foreground">
+                    ROT13 (przesunięcie o 13) jest powszechnie używany w internecie do ukrywania 
+                    spoilerów i żartów. Jego zaletą jest to, że szyfrowanie = deszyfrowanie.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Czym jest ROT13?</h3>
+              <div className="p-4 bg-muted rounded-lg text-muted-foreground space-y-2">
+                <p>
+                  ROT13 to specjalny przypadek szyfru Cezara z przesunięciem równym 13. 
+                  Ponieważ alfabet łaciński ma 26 liter, zastosowanie ROT13 dwukrotnie 
+                  przywraca oryginalny tekst. Oznacza to, że ta sama operacja służy 
+                  zarówno do szyfrowania, jak i deszyfrowania.
+                </p>
+                <p>
+                  ROT13 jest popularny na forach internetowych i w grupach dyskusyjnych 
+                  do ukrywania spoilerów, odpowiedzi na zagadki i treści, które użytkownik 
+                  powinien świadomie zdecydować się odczytać.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Czy szyfr Cezara jest bezpieczny?</h3>
+              <div className="text-muted-foreground space-y-4">
+                <p>
+                  <strong>Nie.</strong> Szyfr Cezara ma zaledwie 25 możliwych kluczy 
+                  (przesunięć), co oznacza, że można go złamać metodą brute force w kilka 
+                  sekund, sprawdzając wszystkie możliwe przesunięcia. Ponadto analiza 
+                  częstotliwości liter w zaszyfrowanym tekście pozwala szybko ustalić klucz.
+                </p>
+                <p>
+                  Do bezpiecznego szyfrowania współcześnie używa się algorytmów takich jak 
+                  AES, RSA czy szyfrowanie end-to-end. Szyfr Cezara pozostaje jednak 
+                  wartościowym narzędziem edukacyjnym i rozrywkowym.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Często zadawane pytania</h3>
+              <div className="space-y-4">
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Czy polskie znaki są szyfrowane?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Nasze narzędzie szyfruje litery alfabetu łacińskiego (A-Z). Polskie znaki 
+                    diakrytyczne (ą, ć, ę, ł, ń, ó, ś, ź, ż) oraz cyfry, spacje i znaki 
+                    interpunkcyjne pozostają bez zmian.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jakie przesunięcie stosował Juliusz Cezar?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Według historyka Swetoniusza, Juliusz Cezar używał przesunięcia o 3. 
+                    Dlatego przesunięcie o 3 jest domyślne w naszym narzędziu.
+                  </p>
+                </div>
+                <div className="p-4 bg-muted rounded-lg">
+                  <h4 className="font-medium mb-2">Jak odszyfrować tekst bez znajomości klucza?</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Wystarczy wypróbować wszystkie 25 możliwych przesunięć. Przy przesunięciu, 
+                    które jest prawidłowym kluczem, tekst stanie się czytelny. Możesz też 
+                    użyć analizy częstotliwości liter - w języku polskim najczęściej 
+                    występują litery: i, a, o, e, z, n.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="text-center text-sm text-muted-foreground">
+              <p>
+                Nasz szyfr Cezara online działa całkowicie w przeglądarce. 
+                Twój tekst nie jest wysyłany na żaden serwer - szyfrowanie 
+                i deszyfrowanie odbywa się lokalnie.
               </p>
             </div>
           </section>

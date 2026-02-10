@@ -35,6 +35,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       "darmowy konwerter",
       "konwersja online",
       "pdf do obrazu",
+      "pdf na word",
+      "konwerter pdf na word",
+      "pdf do docx",
+      "konwersja pdf",
+      "pdf na word online",
     ],
     alternates: {
       canonical: `${BASE_URL}/${locale}/${categoryMeta.converters.slug}`,
@@ -201,11 +206,20 @@ export default async function ConvertersCategoryPage({ params }: PageProps) {
           </div>
 
           <div>
+            <h3 className="text-xl font-semibold mb-3">PDF na Word (DOCX)</h3>
+            <p className="text-muted-foreground">
+              Wyodrębnij tekst z dokumentów PDF i zapisz go jako edytowalny plik Word (DOCX). 
+              Idealne do edycji treści z otrzymanych dokumentów, kopiowania fragmentów tekstu 
+              lub archiwizacji. Narzędzie wyodrębnia tekst — formatowanie i obrazy nie są przenoszone.
+            </p>
+          </div>
+
+          <div>
             <h3 className="text-xl font-semibold mb-3">Obsługiwane formaty</h3>
             <p className="text-muted-foreground">
-              Aktualnie obsługujemy konwersję PDF do formatów graficznych (JPG, PNG). 
-              Pracujemy nad dodaniem kolejnych formatów, w tym konwersji dokumentów 
-              Word, arkuszy Excel i innych popularnych typów plików.
+              Aktualnie obsługujemy konwersję PDF do formatów graficznych (JPG, PNG) oraz 
+              do edytowalnych dokumentów Word (DOCX). Pracujemy nad dodaniem kolejnych formatów 
+              i rozszerzeniem możliwości konwersji.
             </p>
           </div>
 

@@ -880,3 +880,68 @@ export const DOG_LIFE_EXPECTANCY: Record<DogSize, { min: number; max: number }> 
   large: { min: 8, max: 12 },
   giant: { min: 6, max: 10 },
 };
+
+// =====================================================
+// Cat Years Calculator
+// =====================================================
+
+export type CatLifeStage = "kitten" | "junior" | "adult" | "mature" | "senior" | "geriatric";
+
+export interface CatYearsResult {
+  humanYears: number;
+  lifeStage: CatLifeStage;
+}
+
+/**
+ * Calculate human equivalent age for a cat.
+ * Formula:
+ *   Year 1 = 15 human years
+ *   Year 2 = 24 human years (total)
+ *   Each year after 2 = +4 human years
+ * Fractional values are interpolated linearly within each range.
+ */
+export function calculateCatHumanAge(catAge: number): number {
+  if (catAge <= 0) return 0;
+
+  let humanYears: number;
+
+  if (catAge <= 1) {
+    humanYears = catAge * 15;
+  } else if (catAge <= 2) {
+    humanYears = 15 + (catAge - 1) * 9; // 9 more to reach 24 at year 2
+  } else {
+    humanYears = 24 + (catAge - 2) * 4;
+  }
+
+  return Math.round(humanYears * 10) / 10;
+}
+
+/**
+ * Get cat life stage based on cat age in years.
+ */
+export function getCatLifeStage(catAge: number): CatLifeStage {
+  if (catAge < 0.5) return "kitten";
+  if (catAge < 3) return "junior";
+  if (catAge < 7) return "adult";
+  if (catAge < 11) return "mature";
+  if (catAge < 15) return "senior";
+  return "geriatric";
+}
+
+/**
+ * Calculate cat years result.
+ */
+export function calculateCatYears(catAge: number): CatYearsResult {
+  return {
+    humanYears: calculateCatHumanAge(catAge),
+    lifeStage: getCatLifeStage(catAge),
+  };
+}
+
+/**
+ * Average life expectancy for cats.
+ */
+export const CAT_LIFE_EXPECTANCY = {
+  indoor: { min: 12, max: 18 },
+  outdoor: { min: 5, max: 10 },
+};
