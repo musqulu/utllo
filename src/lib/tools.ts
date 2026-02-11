@@ -42,24 +42,23 @@ import {
 export type ToolCategory = "tools" | "generators" | "converters" | "randomizers" | "calculators";
 
 export interface CategoryMeta {
-  slug: string;
+  slugs: Record<string, string>;
   icon: LucideIcon;
-  name: string;
 }
 
 export const categoryMeta: Record<ToolCategory, CategoryMeta> = {
-  tools: { slug: "narzedzia", icon: Wrench, name: "Narzędzia" },
-  generators: { slug: "generatory", icon: Sparkles, name: "Generatory" },
-  converters: { slug: "konwertery", icon: ArrowRightLeft, name: "Konwertery" },
-  randomizers: { slug: "losuj", icon: Dices, name: "Losuj" },
-  calculators: { slug: "kalkulatory", icon: Calculator, name: "Kalkulatory" },
+  tools: { slugs: { pl: "narzedzia", en: "tools" }, icon: Wrench },
+  generators: { slugs: { pl: "generatory", en: "generators" }, icon: Sparkles },
+  converters: { slugs: { pl: "konwertery", en: "converters" }, icon: ArrowRightLeft },
+  randomizers: { slugs: { pl: "losuj", en: "randomizers" }, icon: Dices },
+  calculators: { slugs: { pl: "kalkulatory", en: "calculators" }, icon: Calculator },
 };
 
 export const allCategoryIds: ToolCategory[] = ["tools", "generators", "converters", "randomizers", "calculators"];
 
 export interface Tool {
   id: string;
-  slug: string;
+  slugs: Record<string, string>;
   icon: LucideIcon;
   isReady: boolean;
   category: ToolCategory;
@@ -69,21 +68,21 @@ export const tools: Tool[] = [
   // Generatory (Generators)
   {
     id: "password-generator",
-    slug: "generator-hasel",
+    slugs: { pl: "generator-hasel", en: "password-generator" },
     icon: KeyRound,
     isReady: true,
     category: "generators",
   },
   {
     id: "lorem-ipsum",
-    slug: "generator-lorem-ipsum",
+    slugs: { pl: "generator-lorem-ipsum", en: "lorem-ipsum-generator" },
     icon: FileText,
     isReady: true,
     category: "generators",
   },
   {
     id: "font-generator",
-    slug: "generator-czcionek",
+    slugs: { pl: "generator-czcionek", en: "font-generator" },
     icon: ALargeSmall,
     isReady: true,
     category: "generators",
@@ -92,105 +91,105 @@ export const tools: Tool[] = [
   // Narzędzia (Tools)
   {
     id: "uuid-generator",
-    slug: "generator-uuid",
+    slugs: { pl: "generator-uuid", en: "uuid-generator" },
     icon: Fingerprint,
     isReady: false,
     category: "tools",
   },
   {
     id: "color-converter",
-    slug: "konwerter-kolorow",
+    slugs: { pl: "konwerter-kolorow", en: "color-converter" },
     icon: Palette,
     isReady: false,
     category: "tools",
   },
   {
     id: "json-formatter",
-    slug: "formatter-json",
+    slugs: { pl: "formatter-json", en: "json-formatter" },
     icon: Braces,
     isReady: false,
     category: "tools",
   },
   {
     id: "base64",
-    slug: "base64",
+    slugs: { pl: "base64", en: "base64" },
     icon: Binary,
     isReady: false,
     category: "tools",
   },
   {
     id: "hash-generator",
-    slug: "generator-hashy",
+    slugs: { pl: "generator-hashy", en: "hash-generator" },
     icon: Hash,
     isReady: false,
     category: "tools",
   },
   {
     id: "qr-generator",
-    slug: "generator-qr",
+    slugs: { pl: "generator-qr", en: "qr-generator" },
     icon: QrCode,
     isReady: true,
     category: "generators",
   },
   {
     id: "character-counter",
-    slug: "licznik-znakow",
+    slugs: { pl: "licznik-znakow", en: "character-counter" },
     icon: Type,
     isReady: true,
     category: "tools",
   },
   {
     id: "word-counter",
-    slug: "licznik-slow",
+    slugs: { pl: "licznik-slow", en: "word-counter" },
     icon: LetterText,
     isReady: true,
     category: "tools",
   },
   {
     id: "dice-roll",
-    slug: "rzut-kostka",
+    slugs: { pl: "rzut-kostka", en: "dice-roller" },
     icon: Dices,
     isReady: true,
     category: "randomizers",
   },
   {
     id: "countdown-vacation",
-    slug: "odliczanie-do-wakacji",
+    slugs: { pl: "odliczanie-do-wakacji", en: "vacation-countdown" },
     icon: Sun,
     isReady: true,
     category: "tools",
   },
   {
     id: "countdown-christmas",
-    slug: "odliczanie-do-swiat",
+    slugs: { pl: "odliczanie-do-swiat", en: "christmas-countdown" },
     icon: Gift,
     isReady: true,
     category: "tools",
   },
   {
     id: "countdown-date",
-    slug: "odliczanie-do-daty",
+    slugs: { pl: "odliczanie-do-daty", en: "date-countdown" },
     icon: Calendar,
     isReady: true,
     category: "tools",
   },
   {
     id: "white-screen",
-    slug: "bialy-ekran",
+    slugs: { pl: "bialy-ekran", en: "white-screen" },
     icon: Monitor,
     isReady: true,
     category: "tools",
   },
   {
     id: "amount-in-words",
-    slug: "kwota-slownie",
+    slugs: { pl: "kwota-slownie", en: "amount-in-words" },
     icon: CaseSensitive,
     isReady: true,
     category: "tools",
   },
   {
     id: "caesar-cipher",
-    slug: "szyfr-cezara",
+    slugs: { pl: "szyfr-cezara", en: "caesar-cipher" },
     icon: Lock,
     isReady: true,
     category: "tools",
@@ -199,28 +198,28 @@ export const tools: Tool[] = [
   // Konwertery (Converters)
   {
     id: "pdf-to-word",
-    slug: "pdf-na-word",
+    slugs: { pl: "pdf-na-word", en: "pdf-to-word" },
     icon: FileText,
     isReady: true,
     category: "converters",
   },
   {
     id: "word-to-pdf",
-    slug: "word-na-pdf",
+    slugs: { pl: "word-na-pdf", en: "word-to-pdf" },
     icon: FileOutput,
     isReady: false,
     category: "converters",
   },
   {
     id: "pdf-to-jpg",
-    slug: "pdf-na-jpg",
+    slugs: { pl: "pdf-na-jpg", en: "pdf-to-jpg" },
     icon: Image,
     isReady: true,
     category: "converters",
   },
   {
     id: "pdf-to-png",
-    slug: "pdf-na-png",
+    slugs: { pl: "pdf-na-png", en: "pdf-to-png" },
     icon: Image,
     isReady: true,
     category: "converters",
@@ -229,42 +228,42 @@ export const tools: Tool[] = [
   // Losuj (Randomizers)
   {
     id: "random-number",
-    slug: "losuj-liczbe",
+    slugs: { pl: "losuj-liczbe", en: "random-number" },
     icon: Dices,
     isReady: true,
     category: "randomizers",
   },
   {
     id: "random-numbers",
-    slug: "losuj-liczby",
+    slugs: { pl: "losuj-liczby", en: "random-numbers" },
     icon: Dices,
     isReady: true,
     category: "randomizers",
   },
   {
     id: "random-quote",
-    slug: "losuj-cytat",
+    slugs: { pl: "losuj-cytat", en: "random-quote" },
     icon: Quote,
     isReady: false,
     category: "randomizers",
   },
   {
     id: "random-bible",
-    slug: "losuj-cytat-biblia",
+    slugs: { pl: "losuj-cytat-biblia", en: "random-bible-quote" },
     icon: BookOpen,
     isReady: false,
     category: "randomizers",
   },
   {
     id: "random-tarot",
-    slug: "losuj-karte-tarota",
+    slugs: { pl: "losuj-karte-tarota", en: "random-tarot" },
     icon: Sparkles,
     isReady: true,
     category: "randomizers",
   },
   {
     id: "random-yesno",
-    slug: "losuj-tak-nie",
+    slugs: { pl: "losuj-tak-nie", en: "random-yes-no" },
     icon: HelpCircle,
     isReady: true,
     category: "randomizers",
@@ -273,78 +272,92 @@ export const tools: Tool[] = [
   // Kalkulatory (Calculators)
   {
     id: "proportion-calculator",
-    slug: "kalkulator-proporcji",
+    slugs: { pl: "kalkulator-proporcji", en: "proportion-calculator" },
     icon: Calculator,
     isReady: true,
     category: "calculators",
   },
   {
     id: "bmi-calculator",
-    slug: "kalkulator-bmi",
+    slugs: { pl: "kalkulator-bmi", en: "bmi-calculator" },
     icon: Scale,
     isReady: true,
     category: "calculators",
   },
   {
     id: "weighted-average",
-    slug: "srednia-wazona",
+    slugs: { pl: "srednia-wazona", en: "weighted-average" },
     icon: Sigma,
     isReady: true,
     category: "calculators",
   },
   {
     id: "sleep-calculator",
-    slug: "kalkulator-snu",
+    slugs: { pl: "kalkulator-snu", en: "sleep-calculator" },
     icon: Moon,
     isReady: true,
     category: "calculators",
   },
   {
     id: "calorie-calculator",
-    slug: "kalkulator-kalorii",
+    slugs: { pl: "kalkulator-kalorii", en: "calorie-calculator" },
     icon: Flame,
     isReady: true,
     category: "calculators",
   },
   {
     id: "blood-type-calculator",
-    slug: "kalkulator-grupy-krwi",
+    slugs: { pl: "kalkulator-grupy-krwi", en: "blood-type-calculator" },
     icon: Droplets,
     isReady: true,
     category: "calculators",
   },
   {
     id: "inflation-calculator",
-    slug: "kalkulator-inflacji",
+    slugs: { pl: "kalkulator-inflacji", en: "inflation-calculator" },
     icon: TrendingUp,
     isReady: true,
     category: "calculators",
   },
   {
     id: "dog-years-calculator",
-    slug: "kalkulator-psich-lat",
+    slugs: { pl: "kalkulator-psich-lat", en: "dog-years-calculator" },
     icon: Dog,
     isReady: true,
     category: "calculators",
   },
   {
     id: "roman-numerals",
-    slug: "kalkulator-cyfr-rzymskich",
+    slugs: { pl: "kalkulator-cyfr-rzymskich", en: "roman-numerals" },
     icon: Crown,
     isReady: true,
     category: "calculators",
   },
   {
     id: "cat-years-calculator",
-    slug: "kalkulator-kocich-lat",
+    slugs: { pl: "kalkulator-kocich-lat", en: "cat-years-calculator" },
     icon: Cat,
     isReady: true,
     category: "calculators",
   },
 ];
 
-export function getToolBySlug(slug: string): Tool | undefined {
-  return tools.find((tool) => tool.slug === slug);
+// --- Helper functions ---
+
+export function getToolSlug(tool: Tool, locale: string): string {
+  return tool.slugs[locale] || tool.slugs.pl;
+}
+
+export function getCategorySlug(category: ToolCategory, locale: string): string {
+  return categoryMeta[category].slugs[locale] || categoryMeta[category].slugs.pl;
+}
+
+export function getToolBySlug(slug: string, locale?: string): Tool | undefined {
+  if (locale) {
+    return tools.find((tool) => tool.slugs[locale] === slug);
+  }
+  // Search all locales
+  return tools.find((tool) => Object.values(tool.slugs).includes(slug));
 }
 
 export function getToolById(id: string): Tool | undefined {
@@ -359,31 +372,38 @@ export function getAvailableTools(): Tool[] {
   return tools.filter((tool) => tool.isReady);
 }
 
-export function getCategoryBySlug(slug: string): ToolCategory | undefined {
+export function getCategoryBySlug(slug: string, locale?: string): ToolCategory | undefined {
   for (const [category, meta] of Object.entries(categoryMeta)) {
-    if (meta.slug === slug) {
-      return category as ToolCategory;
+    if (locale) {
+      if (meta.slugs[locale] === slug) return category as ToolCategory;
+    } else {
+      if (Object.values(meta.slugs).includes(slug)) return category as ToolCategory;
     }
   }
   return undefined;
 }
 
 export function getToolUrl(tool: Tool, locale: string): string {
-  const catMeta = categoryMeta[tool.category];
-  return `/${locale}/${catMeta.slug}/${tool.slug}`;
+  const catSlug = getCategorySlug(tool.category, locale);
+  const toolSlug = getToolSlug(tool, locale);
+  return `/${locale}/${catSlug}/${toolSlug}`;
 }
 
 export function getCategoryUrl(category: ToolCategory, locale: string): string {
-  return `/${locale}/${categoryMeta[category].slug}`;
+  return `/${locale}/${getCategorySlug(category, locale)}`;
 }
 
 export function getToolByCategoryAndSlug(
   categorySlug: string,
-  toolSlug: string
+  toolSlug: string,
+  locale?: string
 ): Tool | undefined {
-  const category = getCategoryBySlug(categorySlug);
+  const category = getCategoryBySlug(categorySlug, locale);
   if (!category) return undefined;
-  return tools.find((tool) => tool.category === category && tool.slug === toolSlug);
+  if (locale) {
+    return tools.find((tool) => tool.category === category && tool.slugs[locale] === toolSlug);
+  }
+  return tools.find((tool) => tool.category === category && Object.values(tool.slugs).includes(toolSlug));
 }
 
 export function getRelatedTools(currentToolId: string, limit: number = 3): Tool[] {
@@ -393,4 +413,32 @@ export function getRelatedTools(currentToolId: string, limit: number = 3): Tool[
   return tools
     .filter((tool) => tool.category === currentTool.category && tool.id !== currentToolId)
     .slice(0, limit);
+}
+
+/**
+ * Given a tool and a source locale, returns the equivalent URL path for a target locale.
+ * Useful for the language switcher.
+ */
+export function getToolUrlForLocale(tool: Tool, targetLocale: string): string {
+  return getToolUrl(tool, targetLocale);
+}
+
+/**
+ * Find a tool by any slug from any locale (for routing).
+ */
+export function findToolByAnyCategoryAndSlug(
+  categorySlug: string,
+  toolSlug: string
+): { tool: Tool; locale: string } | undefined {
+  for (const [category, meta] of Object.entries(categoryMeta)) {
+    for (const [locale, slug] of Object.entries(meta.slugs)) {
+      if (slug === categorySlug) {
+        const tool = tools.find(
+          (t) => t.category === category && t.slugs[locale] === toolSlug
+        );
+        if (tool) return { tool, locale };
+      }
+    }
+  }
+  return undefined;
 }

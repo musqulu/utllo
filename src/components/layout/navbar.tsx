@@ -20,6 +20,7 @@ import {
   Tool,
   ToolCategory,
 } from "@/lib/tools";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 
 interface NavbarProps {
   locale: string;
@@ -108,7 +109,7 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
           {categories.map(({ key, tools }) => {
             const isActive =
               openCategory === key ||
-              pathname.includes(`/${categoryMeta[key].slug}`);
+              Object.values(categoryMeta[key].slugs).some(s => pathname.includes(`/${s}`));
 
             return (
               <div
@@ -155,16 +156,20 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
           })}
         </div>
 
-        {/* Right side - empty for balance, or future use */}
-        <div className="hidden lg:block w-[120px]" />
+        {/* Right side - Language Switcher */}
+        <div className="hidden lg:flex items-center w-[120px] justify-end">
+          <LanguageSwitcher locale={locale} />
+        </div>
 
         {/* Mobile Navigation */}
-        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-          <SheetTrigger asChild className="lg:hidden">
-            <Button variant="ghost" size="icon" aria-label="Otwórz menu">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
+        <div className="flex items-center gap-1 lg:hidden">
+          <LanguageSwitcher locale={locale} />
+          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" aria-label="Open menu">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
           <SheetContent side="right" className="w-full sm:w-96 overflow-y-auto p-0">
             <SheetHeader className="p-6 pb-4 border-b">
               <SheetTitle className="flex items-center gap-2.5">
@@ -203,7 +208,8 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
               ))}
             </nav>
           </SheetContent>
-        </Sheet>
+          </Sheet>
+        </div>
       </nav>
     </header>
   );

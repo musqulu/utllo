@@ -15,11 +15,18 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const dictionary = await getDictionary(locale as Locale);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://utllo.com";
 
+  // Build hreflang alternates
+  const languages: Record<string, string> = {};
+  for (const loc of i18n.locales) {
+    languages[loc] = `${baseUrl}/${loc}`;
+  }
+
   return {
     title: `${dictionary.home.title} | ${dictionary.brand}`,
     description: dictionary.home.subtitle,
     alternates: {
       canonical: `${baseUrl}/${locale}`,
+      languages,
     },
     openGraph: {
       title: `${dictionary.home.title} | ${dictionary.brand}`,

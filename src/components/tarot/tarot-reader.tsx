@@ -15,11 +15,9 @@ import {
 import {
   DrawnCard,
   drawRandomCard,
-  SUIT_NAMES,
-  ARCANA_NAMES,
   Suit,
-  Element,
 } from "@/lib/tarot-cards";
+import { getLocalizedCard, getSuitName, getArcanaName } from "@/lib/tarot-i18n";
 
 interface TarotReaderDictionary {
   title: string;
@@ -50,18 +48,23 @@ interface TarotReaderDictionary {
 
 interface TarotReaderProps {
   dictionary: TarotReaderDictionary;
+  locale?: string;
 }
 
-const ELEMENT_ICONS: Record<Element, typeof Flame> = {
+const ELEMENT_ICONS: Record<string, typeof Flame> = {
   "Ogień": Flame,
   "Woda": Droplets,
   "Powietrze": Wind,
   "Ziemia": Mountain,
+  "Fire": Flame,
+  "Water": Droplets,
+  "Air": Wind,
+  "Earth": Mountain,
 };
 
 type InterpretationTab = "love" | "health" | "work";
 
-export function TarotReader({ dictionary }: TarotReaderProps) {
+export function TarotReader({ dictionary, locale = "pl" }: TarotReaderProps) {
   const [drawnCard, setDrawnCard] = useState<DrawnCard | null>(null);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -76,7 +79,8 @@ export function TarotReader({ dictionary }: TarotReaderProps) {
       setIsAnimating(true);
       setIsFlipped(false);
       setTimeout(() => {
-        const newCard = drawRandomCard();
+        const rawCard = drawRandomCard();
+        const newCard = { ...rawCard, card: getLocalizedCard(rawCard.card, locale) };
         setDrawnCard(newCard);
         setActiveTab("love");
         setTimeout(() => {
@@ -88,7 +92,8 @@ export function TarotReader({ dictionary }: TarotReaderProps) {
       }, 400);
     } else {
       setIsAnimating(true);
-      const newCard = drawRandomCard();
+      const rawCard2 = drawRandomCard();
+      const newCard = { ...rawCard2, card: getLocalizedCard(rawCard2.card, locale) };
       setDrawnCard(newCard);
       setActiveTab("love");
       setTimeout(() => {
@@ -235,11 +240,11 @@ export function TarotReader({ dictionary }: TarotReaderProps) {
               <p className="text-xs text-muted-foreground">{drawnCard.card.nameEn}</p>
               <div className="flex items-center justify-center gap-2 flex-wrap">
                 <span className="px-2 py-0.5 rounded-full bg-muted text-xs font-medium">
-                  {ARCANA_NAMES[drawnCard.card.arcana]}
+                  {getArcanaName(drawnCard.card.arcana, locale)}
                 </span>
                 {drawnCard.card.suit && (
                   <span className="px-2 py-0.5 rounded-full bg-muted text-xs font-medium">
-                    {SUIT_NAMES[drawnCard.card.suit as Suit]}
+                    {getSuitName(drawnCard.card.suit as Suit, locale)}
                   </span>
                 )}
                 <span
@@ -404,7 +409,7 @@ export function TarotReader({ dictionary }: TarotReaderProps) {
                       <p className="font-medium truncate">{drawn.card.name}</p>
                       <p className="text-xs text-muted-foreground">
                         {drawn.isReversed ? dictionary.reversed : dictionary.upright}
-                        {drawn.card.suit && ` • ${SUIT_NAMES[drawn.card.suit as Suit]}`}
+                        {drawn.card.suit && ` • ${getSuitName(drawn.card.suit as Suit, locale)}`}
                       </p>
                     </div>
                   </div>

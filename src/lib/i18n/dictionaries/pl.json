@@ -21,31 +21,293 @@
       "title": "Narzędzia Online",
       "subtitle": "Kolekcja darmowych narzędzi dla programistów i twórców",
       "seoTitle": "Darmowe Narzędzia Online - Liczniki, Odliczanie i więcej",
-      "seoDescription": "Bezpłatne narzędzia online. Licznik znaków i słów, rzut kostką, odliczanie do wakacji i świąt. Wszystko działa w przeglądarce."
+      "seoDescription": "Bezpłatne narzędzia online. Licznik znaków i słów, rzut kostką, odliczanie do wakacji i świąt. Wszystko działa w przeglądarce.",
+      "keywords": [
+        "narzędzia online",
+        "generator haseł",
+        "lorem ipsum generator",
+        "licznik znaków",
+        "licznik słów",
+        "generator czcionek",
+        "odliczanie do wakacji",
+        "odliczanie do świąt",
+        "biały ekran",
+        "test martwych pikseli",
+        "kwota słownie",
+        "liczba słownie",
+        "zamiana liczby na słowa",
+        "kwota słownie po polsku",
+        "szyfr cezara",
+        "szyfr cezara online",
+        "szyfrowanie tekstu",
+        "cipher online",
+        "darmowe narzędzia"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Darmowe narzędzia online - utllo",
+          "body": "Kolekcja darmowych narzędzi online, które działają bezpośrednio w Twojej przeglądarce. Nie musisz niczego instalować, rejestrować się ani płacić. Każde narzędzie zostało zaprojektowane z myślą o szybkości i łatwości użytkowania."
+        },
+        {
+          "type": "text",
+          "heading": "Odliczanie do wakacji i świąt",
+          "body": "Sprawdź ile dni, godzin i minut zostało do wakacji letnich lub Bożego Narodzenia. Możesz też ustawić własną datę i śledzić odliczanie do dowolnego wydarzenia."
+        },
+        {
+          "type": "text",
+          "heading": "Licznik znaków i słów",
+          "body": "Policz znaki, słowa, zdania i akapity w dowolnym tekście. Przydatne do pisania postów na social media, esejów, CV i wszędzie, gdzie liczy się długość tekstu."
+        },
+        {
+          "type": "text",
+          "heading": "Bezpieczeństwo i prywatność",
+          "body": "Wszystkie narzędzia przetwarzają dane lokalnie w Twojej przeglądarce. Żadne informacje nie są wysyłane na nasze serwery, co gwarantuje pełną prywatność."
+        }
+      ]
     },
     "generators": {
       "title": "Generatory Online",
       "subtitle": "Generuj hasła, tekst Lorem Ipsum i stylowe czcionki",
       "seoTitle": "Darmowe Generatory Online - Haseł, Lorem Ipsum, Czcionek",
-      "seoDescription": "Bezpłatne generatory online. Generator haseł, Lorem Ipsum, czcionek Unicode. Szybkie i bezpieczne generowanie treści w przeglądarce."
+      "seoDescription": "Bezpłatne generatory online. Generator haseł, Lorem Ipsum, czcionek Unicode. Szybkie i bezpieczne generowanie treści w przeglądarce.",
+      "keywords": [
+        "generatory online",
+        "generator haseł",
+        "generator lorem ipsum",
+        "generator czcionek",
+        "generator qr",
+        "kod qr",
+        "generator kodów qr",
+        "darmowe generatory",
+        "generator tekstu",
+        "generator Unicode"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Darmowe generatory online - utllo",
+          "body": "Kolekcja darmowych generatorów online, które działają bezpośrednio w Twojej przeglądarce. Generuj hasła, tekst Lorem Ipsum i stylowe czcionki Unicode bez instalacji, rejestracji i opłat."
+        },
+        {
+          "type": "text",
+          "heading": "Generator haseł",
+          "body": "Twórz silne, bezpieczne hasła z konfigurowalną długością i typami znaków. Używamy kryptograficznie bezpiecznego generatora (crypto.getRandomValues), a hasła nigdy nie opuszczają Twojej przeglądarki."
+        },
+        {
+          "type": "text",
+          "heading": "Generator Lorem Ipsum",
+          "body": "Generuj tekst zastępczy Lorem Ipsum w trzech formatach: akapity, zdania i pojedyncze słowa. Idealne narzędzie dla projektantów i deweloperów do wypełniania makiet przed dodaniem właściwej treści."
+        },
+        {
+          "type": "text",
+          "heading": "Generator czcionek Unicode",
+          "body": "Zamień zwykły tekst na stylowe czcionki Unicode, które możesz skopiować i wkleić na Instagram, Facebook, Twitter i inne platformy. Ponad 25 unikalnych stylów do wyboru - od pogrubionego i kursywy po gotyckie i dekoracyjne fonty."
+        },
+        {
+          "type": "text",
+          "heading": "Generator kodów QR",
+          "body": "Twórz kody QR dla dowolnych treści - linków, tekstu, numerów telefonów i danych WiFi. Pobierz wygenerowany kod QR jako PNG w różnych rozmiarach (128×128 do 1024×1024). Idealne do marketingu, wizytówek i udostępniania informacji."
+        },
+        {
+          "type": "text",
+          "heading": "Bezpieczeństwo i prywatność",
+          "body": "Wszystkie generatory przetwarzają dane lokalnie w Twojej przeglądarce. Żadne informacje nie są wysyłane na nasze serwery, co gwarantuje pełną prywatność."
+        }
+      ]
     },
     "converters": {
       "title": "Konwertery Online",
       "subtitle": "Szybka konwersja plików i formatów w przeglądarce",
       "seoTitle": "Darmowe Konwertery Online - PDF, Obrazy, Dokumenty",
-      "seoDescription": "Bezpłatne konwertery online. Konwertuj PDF na JPG, PNG, Word i więcej. Szybka konwersja w przeglądarce bez wysyłania plików na serwer."
+      "seoDescription": "Bezpłatne konwertery online. Konwertuj PDF na JPG, PNG, Word i więcej. Szybka konwersja w przeglądarce bez wysyłania plików na serwer.",
+      "keywords": [
+        "konwertery online",
+        "pdf na jpg",
+        "pdf na png",
+        "konwersja plików",
+        "konwerter pdf",
+        "darmowy konwerter",
+        "konwersja online",
+        "pdf do obrazu",
+        "pdf na word",
+        "konwerter pdf na word",
+        "pdf do docx",
+        "konwersja pdf",
+        "pdf na word online"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Konwertery plików online - szybko i bezpiecznie",
+          "body": "Konwertuj pliki bezpośrednio w przeglądarce bez wysyłania ich na zewnętrzne serwery. Nasze konwertery działają lokalnie na Twoim urządzeniu, co gwarantuje pełną prywatność i bezpieczeństwo Twoich dokumentów."
+        },
+        {
+          "type": "text",
+          "heading": "PDF na JPG i PNG",
+          "body": "Konwertuj strony dokumentów PDF na obrazy w formacie JPG lub PNG w wysokiej jakości. Przydatne do wyodrębniania stron z dokumentów, tworzenia miniatur, przygotowywania materiałów do prezentacji lub publikacji w internecie."
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa konwersja w przeglądarce?",
+          "body": "Nasze konwertery wykorzystują nowoczesne API przeglądarki do przetwarzania plików bez połączenia z serwerem. Plik jest wczytywany do pamięci przeglądarki, przetwarzany lokalnie i możesz pobrać wynik natychmiast. Nic nie jest zapisywane ani wysyłane."
+        },
+        {
+          "type": "text",
+          "heading": "PDF na Word (DOCX)",
+          "body": "Wyodrębnij tekst z dokumentów PDF i zapisz go jako edytowalny plik Word (DOCX). Idealne do edycji treści z otrzymanych dokumentów, kopiowania fragmentów tekstu lub archiwizacji. Narzędzie wyodrębnia tekst — formatowanie i obrazy nie są przenoszone."
+        },
+        {
+          "type": "text",
+          "heading": "Obsługiwane formaty",
+          "body": "Aktualnie obsługujemy konwersję PDF do formatów graficznych (JPG, PNG) oraz do edytowalnych dokumentów Word (DOCX). Pracujemy nad dodaniem kolejnych formatów i rozszerzeniem możliwości konwersji."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy moje pliki są bezpieczne?",
+              "a": "Tak. Wszystkie pliki są przetwarzane lokalnie w Twojej przeglądarce. Nie wysyłamy żadnych danych na serwer."
+            },
+            {
+              "q": "Jaki jest limit rozmiaru pliku?",
+              "a": "Ponieważ konwersja odbywa się w przeglądarce, limit zależy od pamięci Twojego urządzenia. Zazwyczaj pliki do 50 MB działają bez problemu."
+            }
+          ]
+        }
+      ]
     },
     "randomizers": {
       "title": "Generatory Losowe",
       "subtitle": "Losuj liczby, cytaty i podejmuj decyzje",
       "seoTitle": "Generator Liczb Losowych Online - Losuj Liczby, Cytaty, Tak/Nie",
-      "seoDescription": "Darmowe generatory losowe online. Losuj liczby, cytaty, karty tarota. Generator decyzji Tak/Nie. Szybkie i bezpieczne losowanie."
+      "seoDescription": "Darmowe generatory losowe online. Losuj liczby, cytaty, karty tarota. Generator decyzji Tak/Nie. Szybkie i bezpieczne losowanie.",
+      "keywords": [
+        "losuj liczby",
+        "losuj liczbe",
+        "generator losowy",
+        "losuj tak nie",
+        "losowanie online",
+        "generator liczb",
+        "losowy cytat",
+        "karta tarota",
+        "losuj kartę tarota",
+        "tarot online",
+        "losowanie kart tarota",
+        "wirtualny tarot",
+        "darmowy tarot"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Generatory losowe online - uczciwe losowanie",
+          "body": "Nasze generatory losowe zapewniają szybkie i sprawiedliwe losowanie. Każdy wynik jest generowany za pomocą kryptograficznie bezpiecznych algorytmów, co gwarantuje pełną losowość i nieprzewidywalność rezultatów."
+        },
+        {
+          "type": "text",
+          "heading": "Losuj liczbę / liczby",
+          "body": "Generuj losowe liczby w dowolnym zakresie. Ustaw minimum i maksimum, a generator wybierze losową liczbę lub zestaw liczb. Idealne do gier planszowych, konkursów, loterii i szybkich decyzji."
+        },
+        {
+          "type": "text",
+          "heading": "Losuj Tak / Nie",
+          "body": "Nie możesz się zdecydować? Nasz generator podejmie decyzję za Ciebie. Animowany interfejs sprawia, że losowanie jest zabawne i ekscytujące. Działa jak wirtualna moneta - szybko i bezstronnie."
+        },
+        {
+          "type": "list",
+          "heading": "Do czego przydaje się losowanie?",
+          "items": [
+            "Gry planszowe i RPG - rzuty kostką, losowanie kolejności",
+            "Konkursy i losowania - wybór zwycięzców",
+            "Edukacja - losowe pytania, grupy, zadania",
+            "Codzienne decyzje - co jeść, gdzie iść, co oglądać",
+            "Programowanie - generowanie danych testowych"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Jak zapewniamy losowość?",
+          "body": "Używamy interfejsu crypto.getRandomValues() dostępnego w nowoczesnych przeglądarkach, który zapewnia kryptograficznie bezpieczne generowanie liczb losowych. To ten sam mechanizm, którego używają banki i systemy bezpieczeństwa."
+        }
+      ]
     },
     "calculators": {
       "title": "Kalkulatory Online",
       "subtitle": "Obliczenia matematyczne i zdrowotne",
       "seoTitle": "Darmowe Kalkulatory Online - BMI, Proporcje i więcej",
-      "seoDescription": "Bezpłatne kalkulatory online. Oblicz BMI, proporcje, procenty i więcej. Szybkie i dokładne obliczenia w przeglądarce."
+      "seoDescription": "Bezpłatne kalkulatory online. Oblicz BMI, proporcje, procenty i więcej. Szybkie i dokładne obliczenia w przeglądarce.",
+      "keywords": [
+        "kalkulator online",
+        "kalkulator bmi",
+        "kalkulator proporcji",
+        "średnia ważona",
+        "kalkulator średniej",
+        "kalkulator snu",
+        "cykle snu",
+        "kalkulator kalorii",
+        "zapotrzebowanie kaloryczne",
+        "kalkulator grupy krwi",
+        "dziedziczenie grupy krwi",
+        "grupa krwi dziecka",
+        "kalkulator inflacji",
+        "inflacja",
+        "siła nabywcza",
+        "psie lata na ludzkie",
+        "kalkulator psich lat",
+        "wiek psa",
+        "cyfry rzymskie",
+        "kalkulator cyfr rzymskich",
+        "konwerter cyfr rzymskich",
+        "rzymskie na arabskie",
+        "kocie lata na ludzkie",
+        "kalkulator kocich lat",
+        "wiek kota",
+        "ile lat ma kot",
+        "obliczenia online",
+        "darmowy kalkulator",
+        "bmi calculator"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulatory online - szybkie i dokładne obliczenia",
+          "body": "Nasze kalkulatory online umożliwiają szybkie i precyzyjne obliczenia bez potrzeby instalowania oprogramowania. Każdy kalkulator jest zoptymalizowany pod kątem dokładności i łatwości użytkowania."
+        },
+        {
+          "type": "text",
+          "heading": "Kalkulator BMI",
+          "body": "Oblicz swój wskaźnik masy ciała (Body Mass Index) podając wagę i wzrost. Kalkulator pokazuje Twoją kategorię wagową (niedowaga, norma, nadwaga, otyłość) oraz interpretację wyniku. Przydatny do monitorowania zdrowia i planowania diety."
+        },
+        {
+          "type": "text",
+          "heading": "Kalkulator proporcji",
+          "body": "Rozwiązuj równania proporcji (a:b = c:x) szybko i dokładnie. Wpisz trzy znane wartości, a kalkulator obliczy czwartą. Niezbędny w matematyce, gotowaniu, fotografii, budownictwie i wielu innych dziedzinach."
+        },
+        {
+          "type": "text",
+          "heading": "Kalkulator średniej ważonej",
+          "body": "Oblicz średnią ważoną z dowolną liczbą wartości i wag. Idealny do obliczania średniej ocen szkolnych i akademickich, wyników egzaminów, ocen projektów z różnymi wagami. Dodawaj i usuwaj wiersze dynamicznie."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Jak oblicza się BMI?",
+              "a": "BMI = waga (kg) / wzrost (m)². Na przykład, osoba ważąca 70 kg i mierząca 175 cm ma BMI = 70 / 1.75² = 22.9 (norma)."
+            },
+            {
+              "q": "Czym jest średnia ważona?",
+              "a": "Średnia ważona to średnia, w której każda wartość ma przypisaną wagę (znaczenie). Na przykład, ocena z egzaminu (waga 3) liczy się bardziej niż ocena z kartkówki (waga 1)."
+            },
+            {
+              "q": "Czy wyniki są dokładne?",
+              "a": "Tak. Nasze kalkulatory używają standardowych algorytmów matematycznych z precyzją do kilku miejsc po przecinku."
+            }
+          ]
+        }
+      ]
     },
     "allTools": "Wszystkie narzędzia",
     "viewTool": "Otwórz narzędzie",
@@ -79,7 +341,14 @@
       "name": "Generator Haseł",
       "description": "Twórz silne i bezpieczne hasła z różnymi opcjami konfiguracji.",
       "seoTitle": "Generator Haseł Online - Bezpieczne i Silne Hasła",
-      "seoDescription": "Darmowy generator silnych haseł online. Twórz bezpieczne hasła z wielkimi literami, cyframi i symbolami."
+      "seoDescription": "Darmowy generator silnych haseł online. Twórz bezpieczne hasła z wielkimi literami, cyframi i symbolami.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Bezpieczny Generator Haseł Online",
+          "body": "Nasz generator haseł tworzy silne i bezpieczne hasła bezpośrednio w Twojej przeglądarce. Hasła nie są nigdzie wysyłane ani zapisywane. Używamy kryptograficznie bezpiecznego generatora liczb losowych (crypto.getRandomValues) dla maksymalnego bezpieczeństwa Twoich haseł. Możesz dostosować długość hasła od 8 do 64 znaków oraz wybrać, jakie typy znaków mają być uwzględnione: wielkie litery, małe litery, cyfry i symbole specjalne."
+        }
+      ]
     },
     "uuid-generator": {
       "name": "Generator UUID",
@@ -96,7 +365,14 @@
       "sentences": "Zdania",
       "words": "Słowa",
       "count": "Ilość",
-      "generate": "Generuj Nowy Tekst"
+      "generate": "Generuj Nowy Tekst",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest Lorem Ipsum?",
+          "body": "Lorem Ipsum to standardowy tekst zastępczy używany w przemyśle poligraficznym i typograficznym od XVI wieku. Jest to zniekształcony fragment traktatu Cycerona \"De finibus bonorum et malorum\". Nasz generator tworzy losowy tekst Lorem Ipsum w trzech formatach: akapity, zdania i pojedyncze słowa. Możesz dostosować ilość generowanego tekstu za pomocą suwaka. Tekst Lorem Ipsum jest powszechnie używany przez projektantów i deweloperów do wypełniania makiet i prototypów przed dodaniem właściwej treści."
+        }
+      ]
     },
     "color-converter": {
       "name": "Konwerter Kolorów",
@@ -136,7 +412,105 @@
       "size": "Rozmiar",
       "clear": "Wyczyść",
       "preview": "Podgląd kodu QR",
-      "noContent": "Wpisz treść, aby wygenerować kod QR"
+      "noContent": "Wpisz treść, aby wygenerować kod QR",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Darmowy Generator Kodów QR Online",
+          "body": "Nasz generator kodów QR pozwala na szybkie i bezpłatne tworzenie kodów QR bezpośrednio w przeglądarce. Wystarczy wpisać tekst, adres URL, numer telefonu lub dowolne dane, a narzędzie wygeneruje gotowy kod QR do pobrania jako PNG. Kod QR (Quick Response) to dwuwymiarowy kod kreskowy, który przechowuje informacje w postaci czarno-białego wzoru. Kody QR mogą być odczytywane przez aparaty smartfonów i skanery kodów kreskowych, co czyni je idealnym narzędziem do szybkiego przekazywania informacji."
+        },
+        {
+          "type": "grid",
+          "heading": "Do czego służą kody QR?",
+          "items": [
+            {
+              "title": "Linki i strony WWW",
+              "body": "Zakoduj adres URL, aby użytkownicy mogli szybko otworzyć stronę internetową po zeskanowaniu kodu."
+            },
+            {
+              "title": "WiFi",
+              "body": "Udostępnij dane sieci WiFi gościom - po zeskanowaniu kodu telefon automatycznie połączy się z siecią."
+            },
+            {
+              "title": "Dane kontaktowe",
+              "body": "Zakoduj wizytówkę vCard z imieniem, numerem telefonu i adresem email w jednym kodzie QR."
+            },
+            {
+              "title": "Marketing i reklama",
+              "body": "Umieść kody QR na ulotkach, plakatach i opakowaniach, aby kierować klientów do ofert, stron produktów lub mediów społecznościowych."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Kod QR vs kod kreskowy",
+          "headers": [
+            "Cecha",
+            "Kod QR",
+            "Kod kreskowy"
+          ],
+          "rows": [
+            [
+              "Wymiary",
+              "Dwuwymiarowy (2D)",
+              "Jednowymiarowy (1D)"
+            ],
+            [
+              "Pojemność danych",
+              "Do 4 296 znaków",
+              "Zwykle 20-25 znaków"
+            ],
+            [
+              "Typy danych",
+              "Tekst, URL, email, WiFi, vCard",
+              "Głównie numery"
+            ],
+            [
+              "Korekcja błędów",
+              "Tak (do 30%)",
+              "Nie"
+            ]
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak tworzyć skuteczne kody QR?",
+          "items": [
+            "**Odpowiedni rozmiar** - kod QR powinien mieć co najmniej 2×2 cm do druku. Dla billboardów użyj minimum 256×256 px.",
+            "**Wysoki kontrast** - zachowaj ciemny wzór na jasnym tle. Unikaj niskiego kontrastu kolorów.",
+            "**Testuj przed drukiem** - zawsze zeskanuj kod różnymi urządzeniami przed wydrukowaniem.",
+            "**Krótkie URL-e** - im mniej danych, tym prostszy i bardziej czytelny kod QR.",
+            "**Margines (quiet zone)** - zostaw pusty margines wokół kodu, aby skanery mogły go łatwo odczytać."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy kody QR wygasają?",
+              "a": "Statyczne kody QR (jak te generowane przez nasze narzędzie) nigdy nie wygasają. Zawierają dane bezpośrednio w kodzie, więc działają tak długo, jak długo zakodowane dane są aktualne."
+            },
+            {
+              "q": "Jaka jest maksymalna pojemność kodu QR?",
+              "a": "Kod QR może przechowywać do 4 296 znaków alfanumerycznych, 7 089 cyfr lub 2 953 bajty danych binarnych. Jednak krótsze dane dają prostszy i łatwiejszy do zeskanowania kod."
+            },
+            {
+              "q": "Czy generator jest darmowy?",
+              "a": "Tak, nasz generator kodów QR jest całkowicie darmowy i bez ograniczeń. Możesz tworzyć dowolną liczbę kodów QR bez rejestracji."
+            },
+            {
+              "q": "Czy mogę używać kodów QR komercyjnie?",
+              "a": "Oczywiście! Wygenerowane kody QR możesz używać do dowolnych celów - osobistych i komercyjnych, na materiałach drukowanych i cyfrowych."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Nasz generator kodów QR działa całkowicie w przeglądarce. Twoje dane nie są wysyłane na żaden serwer - generowanie odbywa się lokalnie na Twoim urządzeniu."
+        }
+      ]
     },
     "character-counter": {
       "name": "Licznik Znaków",
@@ -156,7 +530,49 @@
       "minutes": "min",
       "seconds": "sek",
       "clear": "Wyczyść",
-      "copy": "Kopiuj tekst"
+      "copy": "Kopiuj tekst",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Licznik Znaków Online - Policz Znaki w Tekście",
+          "body": "Nasz darmowy licznik znaków to idealne narzędzie do szybkiego zliczania znaków w dowolnym tekście. Czy piszesz SMS, tweet, meta description dla SEO, czy wypełniasz formularz z limitem znaków - nasz licznik pomoże Ci zmieścić się w wymaganych granicach."
+        },
+        {
+          "type": "list",
+          "heading": "Do czego służy licznik znaków?",
+          "items": [
+            "**Media społecznościowe** - Twitter (280 znaków), Instagram bio (150 znaków)",
+            "**SEO** - Meta title (60 znaków), meta description (160 znaków)",
+            "**SMS** - Sprawdź, czy wiadomość zmieści się w jednym SMS (160 znaków)",
+            "**Formularze online** - Wiele formularzy ma limity znaków",
+            "**Copywriting** - Kontroluj długość nagłówków i tekstów reklamowych"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak używać licznika znaków?",
+          "items": [
+            "Wpisz lub wklej tekst w pole tekstowe",
+            "Wyniki aktualizują się automatycznie w czasie rzeczywistym",
+            "Sprawdź liczbę znaków, słów, zdań i akapitów",
+            "Zobacz szacowany czas czytania i mówienia"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy spacje są liczone jako znaki?",
+              "a": "Tak, nasz licznik pokazuje zarówno liczbę wszystkich znaków (ze spacjami), jak i liczbę znaków bez spacji."
+            },
+            {
+              "q": "Jak obliczany jest czas czytania?",
+              "a": "Czas czytania jest obliczany na podstawie średniej prędkości czytania (~200 słów/min). Czas mówienia bazuje na ~150 słów/min."
+            }
+          ]
+        }
+      ]
     },
     "word-counter": {
       "name": "Licznik Słów",
@@ -180,7 +596,55 @@
       "wordsLabel": "słów",
       "clear": "Wyczyść",
       "copy": "Kopiuj tekst",
-      "topWords": "Najczęstsze słowa"
+      "topWords": "Najczęstsze słowa",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Licznik Słów Online - Policz Słowa w Tekście",
+          "body": "Nasz darmowy licznik słów to wszechstronne narzędzie dla pisarzy, studentów, blogerów i copywriterów. Analizuje tekst w czasie rzeczywistym, pokazując liczbę słów, zdań, akapitów oraz szacowany czas czytania i mówienia."
+        },
+        {
+          "type": "list",
+          "heading": "Dla kogo jest licznik słów?",
+          "items": [
+            "**Studenci** - Kontroluj długość esejów i prac zaliczeniowych",
+            "**Copywriterzy** - Optymalizuj długość tekstów pod klient",
+            "**Blogerzy** - Optymalizuj długość artykułów pod SEO (1500+ słów)",
+            "**Tłumacze** - Wyceniaj zlecenia na podstawie liczby słów",
+            "**Autorzy** - Śledź postęp pisania książki lub artykułu"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Ile słów powinien mieć artykuł?",
+          "headers": [
+            "Typ treści",
+            "Zalecana długość"
+          ],
+          "rows": [
+            [
+              "Post na blog (SEO)",
+              "1500-2500 słów"
+            ],
+            [
+              "Opis produktu",
+              "300-500 słów"
+            ],
+            [
+              "Post na social media",
+              "40-80 słów"
+            ],
+            [
+              "Email marketing",
+              "200-300 słów"
+            ],
+            [
+              "Landing page",
+              "500-1000 słów"
+            ]
+          ]
+        }
+      ]
     },
     "dice-roll": {
       "name": "Rzut Kostką",
@@ -202,7 +666,105 @@
       "diceMultiple": "kostki",
       "average": "Średnia",
       "min": "Min",
-      "max": "Max"
+      "max": "Max",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Rzut Kostką Online - Wirtualna Kostka do Gry",
+          "body": "Nasz darmowy symulator rzutu kostką to idealne narzędzie do gier planszowych, RPG, losowań i zabaw. Wybierz liczbę kostek i ich typ (D4, D6, D8, D10, D12, D20, D100) i rzucaj bez ograniczeń. Wyniki są w pełni losowe i uczciwe."
+        },
+        {
+          "type": "grid",
+          "heading": "Dostępne typy kostek",
+          "items": [
+            {
+              "title": "D4",
+              "body": "Czworościan"
+            },
+            {
+              "title": "D6",
+              "body": "Klasyczna kostka"
+            },
+            {
+              "title": "D8",
+              "body": "Ośmiościan"
+            },
+            {
+              "title": "D10",
+              "body": "Dziesięciościan"
+            },
+            {
+              "title": "D12",
+              "body": "Dwunastościan"
+            },
+            {
+              "title": "D20",
+              "body": "Dwudziestościan"
+            },
+            {
+              "title": "D100",
+              "body": "Procentówka (1-100)"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Do czego służy wirtualna kostka?",
+          "items": [
+            "**Gry planszowe** - Nie masz przy sobie prawdziwej kostki? Użyj naszej!",
+            "**Gry RPG** - D&D, Warhammer i inne systemy wymagające różnych kostek",
+            "**Losowania** - Uczciwe losowanie kolejności, nagród, zadań",
+            "**Edukacja** - Nauka prawdopodobieństwa i statystyki",
+            "**Podejmowanie decyzji** - Niech kostka zdecyduje!",
+            "**Zabawy i gry online** - Grasz zdalnie z przyjaciółmi"
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Funkcje naszego generatora",
+          "items": [
+            {
+              "title": "Wiele kostek naraz",
+              "body": "Rzucaj od 1 do 10 kostek jednocześnie i zobacz sumę wszystkich wyników."
+            },
+            {
+              "title": "Historia rzutów",
+              "body": "Przeglądaj historię poprzednich rzutów wraz ze statystykami."
+            },
+            {
+              "title": "Animacja rzutu",
+              "body": "Realistyczna animacja zwiększa napięcie przed zobaczeniem wyniku."
+            },
+            {
+              "title": "Statystyki",
+              "body": "Zobacz średnią, minimum i maksimum z wszystkich rzutów."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Czy wyniki są naprawdę losowe?",
+          "body": "Tak! Nasz generator wykorzystuje kryptograficznie bezpieczne algorytmy. Każda ścianka kostki ma identyczne prawdopodobieństwo wylosowania, więc wyniki są tak samo uczciwe jak rzut prawdziwą kostką."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Co oznacza D6, D20 itp.?",
+              "a": "Litera \"D\" pochodzi od angielskiego \"dice\" (kostka), a liczba oznacza ilość ścianek. D6 to klasyczna sześcienna kostka (1-6), D20 to dwudziestościan (1-20) popularny w grach RPG."
+            },
+            {
+              "q": "Jak rzucić wieloma kostkami?",
+              "a": "Użyj suwaka \"Liczba kostek\" aby wybrać od 1 do 10 kostek. Wszystkie kostki będą tego samego typu i zostaną rzucone jednocześnie."
+            },
+            {
+              "q": "Czy mogę używać tej kostki do gier na pieniądze?",
+              "a": "Ten generator jest przeznaczony wyłącznie do celów rozrywkowych i edukacyjnych. Nie zalecamy używania go do gier hazardowych."
+            }
+          ]
+        }
+      ]
     },
     "font-generator": {
       "name": "Generator Czcionek",
@@ -227,7 +789,72 @@
       "body": "Treść",
       "searchFonts": "Szukaj stylów...",
       "noResults": "Nie znaleziono stylów",
-      "googleFonts": "Google Fonts"
+      "googleFonts": "Google Fonts",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Generator Stylowych Czcionek Online - Kopiuj i Wklej",
+          "body": "Nasz darmowy generator czcionek zamienia zwykły tekst na stylowe fonty Unicode, które możesz skopiować i wkleić wszędzie - na Instagram, Facebook, Twitter, TikTok, Discord i w innych miejscach. Ponad 25 unikalnych stylów do wyboru!"
+        },
+        {
+          "type": "grid",
+          "heading": "Dostępne style czcionek",
+          "items": [
+            {
+              "title": "Podstawowe",
+              "body": "𝗣𝗼𝗴𝗿𝘂𝗯𝗶𝗼𝗻𝘆, 𝘒𝘶𝘳𝘴𝘺𝘸𝘢, 𝙋𝙤𝙜𝙧𝙪𝙗𝙞𝙤𝙣𝙖 𝙠𝙪𝙧𝙨𝙮𝙬𝙖, 𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎"
+            },
+            {
+              "title": "Dekoracyjne",
+              "body": "𝒮𝓀𝓇𝓎𝓅𝓉, 𝔉𝔯𝔞𝔨𝔱𝔲𝔯𝔞, 𝔾𝕠𝕥𝕙𝕚𝕔, 𝕯𝖔𝖚𝖇𝖑𝖊"
+            },
+            {
+              "title": "Symbole",
+              "body": "Ⓦ ⓚⓞⓛⓚⓤ, 🅦 🅝🅔🅖🅐🅣🅨🅦, 🄺🅆🄰🄳🅁🄰🅃"
+            }
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak używać generatora?",
+          "items": [
+            "**Wpisz tekst** - wprowadź tekst, który chcesz przekształcić",
+            "**Wybierz styl** - przeglądaj dostępne style czcionek",
+            "**Kopiuj** - kliknij przycisk \"Kopiuj\" przy wybranym stylu",
+            "**Wklej** - wklej tekst w dowolnym miejscu (Ctrl+V / Cmd+V)"
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Gdzie możesz użyć stylowych czcionek?",
+          "items": [
+            "**Instagram** - bio, posty, stories, komentarze",
+            "**Facebook** - posty, komentarze, nazwa profilu",
+            "**Twitter/X** - tweety, bio, nazwa użytkownika",
+            "**TikTok** - bio, komentarze",
+            "**Discord** - wiadomości, nazwa serwera"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Jak to działa?",
+              "a": "Generator używa specjalnych znaków Unicode, które wyglądają jak stylowe czcionki. To nie są prawdziwe fonty, ale znaki z różnych alfabetów i symboli matematycznych, które można kopiować i wklejać jako zwykły tekst."
+            },
+            {
+              "q": "Czy polskie znaki są obsługiwane?",
+              "a": "Niektóre style mogą nie obsługiwać polskich znaków diakrytycznych (ą, ę, ó, itd.). W takim przypadku polskie litery pozostaną w oryginalnej formie."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Nasz generator czcionek działa całkowicie w przeglądarce. Twój tekst nie jest wysyłany na żaden serwer - wszystkie przekształcenia wykonywane są lokalnie."
+        }
+      ]
     },
     "countdown-vacation": {
       "name": "Odliczanie do Wakacji",
@@ -243,7 +870,29 @@
       "vacationStart": "Początek wakacji",
       "timeLeft": "Pozostało",
       "vacationStarted": "Wakacje już się zaczęły!",
-      "enjoy": "Ciesz się wolnym czasem!"
+      "enjoy": "Ciesz się wolnym czasem!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Odliczanie do Wakacji Letnich 2026",
+          "body": "Sprawdź ile czasu zostało do rozpoczęcia wakacji letnich! Nasz darmowy licznik odlicza czas do ostatniego dnia roku szkolnego, po którym zaczynają się wakacje. Wyświetla dni, godziny, minuty i sekundy w czasie rzeczywistym."
+        },
+        {
+          "type": "text",
+          "heading": "Kiedy zaczynają się wakacje 2026?",
+          "body": "Wakacje letnie w Polsce zaczynają się ostatniego dnia czerwca po zakończeniu roku szkolnego. W 2026 roku planowany koniec roku szkolnego to piątek 26 czerwca, a wakacje rozpoczynają się w sobotę 27 czerwca 2026."
+        },
+        {
+          "type": "list",
+          "heading": "Dla kogo jest ten licznik?",
+          "items": [
+            "**Uczniowie** - Sprawdź ile dni zostało do wolności!",
+            "**Nauczyciele** - Odliczaj do zasłużonego odpoczynku",
+            "**Rodzice** - Planuj wakacyjne podróże i aktywności",
+            "**Wszyscy** - Bo kto nie czeka na lato?"
+          ]
+        }
+      ]
     },
     "countdown-christmas": {
       "name": "Odliczanie do Świąt",
@@ -259,7 +908,30 @@
       "christmasDate": "Wigilia Bożego Narodzenia",
       "timeLeft": "Pozostało do Wigilii",
       "christmasNow": "Wesołych Świąt!",
-      "merryChristmas": "Świąteczny czas już nadszedł!"
+      "merryChristmas": "Świąteczny czas już nadszedł!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Odliczanie do Świąt Bożego Narodzenia 2026",
+          "body": "Ile dni do Gwiazdki? Nasz darmowy licznik odlicza czas do Wigilii Bożego Narodzenia (24 grudnia). Wyświetla dni, godziny, minuty i sekundy w czasie rzeczywistym. Buduj świąteczną atmosferę razem z nami!"
+        },
+        {
+          "type": "text",
+          "heading": "Kiedy są Święta Bożego Narodzenia?",
+          "body": "Wigilia Bożego Narodzenia przypada na 24 grudnia, a same Święta obchodzimy 25 i 26 grudnia. W Polsce Wigilia jest szczególnie ważnym dniem — to wtedy spotykamy się przy wigilijnym stole."
+        },
+        {
+          "type": "list",
+          "heading": "Polskie tradycje wigilijne",
+          "items": [
+            "12 potraw wigilijnych — tradycyjny posiłek bezmięsny",
+            "Dzielenie się opłatkiem — wyrażenie życzeń i miłości",
+            "Dodatkowe nakrycie — dla niespodziewanego gościa",
+            "Kolędy — wspólne śpiewanie przy stole",
+            "Prezenty pod choinką — wymiana podarunków"
+          ]
+        }
+      ]
     },
     "countdown-date": {
       "name": "Odliczanie do Daty",
@@ -277,7 +949,40 @@
       "eventPlaceholder": "np. Moje urodziny",
       "timeLeft": "Pozostało",
       "dateReached": "Data już minęła!",
-      "timeSince": "Od tego wydarzenia minęło"
+      "timeSince": "Od tego wydarzenia minęło",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Odliczanie do Wybranej Daty",
+          "body": "Ustaw dowolną datę i obserwuj odliczanie w czasie rzeczywistym! Nasz darmowy licznik pokazuje dni, godziny, minuty i sekundy do wybranego wydarzenia. Idealne narzędzie do śledzenia ważnych dat."
+        },
+        {
+          "type": "list",
+          "heading": "Do czego możesz odliczać?",
+          "items": [
+            "**Urodziny** - Twoje lub bliskiej osoby",
+            "**Ślub** - Wielki dzień się zbliża!",
+            "**Egzaminy** - Ile czasu na naukę?",
+            "**Podróże** - Odliczaj do wymarzonych wakacji",
+            "**Koncerty i wydarzenia** - Buduj emocje!",
+            "**Termin projektu** - Motywacja do pracy"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy mogę ustawić dowolną datę?",
+              "a": "Tak, możesz wybrać dowolną datę w przyszłości."
+            },
+            {
+              "q": "Co się stanie, gdy data minie?",
+              "a": "Licznik zatrzyma się na zerze i wyświetli komunikat."
+            }
+          ]
+        }
+      ]
     },
     "white-screen": {
       "name": "Biały Ekran",
@@ -293,7 +998,82 @@
       "customColor": "Własny kolor (HEX)",
       "clickToExit": "Kliknij aby wyjść",
       "presets": "Gotowe kolory",
-      "currentColor": "Aktualny kolor"
+      "currentColor": "Aktualny kolor",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Biały Ekran Online - Test Pikseli i Czyszczenie Monitora",
+          "body": "Nasz darmowy biały ekran online to wszechstronne narzędzie do testowania monitora i czyszczenia ekranu. Wyświetl pełnoekranowy, jednolity kolor aby wykryć martwe piksele, smugi, plamy lub nierównomierności podświetlenia. Działa na komputerze, tablecie i telefonie."
+        },
+        {
+          "type": "grid",
+          "heading": "Do czego służy biały ekran?",
+          "items": [
+            {
+              "title": "Test martwych pikseli",
+              "body": "Wykryj piksele, które nie świecą prawidłowo."
+            },
+            {
+              "title": "Czyszczenie ekranu",
+              "body": "Wyświetl biały ekran, aby zobaczyć zabrudzenia i smugi."
+            },
+            {
+              "title": "Test podświetlenia",
+              "body": "Sprawdź równomierność podświetlenia monitora."
+            },
+            {
+              "title": "Fotografia i wideo",
+              "body": "Użyj jako tło lub źródło miękkiego światła."
+            }
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak wykryć martwe piksele?",
+          "items": [
+            "Ustaw biały ekran na pełnym ekranie",
+            "Uważnie przeglądaj cały ekran szukając ciemnych punktów",
+            "Zmień kolor na czarny i szukaj jasnych punktów",
+            "Przetestuj kolory czerwony, zielony i niebiały aby znaleźć subpiksele"
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Rodzaje wadliwych pikseli",
+          "items": [
+            {
+              "title": "Martwy piksel",
+              "body": "Piksel zawsze ciemny - nie reaguje na żaden sygnał."
+            },
+            {
+              "title": "Gorący piksel",
+              "body": "Piksel zawsze jasny - świeci biało niezależnie od obrazu."
+            },
+            {
+              "title": "Zablokowany piksel",
+              "body": "Piksel wyświetla stały kolor (czerwony, zielony lub niebieski)."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy mogę naprawić martwy piksel?",
+              "a": "Zablokowane piksele czasem można naprawić za pomocą specjalnych aplikacji. Martwe piksele (całkowicie ciemne) zwykle nie podlegają naprawie programowej."
+            },
+            {
+              "q": "Ile kolorów jest dostępnych?",
+              "a": "Narzędzie oferuje 12 predefiniowanych kolorów plus możliwość wpisania dowolnego koloru w formacie HEX."
+            },
+            {
+              "q": "Czy to działa na telefonie?",
+              "a": "Tak, biały ekran działa na wszystkich urządzeniach z przeglądarką - komputerach, tabletach i telefonach."
+            }
+          ]
+        }
+      ]
     },
     "amount-in-words": {
       "name": "Kwota Słownie",
@@ -309,7 +1089,44 @@
       "copied": "Skopiowano!",
       "clear": "Wyczyść",
       "currency": "Tryb walutowy (PLN)",
-      "numberOnly": "Tylko liczba"
+      "numberOnly": "Tylko liczba",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kwota Słownie - Zamień Liczbę na Tekst po Polsku",
+          "body": "Nasz darmowy konwerter zamienia dowolną liczbę lub kwotę pieniężną na zapis słowny po polsku. Idealne narzędzie do wypełniania faktur, umów, przelewów i innych dokumentów wymagających zapisu kwoty słownie. Obsługuje liczby do bilionów z groszami."
+        },
+        {
+          "type": "list",
+          "heading": "Kiedy potrzebujesz zapisu kwoty słownie?",
+          "items": [
+            "**Faktury** - Kwota słownie na fakturze VAT",
+            "**Umowy** - Zapis kwoty w umowach cywilnoprawnych",
+            "**Przelewy** - Kwota słownie na blankietach przelewu",
+            "**Czeki** - Wypisywanie kwoty na czekach",
+            "**Dokumenty urzędowe** - Wnioski, formularze, protokoły",
+            "**Akty notarialne** - Ceny nieruchomości słownie"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Jakie liczby obsługuje konwerter?",
+              "a": "Konwerter obsługuje liczby całkowite i dziesiętne od 0 do bilionów. Kwoty pieniężne są automatycznie zaokrąglane do dwóch miejsc po przecinku (grosze)."
+            },
+            {
+              "q": "Czy konwerter obsługuje grosze?",
+              "a": "Tak, część dziesiętna jest automatycznie konwertowana na grosze (np. 1234.56 → tysiąc dwieście trzydzieści cztery złote 56/100)."
+            },
+            {
+              "q": "Czy wynik jest poprawny gramatycznie?",
+              "a": "Tak, konwerter prawidłowo odmienia polskie liczebniki z uwzględnieniem rodzaju i przypadku."
+            }
+          ]
+        }
+      ]
     },
     "caesar-cipher": {
       "name": "Szyfr Cezara",
@@ -326,7 +1143,71 @@
       "decrypt": "Deszyfruj",
       "copy": "Kopiuj",
       "copied": "Skopiowano!",
-      "clear": "Wyczyść"
+      "clear": "Wyczyść",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Szyfr Cezara Online - Szyfrowanie i Deszyfrowanie",
+          "body": "Szyfr Cezara to jeden z najstarszych i najprostszych szyfrów podstawieniowych w historii kryptografii. Nazwa pochodzi od Juliusza Cezara, który używał go do szyfrowania korespondencji wojskowej. Każda litera tekstu jest przesuwana o ustaloną liczbę pozycji w alfabecie."
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa szyfr Cezara?",
+          "body": "Szyfr Cezara polega na przesunięciu każdej litery tekstu o stałą liczbę pozycji w alfabecie. Na przykład przy przesunięciu o 3: A→D, B→E, C→F itd. Deszyfrowanie polega na przesunięciu w przeciwnym kierunku."
+        },
+        {
+          "type": "grid",
+          "heading": "Przykłady szyfrowania",
+          "items": [
+            {
+              "title": "Przesunięcie +1",
+              "body": "ABC → BCD"
+            },
+            {
+              "title": "Przesunięcie +3 (Cezar)",
+              "body": "ABC → DEF"
+            },
+            {
+              "title": "Przesunięcie +13 (ROT13)",
+              "body": "ABC → NOP"
+            },
+            {
+              "title": "Przesunięcie +25",
+              "body": "ABC → ZAB"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Do czego służy szyfr Cezara?",
+          "items": [
+            "**Edukacja** - Nauka podstaw kryptografii i algorytmów",
+            "**Zabawy i łamigłówki** - Tworzenie zaszyfrowanych wiadomości",
+            "**Geocaching** - Szyfrowanie wskazówek w grach terenowych",
+            "**Escape roomy** - Element zagadek logicznych",
+            "**Historia** - Poznanie korzeni kryptografii"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Czym jest ROT13?",
+          "body": "ROT13 to specjalny przypadek szyfru Cezara z przesunięciem o 13 pozycji. Ponieważ alfabet łaciński ma 26 liter, zastosowanie ROT13 dwa razy przywraca oryginalny tekst. ROT13 jest często używany w internecie do ukrywania spoilerów i żartów."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy szyfr Cezara jest bezpieczny?",
+              "a": "Nie, szyfr Cezara jest łatwy do złamania — ma tylko 25 możliwych przesunięć. Służy do nauki kryptografii, nie do ochrony danych."
+            },
+            {
+              "q": "Czy polskie znaki są obsługiwane?",
+              "a": "Tak, nasz szyfr obsługuje polskie znaki diakrytyczne (ą, ę, ó, ś, ł, ż, ź, ć, ń)."
+            }
+          ]
+        }
+      ]
     },
     "pdf-to-word": {
       "name": "PDF na Word",
@@ -351,7 +1232,102 @@
       "newFile": "Nowy plik",
       "textOnly": "Narzędzie wyodrębnia tylko tekst. Formatowanie, obrazy i tabele nie są przenoszone.",
       "noText": "Nie znaleziono tekstu w tym pliku PDF. Plik może zawierać zeskanowane obrazy zamiast tekstu.",
-      "pages": "stron"
+      "pages": "stron",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest konwersja PDF na Word?",
+          "body": "Konwersja PDF na Word to proces przekształcania dokumentów w formacie PDF (Portable Document Format) na edytowalne pliki DOCX, obsługiwane przez programy takie jak Microsoft Word, Google Docs czy LibreOffice. Dzięki temu możesz łatwo edytować, kopiować i modyfikować tekst zawarty w dokumentach PDF. Nasze narzędzie wyodrębnia tekst z każdej strony pliku PDF i tworzy czysty dokument Word z zachowaniem podziału na strony. Cały proces odbywa się w Twojej przeglądarce — pliki nie są wysyłane na żaden serwer."
+        },
+        {
+          "type": "list",
+          "heading": "Kiedy warto konwertować PDF na Word?",
+          "items": [
+            "**Edycja dokumentów** — gdy potrzebujesz zmodyfikować tekst z otrzymanego PDF",
+            "**Kopiowanie treści** — szybkie przeniesienie tekstu do innego dokumentu lub projektu",
+            "**Dostępność** — konwersja na edytowalny format ułatwia czytanie osobom z niepełnosprawnościami",
+            "**Archiwizacja** — zapisanie treści PDF w formacie łatwym do przeszukiwania i edycji",
+            "**Raporty i prezentacje** — wykorzystanie danych tekstowych z PDF w nowych dokumentach"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "PDF vs DOCX — porównanie formatów",
+          "headers": [
+            "Cecha",
+            "PDF",
+            "DOCX (Word)"
+          ],
+          "rows": [
+            [
+              "Edycja",
+              "Trudna, wymaga specjalnego oprogramowania",
+              "Łatwa, w każdym edytorze tekstu"
+            ],
+            [
+              "Wygląd",
+              "Zawsze identyczny na każdym urządzeniu",
+              "Może się różnić w zależności od czcionek i programu"
+            ],
+            [
+              "Rozmiar pliku",
+              "Zwykle mniejszy",
+              "Może być większy (szczególnie z obrazami)"
+            ],
+            [
+              "Drukowanie",
+              "Doskonałe, zachowuje układ",
+              "Dobre, ale może wymagać dopasowania"
+            ],
+            [
+              "Zastosowanie",
+              "Udostępnianie, archiwizacja, druk",
+              "Tworzenie, edycja, współpraca"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Wskazówki — jak uzyskać najlepsze wyniki",
+          "items": [
+            "**Pliki z warstwą tekstową** — najlepiej konwertują się pliki PDF utworzone cyfrowo (np. z Worda, przeglądarki), a nie zeskanowane",
+            "**Proste dokumenty** — dokumenty z prostym układem tekstu dadzą najlepsze rezultaty",
+            "**Sprawdź wynik** — zawsze przejrzyj wynikowy dokument Word i popraw ewentualne niedoskonałości",
+            "**Zeskanowane PDF** — jeśli PDF zawiera tylko obrazy (skan), tekst nie zostanie wyodrębniony. Potrzebujesz narzędzia OCR"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Najczęściej zadawane pytania",
+          "items": [
+            {
+              "q": "Czy konwerter jest darmowy?",
+              "a": "Tak, narzędzie jest całkowicie darmowe i nie wymaga rejestracji. Możesz konwertować dowolną liczbę plików."
+            },
+            {
+              "q": "Czy moje pliki są bezpieczne?",
+              "a": "Tak, cała konwersja odbywa się w Twojej przeglądarce. Pliki nie są wysyłane na żaden serwer — masz pełną kontrolę nad swoimi dokumentami."
+            },
+            {
+              "q": "Czy formatowanie zostanie zachowane?",
+              "a": "Narzędzie wyodrębnia wyłącznie tekst. Formatowanie (pogrubienie, kursywa, kolory), obrazy i tabele nie są przenoszone. Otrzymasz czysty tekst podzielony na akapity."
+            },
+            {
+              "q": "Co z zeskanowanymi plikami PDF?",
+              "a": "Zeskanowane dokumenty PDF zawierają obrazy zamiast tekstu i nie mogą być konwertowane tym narzędziem. Do rozpoznawania tekstu ze skanów potrzebne jest oprogramowanie OCR (Optical Character Recognition)."
+            },
+            {
+              "q": "Jaki jest maksymalny rozmiar pliku?",
+              "a": "Maksymalny rozmiar pliku to 50 MB. Ponieważ konwersja odbywa się w przeglądarce, bardzo duże pliki mogą przetwarzać się dłużej."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Nasz darmowy konwerter PDF na Word działa całkowicie w przeglądarce. Twoje pliki nie są wysyłane na serwer - pełna prywatność i bezpieczeństwo gwarantowane."
+        }
+      ]
     },
     "word-to-pdf": {
       "name": "Word na PDF",
@@ -378,7 +1354,29 @@
       "downloadAll": "Pobierz wszystko (ZIP)",
       "converting": "Konwertowanie strony",
       "of": "z",
-      "newFile": "Nowy plik"
+      "newFile": "Nowy plik",
+      "seoContent": [
+        {
+          "type": "ordered-list",
+          "heading": "Jak konwertować PDF na JPG?",
+          "items": [
+            "Wybierz plik PDF z dysku lub przeciągnij go na stronę",
+            "Dostosuj skalę i jakość obrazów wyjściowych",
+            "Kliknij „Konwertuj\" i poczekaj na zakończenie",
+            "Pobierz pojedyncze strony lub wszystkie jako ZIP"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Dlaczego JPG?",
+          "body": "Format JPG zapewnia doskonałą kompresję przy zachowaniu dobrej jakości obrazu. Idealny do zdjęć, dokumentów kolorowych i materiałów graficznych. Pliki JPG są szeroko obsługiwane i zajmują mało miejsca."
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Nasz darmowy konwerter PDF na JPG działa całkowicie w przeglądarce. Twoje pliki nie są wysyłane na serwer - pełna prywatność gwarantowana."
+        }
+      ]
     },
     "pdf-to-png": {
       "name": "PDF na PNG",
@@ -398,7 +1396,29 @@
       "downloadAll": "Pobierz wszystko (ZIP)",
       "converting": "Konwertowanie strony",
       "of": "z",
-      "newFile": "Nowy plik"
+      "newFile": "Nowy plik",
+      "seoContent": [
+        {
+          "type": "ordered-list",
+          "heading": "Jak konwertować PDF na PNG?",
+          "items": [
+            "Wybierz plik PDF z dysku lub przeciągnij go na stronę",
+            "Dostosuj skalę obrazów wyjściowych",
+            "Kliknij „Konwertuj\" i poczekaj na zakończenie",
+            "Pobierz pojedyncze strony lub wszystkie jako ZIP"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Dlaczego PNG?",
+          "body": "Format PNG zapewnia bezstratną kompresję i obsługuje przezroczystość. Idealny do grafik, schematów, dokumentów z tekstem i logo. Pliki PNG zachowują pełną jakość przy każdym zapisie."
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Nasz darmowy konwerter PDF na PNG działa całkowicie w przeglądarce. Twoje pliki nie są wysyłane na serwer - pełna prywatność gwarantowana."
+        }
+      ]
     },
     "random-number": {
       "name": "Losuj Liczbę",
@@ -409,7 +1429,14 @@
       "max": "Maksimum",
       "result": "Wylosowana liczba",
       "generate": "Losuj Nową Liczbę",
-      "history": "Historia losowań"
+      "history": "Historia losowań",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Generator Liczb Losowych Online",
+          "body": "Nasz generator liczb losowych używa kryptograficznie bezpiecznego algorytmu do generowania prawdziwie losowych wyników. Idealne do gier, konkursów, podejmowania decyzji i wszelkich sytuacji wymagających losowego wyboru liczby."
+        }
+      ]
     },
     "random-numbers": {
       "name": "Losuj Liczby",
@@ -423,7 +1450,14 @@
       "sorted": "Sortuj rosnąco",
       "results": "Wylosowane liczby",
       "generate": "Losuj Liczby",
-      "copyAll": "Kopiuj wszystkie"
+      "copyAll": "Kopiuj wszystkie",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Losuj Wiele Liczb Jednocześnie",
+          "body": "Generator pozwala na losowanie wielu liczb na raz. Możesz wybrać czy liczby mają być unikalne czy mogą się powtarzać. Idealny do loterii, losowania nagród, wybierania grup i innych zastosowań wymagających wielu losowych wartości."
+        }
+      ]
     },
     "random-quote": {
       "name": "Losuj Cytat",
@@ -469,7 +1503,67 @@
       "adviceLabel": "Rada",
       "element": "Żywioł",
       "zodiacLabel": "Zodiak",
-      "planetLabel": "Planeta"
+      "planetLabel": "Planeta",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest tarot?",
+          "body": "Tarot to system 78 kart używanych od wieków do refleksji, medytacji i poszukiwania wewnętrznych odpowiedzi. Talia dzieli się na dwie główne grupy: 22 karty Wielkich Arkanów (Major Arcana), które symbolizują ważne życiowe tematy i archetypy, oraz 56 kart Małych Arkanów (Minor Arcana), podzielonych na cztery kolory: Kielichy, Pentakle, Miecze i Różdżki. Nasze narzędzie losuje kartę z pełnej talii 78 kart, w pozycji prostej lub odwróconej, i wyświetla jej znaczenie."
+        },
+        {
+          "type": "text",
+          "heading": "Wielkie Arkana — 22 karty losu",
+          "body": "Wielkie Arkana to 22 karty numerowane od 0 (Głupiec) do 21 (Świat). Reprezentują one wielkie tematy życiowe, duchowe lekcje i archetypy — od niewinności Głupca, przez transformację Śmierci, po spełnienie Świata. Do Wielkich Arkanów należą m.in.: Głupiec, Mag, Najwyższa Kapłanka, Cesarzowa, Cesarz, Hierofant, Kochankowie, Rydwan, Siła, Pustelnik, Koło Fortuny, Sprawiedliwość, Wisielec, Śmierć, Umiarkowanie, Diabeł, Wieża, Gwiazda, Księżyc, Słońce, Sąd Ostateczny i Świat."
+        },
+        {
+          "type": "list",
+          "heading": "Małe Arkana — 56 kart codzienności",
+          "items": [
+            "**Kielichy** — emocje, uczucia, relacje, intuicja (żywioł wody)",
+            "**Pentakle** — finanse, praca, zdrowie, materia (żywioł ziemi)",
+            "**Miecze** — myśli, konflikty, komunikacja, intelekt (żywioł powietrza)",
+            "**Różdżki** — pasja, energia, kreatywność, działanie (żywioł ognia)"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Pozycja prosta vs odwrócona",
+          "body": "Każda karta tarota może pojawić się w dwóch pozycjach: prostej (upright) i odwróconej (reversed). Pozycja prosta zazwyczaj wskazuje na pozytywne lub bezpośrednie znaczenie karty, natomiast pozycja odwrócona może sugerować blokady, wyzwania lub wewnętrzne aspekty danego tematu. Odwrócona karta nie oznacza automatycznie czegoś negatywnego — często zachęca do głębszej refleksji."
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak korzystać z losowania kart tarota?",
+          "items": [
+            "Skup się na pytaniu lub temacie, który Cię nurtuje",
+            "Kliknij „Wylosuj Kartę\" — zostanie wybrana losowa karta z pełnej talii 78 kart",
+            "Kliknij kartę, aby ją obrócić i zobaczyć, którą wylosowałeś",
+            "Przeczytaj znaczenie karty w wylosowanej pozycji (prostej lub odwróconej)",
+            "Zastanów się, jak przesłanie karty odnosi się do Twojego pytania"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Najczęściej zadawane pytania",
+          "items": [
+            {
+              "q": "Czy losowanie kart tarota jest darmowe?",
+              "a": "Tak, narzędzie jest całkowicie darmowe i nie wymaga rejestracji."
+            },
+            {
+              "q": "Ile kart zawiera talia?",
+              "a": "Nasza talia zawiera pełne 78 kart — 22 karty Wielkich Arkanów i 56 kart Małych Arkanów (Kielichy, Pentakle, Miecze, Różdżki)."
+            },
+            {
+              "q": "Jak działa losowanie?",
+              "a": "Używamy kryptograficznie bezpiecznego generatora liczb losowych (crypto.getRandomValues), który zapewnia w pełni losowy wybór karty i jej pozycji."
+            },
+            {
+              "q": "Czy tarot przepowiada przyszłość?",
+              "a": "Tarot jest narzędziem do refleksji i samopoznania, a nie przepowiadania przyszłości. Karty mogą pomóc spojrzeć na sytuację z nowej perspektywy."
+            }
+          ]
+        }
+      ]
     },
     "random-yesno": {
       "name": "Losuj Tak/Nie",
@@ -482,7 +1576,14 @@
       "questionPlaceholder": "Np. Czy powinienem to zrobić?",
       "generate": "Losuj Odpowiedź",
       "result": "Odpowiedź losu",
-      "tryAgain": "Spróbuj ponownie"
+      "tryAgain": "Spróbuj ponownie",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Generator Decyzji Tak/Nie",
+          "body": "Nie możesz się zdecydować? Pozwól losowi wybrać za Ciebie! Nasz generator daje szansę 50/50 na każdy wynik. Animowany interfejs sprawia, że podejmowanie decyzji jest przyjemne i ekscytujące. Idealne do codziennych dylematów."
+        }
+      ]
     },
     "proportion-calculator": {
       "name": "Kalkulator Proporcji",
@@ -499,7 +1600,14 @@
       "result": "Wynik",
       "formula": "Wzór: A : B = C : X → X = (B × C) ÷ A",
       "copy": "Kopiuj wynik",
-      "clear": "Wyczyść"
+      "clear": "Wyczyść",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Proporcji Online",
+          "body": "Nasz kalkulator proporcji rozwiązuje równania w formie A/B = C/X. Wystarczy wprowadzić trzy znane wartości, a kalkulator obliczy czwartą. Proporcje są używane w wielu dziedzinach: matematyce, gotowaniu, fotografii, budownictwie i projektowaniu. Wzór: X = (B × C) / A"
+        }
+      ]
     },
     "bmi-calculator": {
       "name": "Kalkulator BMI",
@@ -519,7 +1627,48 @@
       "obese": "Otyłość",
       "severelyObese": "Otyłość II stopnia",
       "morbidlyObese": "Otyłość III stopnia",
-      "clear": "Wyczyść"
+      "clear": "Wyczyść",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator BMI Online - Oblicz Swój Wskaźnik Masy Ciała",
+          "body": "BMI (Body Mass Index) to międzynarodowa miara używana do oceny, czy masa ciała osoby dorosłej jest prawidłowa w stosunku do jej wzrostu. Wzór: BMI = waga (kg) ÷ wzrost² (m). Przykład: 70 kg ÷ (1.75 m)² = 22.9"
+        },
+        {
+          "type": "table",
+          "heading": "Kategorie BMI według WHO",
+          "headers": [
+            "Kategoria",
+            "Zakres BMI"
+          ],
+          "rows": [
+            [
+              "Niedowaga",
+              "< 18.5"
+            ],
+            [
+              "Waga prawidłowa",
+              "18.5 - 24.9"
+            ],
+            [
+              "Nadwaga",
+              "25 - 29.9"
+            ],
+            [
+              "Otyłość I stopnia",
+              "30 - 34.9"
+            ],
+            [
+              "Otyłość II stopnia",
+              "35 - 39.9"
+            ],
+            [
+              "Otyłość III stopnia",
+              "≥ 40"
+            ]
+          ]
+        }
+      ]
     },
     "weighted-average": {
       "name": "Średnia Ważona",
@@ -538,7 +1687,69 @@
       "clear": "Wyczyść wszystko",
       "copy": "Kopiuj wynik",
       "example": "Przykład",
-      "loadExample": "Załaduj przykład ocen"
+      "loadExample": "Załaduj przykład ocen",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Średniej Ważonej Online",
+          "body": "Średnia ważona to specjalny rodzaj średniej, w której każda wartość ma przypisaną wagę określającą jej znaczenie. Jest szeroko stosowana w szkołach, na uczelniach, w finansach i analizie danych. Wzór: x̄ = (w₁·x₁ + w₂·x₂ + ... + wₙ·xₙ) / (w₁ + w₂ + ... + wₙ)"
+        },
+        {
+          "type": "list",
+          "heading": "Gdzie stosuje się średnią ważoną?",
+          "items": [
+            "**Szkoła i studia** - obliczanie średniej ocen z różnymi wagami",
+            "**Finanse** - obliczanie średniej ważonej kosztu kapitału (WACC)",
+            "**Inwestycje** - obliczanie średniej ceny zakupu akcji",
+            "**Statystyka** - analiza danych z różną istotnością obserwacji",
+            "**Ocena pracowników** - ważone kryteria oceny"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Średnia ważona vs zwykła średnia",
+          "headers": [
+            "Cecha",
+            "Średnia arytmetyczna",
+            "Średnia ważona"
+          ],
+          "rows": [
+            [
+              "Wagi",
+              "Wszystkie równe (1)",
+              "Różne dla każdej wartości"
+            ],
+            [
+              "Wzór",
+              "Σx / n",
+              "Σ(w·x) / Σw"
+            ],
+            [
+              "Zastosowanie",
+              "Równoważne dane",
+              "Dane o różnej ważności"
+            ]
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy wagi muszą sumować się do 1 lub 100%?",
+              "a": "Nie, wagi mogą być dowolnymi liczbami dodatnimi. Kalkulator automatycznie dzieli sumę iloczynów przez sumę wag."
+            },
+            {
+              "q": "Jak obliczyć średnią ważoną ocen w dzienniku?",
+              "a": "Wprowadź każdą ocenę jako wartość, a przypisaną jej wagę (np. sprawdzian = 3, kartkówka = 2, odpowiedź = 1)."
+            },
+            {
+              "q": "Czy mogę użyć wag ujemnych?",
+              "a": "Nie, wagi muszą być liczbami dodatnimi."
+            }
+          ]
+        }
+      ]
     },
     "sleep-calculator": {
       "name": "Kalkulator Snu",
@@ -559,7 +1770,103 @@
       "timeToFallAsleep": "Czas zasypiania",
       "results": "Wyniki",
       "bedtimeResults": "Powinieneś położyć się spać o:",
-      "wakeUpResults": "Powinieneś wstać o:"
+      "wakeUpResults": "Powinieneś wstać o:",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Snu Online - Oblicz Optymalny Czas Snu",
+          "body": "Nasz darmowy kalkulator snu pomoże Ci obliczyć idealną godzinę zasypiania lub budzenia na podstawie 90-minutowych cykli snu. Budzenie się w odpowiednim momencie cyklu snu sprawia, że czujesz się wypoczęty i pełen energii."
+        },
+        {
+          "type": "grid",
+          "heading": "Czym są cykle snu?",
+          "items": [
+            {
+              "title": "Faza 1 - Zasypianie",
+              "body": "Lekki sen, łatwe wybudzenie. Trwa 5-10 minut."
+            },
+            {
+              "title": "Faza 2 - Sen lekki",
+              "body": "Spadek temperatury ciała, zwolnienie tętna. ~20 min."
+            },
+            {
+              "title": "Faza 3 - Sen głęboki",
+              "body": "Regeneracja ciała, odbudowa tkanek. Najtrudniej się obudzić."
+            },
+            {
+              "title": "Faza REM",
+              "body": "Marzenia senne, przetwarzanie wspomnień. ~90 min cały cykl."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Ile snu potrzebujesz?",
+          "headers": [
+            "Grupa wiekowa",
+            "Zalecany czas snu"
+          ],
+          "rows": [
+            [
+              "Noworodki (0-3 mies.)",
+              "14-17 godzin"
+            ],
+            [
+              "Niemowlęta (4-11 mies.)",
+              "12-15 godzin"
+            ],
+            [
+              "Małe dzieci (1-2 lat)",
+              "11-14 godzin"
+            ],
+            [
+              "Przedszkolaki (3-5 lat)",
+              "10-13 godzin"
+            ],
+            [
+              "Dzieci (6-13 lat)",
+              "9-11 godzin"
+            ],
+            [
+              "Nastolatki (14-17 lat)",
+              "8-10 godzin"
+            ],
+            [
+              "Dorośli (18-64 lat)",
+              "7-9 godzin"
+            ],
+            [
+              "Seniorzy (65+ lat)",
+              "7-8 godzin"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Wskazówki dotyczące higieny snu",
+          "items": [
+            "**Stały harmonogram** - Kładź się i wstawaj o tych samych godzinach",
+            "**Ciemna sypialnia** - Zaciemnij pokój zasłonami lub maską na oczy",
+            "**Bez ekranów** - Odłóż telefon minimum 30 min przed snem",
+            "**Odpowiednia temperatura** - Utrzymuj 18-20°C w sypialni",
+            "**Unikaj kofeiny** - Nie pij kawy minimum 6 godzin przed snem"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Dlaczego cykl snu trwa 90 minut?",
+              "a": "90 minut to średni czas trwania jednego pełnego cyklu snu (przejścia przez wszystkie fazy). Ta wartość może wahać się od 80 do 120 minut."
+            },
+            {
+              "q": "Ile cykli snu potrzebuję?",
+              "a": "Dorośli potrzebują 5-6 pełnych cykli snu (7.5-9 godzin). Minimum 4 cykle (6 godzin) aby funkcjonować prawidłowo."
+            }
+          ]
+        }
+      ]
     },
     "calorie-calculator": {
       "name": "Kalkulator Kalorii",
@@ -597,7 +1904,99 @@
       "kcalPerDay": "kcal/dzień",
       "weeklyChange": "Tygodniowo",
       "goalResults": "Zapotrzebowanie kaloryczne wg celu",
-      "macros": "Makroskładniki"
+      "macros": "Makroskładniki",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Kalorii Online - Oblicz Zapotrzebowanie Kaloryczne",
+          "body": "Nasz kalkulator kalorii oblicza Twoje dzienne zapotrzebowanie kaloryczne na podstawie wzoru Mifflin-St Jeor. Uwzględnia wagę, wzrost, wiek, płeć i poziom aktywności fizycznej, obliczając BMR (podstawowa przemiana materii) i TDEE (całkowite dzienne zapotrzebowanie energetyczne)."
+        },
+        {
+          "type": "text",
+          "heading": "Czym jest BMR i TDEE?",
+          "body": "BMR (Basal Metabolic Rate) to kalorie spalane w stanie spoczynku — energia potrzebna do podstawowych funkcji życiowych. TDEE (Total Daily Energy Expenditure) to BMR powiększone o kalorie spalane podczas aktywności fizycznej. Do planowania diety używamy TDEE."
+        },
+        {
+          "type": "table",
+          "heading": "Poziomy aktywności fizycznej",
+          "headers": [
+            "Poziom",
+            "Opis",
+            "Mnożnik"
+          ],
+          "rows": [
+            [
+              "Siedzący",
+              "Praca biurowa, brak ćwiczeń",
+              "×1,2"
+            ],
+            [
+              "Lekko aktywny",
+              "Ćwiczenia 1-3 razy w tygodniu",
+              "×1,375"
+            ],
+            [
+              "Umiarkowanie aktywny",
+              "Ćwiczenia 3-5 razy w tygodniu",
+              "×1,55"
+            ],
+            [
+              "Bardzo aktywny",
+              "Intensywne ćwiczenia 6-7 razy w tygodniu",
+              "×1,725"
+            ],
+            [
+              "Ekstremalnie aktywny",
+              "Sportowiec, ciężka praca fizyczna",
+              "×1,9"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Makroskładniki",
+          "headers": [
+            "Makroskładnik",
+            "Kalorie/gram",
+            "Rola w organizmie"
+          ],
+          "rows": [
+            [
+              "Białko",
+              "4 kcal/g",
+              "Budowa i regeneracja mięśni, enzymy, hormony"
+            ],
+            [
+              "Węglowodany",
+              "4 kcal/g",
+              "Główne źródło energii, paliwo dla mózgu i mięśni"
+            ],
+            [
+              "Tłuszcze",
+              "9 kcal/g",
+              "Hormony, wchłanianie witamin, ochrona narządów"
+            ]
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czym różni się BMR od TDEE?",
+              "a": "BMR to kalorie spalane w stanie spoczynku. TDEE to BMR plus kalorie z aktywności fizycznej i trawienia. Do diety używamy TDEE."
+            },
+            {
+              "q": "Jak dokładny jest kalkulator?",
+              "a": "Formuła Mifflin-St Jeor ma dokładność ~±10%. Wynik powinien być punktem wyjścia — obserwuj wagę 2-3 tygodnie i dostosuj."
+            },
+            {
+              "q": "Ile białka powinienem jeść?",
+              "a": "Dla osób aktywnych: 1,6-2,2 g białka na kg masy ciała dziennie. Przy odchudzaniu: 2,0-2,4 g/kg."
+            }
+          ]
+        }
+      ]
     },
     "blood-type-calculator": {
       "name": "Kalkulator Grupy Krwi",
@@ -615,7 +2014,37 @@
       "results": "Wyniki",
       "probability": "Prawdopodobieństwo",
       "possibleTypes": "Możliwe grupy krwi dziecka",
-      "noResults": "Brak wyników"
+      "noResults": "Brak wyników",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Grupy Krwi - Oblicz Grupę Krwi Dziecka",
+          "body": "Nasz kalkulator grupy krwi oblicza prawdopodobieństwo poszczególnych grup krwi dziecka na podstawie grup krwi rodziców. Uwzględnia dziedziczenie systemu ABO oraz czynnika Rh zgodnie z prawami genetyki Mendla."
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa dziedziczenie grupy krwi?",
+          "body": "Grupa krwi jest determinowana przez geny odziedziczone od obojga rodziców. System ABO ma trzy allele: A, B i O. Allele A i B są dominujące nad O. Czynnik Rh (+ lub -) dziedziczy się niezależnie — allel Rh+ jest dominujący nad Rh-."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy dwa rodzice z grupą 0 mogą mieć dziecko z inną grupą?",
+              "a": "Nie. Oboje rodziców z grupą 0 mają genotyp OO, więc dziecko może odziedziczyć tylko allele O — będzie miało grupę 0."
+            },
+            {
+              "q": "Czy ten kalkulator jest w 100% dokładny?",
+              "a": "Kalkulator pokazuje prawdopodobieństwa na podstawie standardowej genetyki. W bardzo rzadkich przypadkach mutacje genetyczne mogą dać nieoczekiwane wyniki."
+            },
+            {
+              "q": "Co to jest czynnik Rh?",
+              "a": "Czynnik Rh to białko na powierzchni czerwonych krwinek. Rh+ (obecne) jest dominujące nad Rh- (brak). Około 85% populacji ma Rh+."
+            }
+          ]
+        }
+      ]
     },
     "inflation-calculator": {
       "name": "Kalkulator Inflacji",
@@ -635,7 +2064,48 @@
       "yearByYear": "Zmiana wartości rok po roku",
       "year": "Rok",
       "value": "Wartość",
-      "loss": "Utrata"
+      "loss": "Utrata",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kalkulator Inflacji - Oblicz Siłę Nabywczą Pieniądza",
+          "body": "Nasz kalkulator inflacji pokazuje jak inflacja wpływa na wartość Twoich pieniędzy w czasie. Oblicz ile będą warte Twoje oszczędności za 5, 10 lub 20 lat przy różnych poziomach inflacji. Zobacz utratę siły nabywczej rok po roku."
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa inflacja?",
+          "body": "Inflacja to wzrost ogólnego poziomu cen w gospodarce. Oznacza to, że za tę samą kwotę pieniędzy z czasem można kupić coraz mniej. Inflacja 5% rocznie oznacza, że po 10 latach Twoje 1000 zł będzie warte tylko około 614 zł w dzisiejszych cenach."
+        },
+        {
+          "type": "list",
+          "heading": "Jak chronić oszczędności przed inflacją?",
+          "items": [
+            "**Lokaty bankowe** - Podstawowa ochrona, ale często poniżej inflacji",
+            "**Obligacje skarbowe** - Indeksowane inflacją obligacje chronią kapitał",
+            "**Inwestycje w akcje** - Długoterminowo przewyższają inflację",
+            "**Nieruchomości** - Ceny nieruchomości zazwyczaj rosną z inflacją",
+            "**Złoto i metale szlachetne** - Tradycyjna ochrona przed inflacją"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Jaka jest aktualna inflacja w Polsce?",
+              "a": "Aktualna inflacja zmienia się co miesiąc. Sprawdź dane GUS (Główny Urząd Statystyczny) na stronie stat.gov.pl."
+            },
+            {
+              "q": "Dlaczego inflacja jest ważna?",
+              "a": "Inflacja zmniejsza siłę nabywczą oszczędności. Jeśli Twoje pieniądze nie rosną szybciej niż inflacja, tracisz realną wartość."
+            },
+            {
+              "q": "Czy deflacja jest lepsza od inflacji?",
+              "a": "Umiarkowana inflacja (2-3%) jest uznawana za zdrową dla gospodarki. Deflacja (spadek cen) może prowadzić do recesji."
+            }
+          ]
+        }
+      ]
     },
     "dog-years-calculator": {
       "name": "Psie Lata na Ludzkie",
@@ -664,7 +2134,44 @@
       "young": "Młody",
       "adult": "Dorosły",
       "senior": "Senior",
-      "geriatric": "Wiekowy"
+      "geriatric": "Wiekowy",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Psie Lata na Ludzkie - Kalkulator Wieku Psa",
+          "body": "Nasz kalkulator psich lat przelicza wiek psa na ludzkie lata uwzględniając rozmiar psa. Popularne mnożenie przez 7 to uproszczenie — w rzeczywistości psy starzeją się szybciej na początku życia, a tempo spowalnia z wiekiem. Małe psy żyją dłużej niż duże."
+        },
+        {
+          "type": "text",
+          "heading": "Dlaczego pomnóż przez 7 to mit?",
+          "body": "Zasada \"1 psi rok = 7 ludzkich lat\" jest zbyt uproszczona. Pies w wieku 1 roku jest znacznie bardziej dojrzały niż 7-letnie dziecko. Nowoczesne formuły uwzględniają, że psy starzeją się nieliniowo — szybciej w młodości i wolniej w późniejszych latach."
+        },
+        {
+          "type": "list",
+          "heading": "Etapy życia psa",
+          "items": [
+            "**Szczenię (0-1 rok)** - Szybki wzrost i rozwój",
+            "**Junior (1-2 lata)** - Dojrzewanie, pełnia energii",
+            "**Dorosły (2-7 lat)** - Stabilność, najlepsze lata",
+            "**Senior (7-10 lat)** - Spowolnienie, wymaga więcej opieki",
+            "**Geriatryczny (10+ lat)** - Wymaga specjalnej diety i opieki"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy duże psy starzeją się szybciej?",
+              "a": "Tak, duże i olbrzymie rasy starzeją się szybciej niż małe. Chihuahua może żyć 15-20 lat, podczas gdy Dog Niemiecki przeciętnie 7-10 lat."
+            },
+            {
+              "q": "Kiedy pies jest \"stary\"?",
+              "a": "Zależy od rozmiaru: małe psy stają się seniorami w wieku ~10 lat, średnie ~8 lat, duże ~6 lat, olbrzymie ~5 lat."
+            }
+          ]
+        }
+      ]
     },
     "roman-numerals": {
       "name": "Kalkulator Cyfr Rzymskich",
@@ -685,7 +2192,86 @@
       "clear": "Wyczyść",
       "invalidNumber": "Wpisz liczbę od 1 do 3999",
       "invalidRoman": "Nieprawidłowa cyfra rzymska",
-      "referenceTable": "Tabela wartości"
+      "referenceTable": "Tabela wartości",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Cyfry Rzymskie - Konwerter i Kalkulator Online",
+          "body": "Nasz darmowy konwerter cyfr rzymskich pozwala na szybkie przeliczanie między systemem arabskim (1, 2, 3...) a rzymskim (I, II, III...). Wpisz liczbę arabską lub rzymską, a kalkulator automatycznie ją przekonwertuje. Obsługuje liczby od 1 do 3999."
+        },
+        {
+          "type": "table",
+          "heading": "7 podstawowych symboli",
+          "headers": [
+            "Symbol",
+            "Wartość"
+          ],
+          "rows": [
+            [
+              "I",
+              "1"
+            ],
+            [
+              "V",
+              "5"
+            ],
+            [
+              "X",
+              "10"
+            ],
+            [
+              "L",
+              "50"
+            ],
+            [
+              "C",
+              "100"
+            ],
+            [
+              "D",
+              "500"
+            ],
+            [
+              "M",
+              "1000"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa zapis subtraktywny?",
+          "body": "Gdy mniejszy symbol stoi przed większym, odejmujemy jego wartość. Na przykład: IV = 5-1 = 4, IX = 10-1 = 9, XL = 50-10 = 40, XC = 100-10 = 90, CD = 500-100 = 400, CM = 1000-100 = 900."
+        },
+        {
+          "type": "list",
+          "heading": "Gdzie dziś używamy cyfr rzymskich?",
+          "items": [
+            "**Zegary** - Tarcze zegarowe tradycyjnie używają cyfr rzymskich",
+            "**Rozdziały książek** - Numerowanie rozdziałów i tomów",
+            "**Daty** - Rok na budynkach, filmach (np. MMXXVI = 2026)",
+            "**Władcy i papieże** - Jan Paweł II, Elżbieta II",
+            "**Kolejne edycje** - Super Bowl LVIII, Olimpiada XXXIII"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Dlaczego maksimum to 3999?",
+              "a": "W standardowym systemie nie istnieje symbol dla 5000. Liczby większe wymagają specjalnych oznaczeń (np. nadkreślenie = ×1000)."
+            },
+            {
+              "q": "Czy 4 pisze się IIII czy IV?",
+              "a": "Obie formy są poprawne. IV (zapis subtraktywny) jest bardziej powszechny, ale IIII pojawia się na wielu zegarach."
+            },
+            {
+              "q": "Czy istnieje symbol dla zera?",
+              "a": "Nie. Rzymianie nie mieli pojęcia zera jako liczby. Ich system był addytywny i nie wymagał symbolu dla pustej wartości."
+            }
+          ]
+        }
+      ]
     },
     "cat-years-calculator": {
       "name": "Kocie Lata na Ludzkie",
@@ -708,7 +2294,101 @@
       "adult": "Dorosły",
       "mature": "Dojrzały",
       "senior": "Senior",
-      "geriatric": "Wiekowy"
+      "geriatric": "Wiekowy",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Kocie Lata na Ludzkie - Kalkulator Wieku Kota",
+          "body": "Nasz kalkulator kocich lat przelicza wiek kota na ludzkie lata. Popularna zasada \"1 koci rok = 7 ludzkich lat\" jest uproszczeniem. Koty starzeją się szybko w pierwszych dwóch latach życia, a potem tempo zwalnia."
+        },
+        {
+          "type": "text",
+          "heading": "Dlaczego mnożenie przez 7 nie działa?",
+          "body": "Roczny kot jest bardziej dojrzały niż 7-letnie dziecko. Według AAHA, kot po pierwszym roku życia odpowiada 15-letniemu człowiekowi, a po drugim roku — 24-letniemu. Każdy kolejny rok to około 4 ludzkie lata."
+        },
+        {
+          "type": "table",
+          "heading": "Tabela przeliczania kocich lat",
+          "headers": [
+            "Wiek kota",
+            "Wiek ludzki"
+          ],
+          "rows": [
+            [
+              "1 rok",
+              "15 lat"
+            ],
+            [
+              "2 lata",
+              "24 lata"
+            ],
+            [
+              "5 lat",
+              "36 lat"
+            ],
+            [
+              "10 lat",
+              "56 lat"
+            ],
+            [
+              "15 lat",
+              "76 lat"
+            ],
+            [
+              "20 lat",
+              "96 lat"
+            ]
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Etapy życia kota",
+          "items": [
+            {
+              "title": "Kocię (0-6 mies.)",
+              "body": "Szybki wzrost, nauka, socjalizacja"
+            },
+            {
+              "title": "Junior (7 mies.-2 lata)",
+              "body": "Osiąganie pełnego rozmiaru"
+            },
+            {
+              "title": "Dorosły (3-6 lat)",
+              "body": "Stabilność, najlepsze lata"
+            },
+            {
+              "title": "Dojrzały (7-10 lat)",
+              "body": "Mniejsza aktywność"
+            },
+            {
+              "title": "Senior (11-14 lat)",
+              "body": "Wymaga więcej opieki zdrowotnej"
+            },
+            {
+              "title": "Geriatryczny (15+ lat)",
+              "body": "Specjalna dieta i monitoring"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Ile żyje przeciętny kot?",
+              "a": "Koty domowe żyją średnio 12-18 lat. Koty wychodzące na zewnątrz żyją krócej (10-12 lat) ze względu na ryzyka."
+            },
+            {
+              "q": "Jaki jest rekord długości życia kota?",
+              "a": "Najstarszym udokumentowanym kotem była Creme Puff z Teksasu, która dożyła 38 lat i 3 dni (1967-2005)."
+            },
+            {
+              "q": "Jak wydłużyć życie kota?",
+              "a": "Regularne wizyty u weterynarza, zdrowa dieta, utrzymanie optymalnej wagi, aktywność umysłowa i fizyczna."
+            }
+          ]
+        }
+      ]
     }
   },
   "common": {

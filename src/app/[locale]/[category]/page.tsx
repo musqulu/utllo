@@ -1,65 +1,105 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { Zap, Shield, UserX } from "lucide-react";
+import { notFound } from "next/navigation";
 import { i18n, Locale } from "@/lib/i18n/config";
 import { getDictionary } from "@/lib/i18n/dictionaries";
-import { getToolsByCategory, categoryMeta, getToolUrl, getCategoryUrl } from "@/lib/tools";
+import {
+  getToolsByCategory,
+  categoryMeta,
+  getToolUrl,
+  getCategoryUrl,
+  getCategoryBySlug,
+  getCategorySlug,
+  allCategoryIds,
+  ToolCategory,
+} from "@/lib/tools";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui";
 import { JsonLd, generateCollectionPageSchema, generateBreadcrumbSchema } from "@/components/seo/json-ld";
 import { Badge } from "@/components/ui/badge";
+import { SeoContent, type SeoBlock } from "@/components/seo/seo-content";
 
-const BASE_URL = "https://utllo.com";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://utllo.com";
 
 interface PageProps {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: Locale; category: string }>;
 }
 
 export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ locale }));
+  const params: { locale: string; category: string }[] = [];
+
+  for (const locale of i18n.locales) {
+    for (const categoryId of allCategoryIds) {
+      params.push({
+        locale,
+        category: getCategorySlug(categoryId, locale),
+      });
+    }
+  }
+
+  return params;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale, category: categorySlug } = await params;
+  const categoryId = getCategoryBySlug(categorySlug, locale);
+
+  if (!categoryId) return { title: "Not Found" };
+
   const dict = await getDictionary(locale);
-  const categoryPage = dict.categoryPages.randomizers;
+  const categoryPage = dict.categoryPages[categoryId];
+  const catSlug = getCategorySlug(categoryId, locale);
+
+  // Build hreflang alternates
+  const languages: Record<string, string> = {};
+  for (const loc of i18n.locales) {
+    languages[loc] = `${BASE_URL}/${loc}/${getCategorySlug(categoryId, loc)}`;
+  }
 
   return {
     title: categoryPage.seoTitle,
     description: categoryPage.seoDescription,
-    keywords: [
-      "losuj liczby",
-      "losuj liczbe",
-      "generator losowy",
-      "losuj tak nie",
-      "losowanie online",
-      "generator liczb",
-      "losowy cytat",
-      "karta tarota",
-      "losuj kartę tarota",
-      "tarot online",
-      "losowanie kart tarota",
-      "wirtualny tarot",
-      "darmowy tarot",
-    ],
+    keywords: categoryPage.keywords || [],
     alternates: {
-      canonical: `${BASE_URL}/${locale}/${categoryMeta.randomizers.slug}`,
+      canonical: `${BASE_URL}/${locale}/${catSlug}`,
+      languages,
     },
     openGraph: {
       title: categoryPage.seoTitle,
       description: categoryPage.seoDescription,
-      url: `${BASE_URL}/${locale}/${categoryMeta.randomizers.slug}`,
+      url: `${BASE_URL}/${locale}/${catSlug}`,
       siteName: dict.brand,
-      locale: locale,
+      locale: locale === "pl" ? "pl_PL" : "en_US",
       type: "website",
     },
   };
 }
 
-export default async function RandomizersCategoryPage({ params }: PageProps) {
-  const { locale } = await params;
+// Color map for category dots
+const CATEGORY_COLORS: Record<ToolCategory, string> = {
+  tools: "blue",
+  generators: "pink",
+  converters: "green",
+  randomizers: "orange",
+  calculators: "purple",
+};
+
+// Other categories to show in "Discover" section (excluding current)
+function getOtherCategories(current: ToolCategory): ToolCategory[] {
+  const others: ToolCategory[] = ["tools", "generators", "converters", "randomizers", "calculators"];
+  return others.filter((c) => c !== current).slice(0, 3);
+}
+
+export default async function CategoryPage({ params }: PageProps) {
+  const { locale, category: categorySlug } = await params;
+  const categoryId = getCategoryBySlug(categorySlug, locale);
+
+  if (!categoryId) notFound();
+
   const dict = await getDictionary(locale);
-  const tools = getToolsByCategory("randomizers");
-  const categoryPage = dict.categoryPages.randomizers;
+  const tools = getToolsByCategory(categoryId);
+  const categoryPage = dict.categoryPages[categoryId];
+  const catSlug = getCategorySlug(categoryId, locale);
 
   const readyTools = tools.filter((t) => t.isReady);
   const comingSoonTools = tools.filter((t) => !t.isReady);
@@ -67,7 +107,7 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
   const collectionSchema = generateCollectionPageSchema({
     name: categoryPage.title,
     description: categoryPage.seoDescription,
-    url: `${BASE_URL}/${locale}/${categoryMeta.randomizers.slug}`,
+    url: `${BASE_URL}/${locale}/${catSlug}`,
     items: readyTools.map((tool) => ({
       name: dict.tools[tool.id as keyof typeof dict.tools]?.name || tool.id,
       url: `${BASE_URL}${getToolUrl(tool, locale)}`,
@@ -76,8 +116,10 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: dict.categoryPages.breadcrumbs.home, url: `${BASE_URL}/${locale}` },
-    { name: categoryPage.title, url: `${BASE_URL}/${locale}/${categoryMeta.randomizers.slug}` },
+    { name: categoryPage.title, url: `${BASE_URL}/${locale}/${catSlug}` },
   ]);
+
+  const otherCategories = getOtherCategories(categoryId);
 
   return (
     <>
@@ -102,7 +144,7 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
             {categoryPage.subtitle}
           </p>
           <p className="mt-4 text-sm text-muted-foreground">
-            {readyTools.length} dostępnych generatorów
+            {readyTools.length} {locale === "pl" ? "dostępnych narzędzi" : "available tools"}
           </p>
         </div>
 
@@ -130,7 +172,9 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
 
         {comingSoonTools.length > 0 && (
           <div className="mt-12 max-w-5xl mx-auto">
-            <h2 className="text-xl font-semibold mb-6 text-muted-foreground">Wkrótce dostępne</h2>
+            <h2 className="text-xl font-semibold mb-6 text-muted-foreground">
+              {locale === "pl" ? "Wkrótce dostępne" : "Coming soon"}
+            </h2>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {comingSoonTools.map((tool) => {
                 const toolDict = dict.tools[tool.id as keyof typeof dict.tools];
@@ -142,9 +186,13 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
                         <div className="p-2 rounded-lg bg-muted text-muted-foreground w-fit">
                           <Icon className="h-6 w-6" />
                         </div>
-                        <Badge variant="secondary">Wkrótce</Badge>
+                        <Badge variant="secondary">
+                          {locale === "pl" ? "Wkrótce" : "Soon"}
+                        </Badge>
                       </div>
-                      <CardTitle className="text-lg mt-3 text-muted-foreground">{toolDict?.name || tool.id}</CardTitle>
+                      <CardTitle className="text-lg mt-3 text-muted-foreground">
+                        {toolDict?.name || tool.id}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <CardDescription>{toolDict?.description || ""}</CardDescription>
@@ -156,6 +204,7 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
           </div>
         )}
 
+        {/* Why Us Section */}
         <section className="mt-20 max-w-4xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">{dict.home.whyUs.title}</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -177,85 +226,33 @@ export default async function RandomizersCategoryPage({ params }: PageProps) {
           </div>
         </section>
 
-        <section className="mt-16 max-w-3xl mx-auto space-y-10">
-          <div>
-            <h2 className="text-2xl font-bold mb-4">Generatory losowe online - uczciwe losowanie</h2>
-            <p className="text-muted-foreground">
-              Nasze generatory losowe zapewniają szybkie i sprawiedliwe losowanie. Każdy wynik 
-              jest generowany za pomocą kryptograficznie bezpiecznych algorytmów, co gwarantuje 
-              pełną losowość i nieprzewidywalność rezultatów.
-            </p>
-          </div>
+        {/* SEO Content */}
+        {categoryPage.seoContent && (
+          <SeoContent blocks={categoryPage.seoContent as SeoBlock[]} />
+        )}
 
-          <div>
-            <h3 className="text-xl font-semibold mb-3">Losuj liczbę / liczby</h3>
-            <p className="text-muted-foreground">
-              Generuj losowe liczby w dowolnym zakresie. Ustaw minimum i maksimum, 
-              a generator wybierze losową liczbę lub zestaw liczb. Idealne do gier 
-              planszowych, konkursów, loterii i szybkich decyzji.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-3">Losuj Tak / Nie</h3>
-            <p className="text-muted-foreground">
-              Nie możesz się zdecydować? Nasz generator podejmie decyzję za Ciebie. 
-              Animowany interfejs sprawia, że losowanie jest zabawne i ekscytujące. 
-              Działa jak wirtualna moneta - szybko i bezstronnie.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-3">Do czego przydaje się losowanie?</h3>
-            <ul className="space-y-2 text-muted-foreground">
-              <li>Gry planszowe i RPG - rzuty kostką, losowanie kolejności</li>
-              <li>Konkursy i losowania - wybór zwycięzców</li>
-              <li>Edukacja - losowe pytania, grupy, zadania</li>
-              <li>Codzienne decyzje - co jeść, gdzie iść, co oglądać</li>
-              <li>Programowanie - generowanie danych testowych</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-3">Jak zapewniamy losowość?</h3>
-            <p className="text-muted-foreground">
-              Używamy interfejsu <code className="text-sm bg-muted px-1.5 py-0.5 rounded">crypto.getRandomValues()</code> 
-              dostępnego w nowoczesnych przeglądarkach, który zapewnia kryptograficznie bezpieczne 
-              generowanie liczb losowych. To ten sam mechanizm, którego używają banki i systemy bezpieczeństwa.
-            </p>
-          </div>
-        </section>
-
+        {/* Discover Other Categories */}
         <section className="mt-16 max-w-3xl mx-auto">
-          <h2 className="text-xl font-semibold mb-6 text-center">Odkryj inne kategorie</h2>
+          <h2 className="text-xl font-semibold mb-6 text-center">
+            {locale === "pl" ? "Odkryj inne kategorie" : "Discover other categories"}
+          </h2>
           <div className="grid sm:grid-cols-3 gap-4">
-            <Link href={getCategoryUrl("tools", locale)} className="group">
-              <Card className="h-full transition-all hover:shadow-lg hover:border-blue-500/50">
-                <CardContent className="p-6 text-center">
-                  <div className="w-3 h-3 rounded-full bg-blue-500 mx-auto mb-3" />
-                  <h3 className="font-semibold group-hover:text-blue-600 transition-colors">{dict.categories.tools}</h3>
-                  <p className="text-xs text-muted-foreground mt-1">{dict.categoryPages.tools.subtitle}</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href={getCategoryUrl("converters", locale)} className="group">
-              <Card className="h-full transition-all hover:shadow-lg hover:border-green-500/50">
-                <CardContent className="p-6 text-center">
-                  <div className="w-3 h-3 rounded-full bg-green-500 mx-auto mb-3" />
-                  <h3 className="font-semibold group-hover:text-green-600 transition-colors">{dict.categories.converters}</h3>
-                  <p className="text-xs text-muted-foreground mt-1">{dict.categoryPages.converters.subtitle}</p>
-                </CardContent>
-              </Card>
-            </Link>
-            <Link href={getCategoryUrl("calculators", locale)} className="group">
-              <Card className="h-full transition-all hover:shadow-lg hover:border-purple-500/50">
-                <CardContent className="p-6 text-center">
-                  <div className="w-3 h-3 rounded-full bg-purple-500 mx-auto mb-3" />
-                  <h3 className="font-semibold group-hover:text-purple-600 transition-colors">{dict.categories.calculators}</h3>
-                  <p className="text-xs text-muted-foreground mt-1">{dict.categoryPages.calculators.subtitle}</p>
-                </CardContent>
-              </Card>
-            </Link>
+            {otherCategories.map((catId) => {
+              const color = CATEGORY_COLORS[catId];
+              return (
+                <Link key={catId} href={getCategoryUrl(catId, locale)} className="group">
+                  <Card className={`h-full transition-all hover:shadow-lg hover:border-${color}-500/50`}>
+                    <CardContent className="p-6 text-center">
+                      <div className={`w-3 h-3 rounded-full bg-${color}-500 mx-auto mb-3`} />
+                      <h3 className="font-semibold transition-colors">{dict.categories[catId]}</h3>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {dict.categoryPages[catId].subtitle}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </section>
       </div>

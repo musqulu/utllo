@@ -1,0 +1,2415 @@
+{
+  "brand": "utllo",
+  "tagline": "Simple tools. Done right.",
+  "nav": {
+    "tools": "Tools",
+    "language": "Language",
+    "home": "Home",
+    "allTools": "All tools",
+    "popular": "Popular"
+  },
+  "categories": {
+    "available": "Popular",
+    "tools": "Tools",
+    "generators": "Generators",
+    "converters": "Converters",
+    "randomizers": "Randomizers",
+    "calculators": "Calculators"
+  },
+  "categoryPages": {
+    "tools": {
+      "title": "Online Tools",
+      "subtitle": "A collection of free tools for developers and creators",
+      "seoTitle": "Free Online Tools - Counters, Countdowns & More",
+      "seoDescription": "Free online tools. Character and word counter, dice roller, vacation and Christmas countdown. Everything runs in your browser.",
+      "keywords": [
+        "online tools",
+        "password generator",
+        "lorem ipsum generator",
+        "character counter",
+        "word counter",
+        "font generator",
+        "vacation countdown",
+        "christmas countdown",
+        "white screen",
+        "dead pixel test",
+        "amount in words",
+        "number to words",
+        "convert number to words",
+        "amount in words converter",
+        "caesar cipher",
+        "caesar cipher online",
+        "text encryption",
+        "cipher online",
+        "free online tools"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Free online tools - utllo",
+          "body": "A collection of free online tools that run directly in your browser. No installation, registration or payment required. Every tool is designed for speed and ease of use."
+        },
+        {
+          "type": "text",
+          "heading": "Vacation and holiday countdowns",
+          "body": "Check how many days, hours and minutes until summer vacation or Christmas. You can also set a custom date and track the countdown to any event."
+        },
+        {
+          "type": "text",
+          "heading": "Character and word counter",
+          "body": "Count characters, words, sentences and paragraphs in any text. Useful for social media posts, essays, CVs and anywhere text length matters."
+        },
+        {
+          "type": "text",
+          "heading": "Security and privacy",
+          "body": "All tools process data locally in your browser. No information is sent to our servers, ensuring full privacy."
+        }
+      ]
+    },
+    "generators": {
+      "title": "Online Generators",
+      "subtitle": "Generate passwords, Lorem Ipsum text and stylish fonts",
+      "seoTitle": "Free Online Generators - Passwords, Lorem Ipsum, Fonts",
+      "seoDescription": "Free online generators. Password generator, Lorem Ipsum, Unicode fonts. Fast and secure content generation in your browser.",
+      "keywords": [
+        "online generators",
+        "password generator",
+        "lorem ipsum generator",
+        "font generator",
+        "qr generator",
+        "qr code",
+        "qr code generator",
+        "free generators",
+        "text generator",
+        "Unicode generator"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Free online generators - utllo",
+          "body": "A collection of free online generators that run directly in your browser. Generate passwords, Lorem Ipsum text and stylish Unicode fonts with no installation, registration or fees."
+        },
+        {
+          "type": "text",
+          "heading": "Password generator",
+          "body": "Create strong, secure passwords with configurable length and character types. We use a cryptographically secure generator (crypto.getRandomValues), and passwords never leave your browser."
+        },
+        {
+          "type": "text",
+          "heading": "Lorem Ipsum generator",
+          "body": "Generate Lorem Ipsum placeholder text in three formats: paragraphs, sentences and single words. The ideal tool for designers and developers to fill mockups before adding real content."
+        },
+        {
+          "type": "text",
+          "heading": "Unicode font generator",
+          "body": "Turn plain text into stylish Unicode fonts you can copy and paste to Instagram, Facebook, Twitter and other platforms. Over 25 unique styles to choose from - from bold and italic to gothic and decorative fonts."
+        },
+        {
+          "type": "text",
+          "heading": "QR code generator",
+          "body": "Create QR codes for any content - links, text, phone numbers and WiFi details. Download the generated QR code as PNG in various sizes (128×128 to 1024×1024). Perfect for marketing, business cards and sharing information."
+        },
+        {
+          "type": "text",
+          "heading": "Security and privacy",
+          "body": "All generators process data locally in your browser. No information is sent to our servers, ensuring full privacy."
+        }
+      ]
+    },
+    "converters": {
+      "title": "Online Converters",
+      "subtitle": "Fast file and format conversion in your browser",
+      "seoTitle": "Free Online Converters - PDF, Images, Documents",
+      "seoDescription": "Free online converters. Convert PDF to JPG, PNG, Word and more. Fast browser-based conversion without uploading files to a server.",
+      "keywords": [
+        "online converters",
+        "pdf to jpg",
+        "pdf to png",
+        "file conversion",
+        "pdf converter",
+        "free converter",
+        "convert online",
+        "pdf to image",
+        "pdf to word",
+        "pdf to word converter",
+        "pdf to docx",
+        "pdf conversion",
+        "pdf to word online"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "File converters online - fast and secure",
+          "body": "Convert files directly in your browser without uploading them to external servers. Our converters run locally on your device, ensuring full privacy and security for your documents."
+        },
+        {
+          "type": "text",
+          "heading": "PDF to JPG and PNG",
+          "body": "Convert PDF document pages to high-quality JPG or PNG images. Useful for extracting pages from documents, creating thumbnails, and preparing materials for presentations or web publishing."
+        },
+        {
+          "type": "text",
+          "heading": "How does browser-based conversion work?",
+          "body": "Our converters use modern browser APIs to process files without a server connection. The file is loaded into the browser memory, processed locally and you can download the result immediately. Nothing is stored or sent."
+        },
+        {
+          "type": "text",
+          "heading": "PDF to Word (DOCX)",
+          "body": "Extract text from PDF documents and save it as an editable Word (DOCX) file. Ideal for editing content from received documents, copying text excerpts or archiving. The tool extracts text only - formatting and images are not transferred."
+        },
+        {
+          "type": "text",
+          "heading": "Supported formats",
+          "body": "We currently support PDF to image formats (JPG, PNG) and to editable Word (DOCX). We are working on adding more formats and expanding conversion options."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Are my files safe?",
+              "a": "Yes. All files are processed locally in your browser. We do not send any data to a server."
+            },
+            {
+              "q": "What is the file size limit?",
+              "a": "Because conversion runs in the browser, the limit depends on your device memory. Files up to 50 MB usually work without issues."
+            }
+          ]
+        }
+      ]
+    },
+    "randomizers": {
+      "title": "Random Generators",
+      "subtitle": "Draw random numbers, quotes and make decisions",
+      "seoTitle": "Random Number Generator Online - Random Numbers, Quotes, Yes/No",
+      "seoDescription": "Free online random generators. Draw random numbers, quotes, tarot cards. Yes/No decision maker. Fast and fair randomization.",
+      "keywords": [
+        "random number generator",
+        "draw random number",
+        "random generator",
+        "yes no generator",
+        "random picker online",
+        "number generator",
+        "random quote",
+        "tarot card",
+        "draw tarot card",
+        "tarot online",
+        "tarot card draw",
+        "virtual tarot",
+        "free tarot"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Online random generators - fair drawing",
+          "body": "Our random generators provide fast and fair results. Every outcome is generated using cryptographically secure algorithms, ensuring full randomness and unpredictability."
+        },
+        {
+          "type": "text",
+          "heading": "Draw a number / numbers",
+          "body": "Generate random numbers in any range. Set minimum and maximum, and the generator will pick a random number or set of numbers. Ideal for board games, contests, lotteries and quick decisions."
+        },
+        {
+          "type": "text",
+          "heading": "Yes / No generator",
+          "body": "Can't make up your mind? Our generator will decide for you. The animated interface makes the draw fun and exciting. Works like a virtual coin flip - fast and unbiased."
+        },
+        {
+          "type": "list",
+          "heading": "What is random drawing useful for?",
+          "items": [
+            "Board games and RPGs - dice rolls, turn order",
+            "Contests and giveaways - picking winners",
+            "Education - random questions, groups, tasks",
+            "Everyday decisions - what to eat, where to go, what to watch",
+            "Programming - generating test data"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "How do we ensure randomness?",
+          "body": "We use the crypto.getRandomValues() API available in modern browsers, which provides cryptographically secure random number generation. It's the same mechanism used by banks and security systems."
+        }
+      ]
+    },
+    "calculators": {
+      "title": "Online Calculators",
+      "subtitle": "Math and health calculations",
+      "seoTitle": "Free Online Calculators - BMI, Proportions & More",
+      "seoDescription": "Free online calculators. Calculate BMI, proportions, percentages and more. Fast and accurate calculations in your browser.",
+      "keywords": [
+        "online calculator",
+        "bmi calculator",
+        "proportion calculator",
+        "weighted average",
+        "average calculator",
+        "sleep calculator",
+        "sleep cycles",
+        "calorie calculator",
+        "daily calories",
+        "blood type calculator",
+        "blood type inheritance",
+        "child blood type",
+        "inflation calculator",
+        "inflation",
+        "purchasing power",
+        "dog years to human years",
+        "dog age calculator",
+        "dog age",
+        "roman numerals",
+        "roman numerals calculator",
+        "roman numeral converter",
+        "roman to arabic",
+        "cat years to human years",
+        "cat age calculator",
+        "cat age",
+        "how old is my cat",
+        "online calculations",
+        "free calculator",
+        "bmi calculator"
+      ],
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Online calculators - fast and accurate",
+          "body": "Our online calculators let you perform quick, precise calculations without installing any software. Each calculator is optimized for accuracy and ease of use."
+        },
+        {
+          "type": "text",
+          "heading": "BMI calculator",
+          "body": "Calculate your body mass index (BMI) by entering your weight and height. The calculator shows your weight category (underweight, normal, overweight, obesity) and result interpretation. Useful for health monitoring and diet planning."
+        },
+        {
+          "type": "text",
+          "heading": "Proportion calculator",
+          "body": "Solve proportion equations (a:b = c:x) quickly and accurately. Enter three known values and the calculator finds the fourth. Essential in math, cooking, photography, construction and many other fields."
+        },
+        {
+          "type": "text",
+          "heading": "Weighted average calculator",
+          "body": "Calculate weighted average with any number of values and weights. Ideal for school and academic grade averages, exam scores, project grades with different weights. Add and remove rows dynamically."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How is BMI calculated?",
+              "a": "BMI = weight (kg) / height (m)². For example, a person weighing 70 kg and 175 cm tall has BMI = 70 / 1.75² = 22.9 (normal range)."
+            },
+            {
+              "q": "What is weighted average?",
+              "a": "Weighted average is an average where each value has an assigned weight (importance). For example, an exam grade (weight 3) counts more than a quiz grade (weight 1)."
+            },
+            {
+              "q": "Are the results accurate?",
+              "a": "Yes. Our calculators use standard mathematical algorithms with precision to several decimal places."
+            }
+          ]
+        }
+      ]
+    },
+    "allTools": "All tools",
+    "viewTool": "Open tool",
+    "relatedTools": "Related tools",
+    "backToCategory": "Back to category",
+    "breadcrumbs": {
+      "home": "Home"
+    }
+  },
+  "home": {
+    "title": "Free Online Tools",
+    "subtitle": "A collection of simple and fast tools for everyone. Everything runs in your browser - safely and quickly.",
+    "whyUs": {
+      "title": "Why our tools?",
+      "fast": {
+        "title": "Fast & Free",
+        "description": "All tools work instantly, with no fees or limits."
+      },
+      "secure": {
+        "title": "Secure",
+        "description": "Data is processed locally in your browser. Nothing is sent to a server."
+      },
+      "noRegister": {
+        "title": "No registration",
+        "description": "Use right away, without creating an account or sharing personal data."
+      }
+    }
+  },
+  "tools": {
+    "password-generator": {
+      "name": "Password Generator",
+      "description": "Create strong and secure passwords with various configuration options.",
+      "seoTitle": "Password Generator Online - Strong & Secure Passwords",
+      "seoDescription": "Free online strong password generator. Create secure passwords with uppercase letters, numbers and symbols.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Secure Password Generator Online",
+          "body": "Our password generator creates strong, secure passwords directly in your browser. Passwords are never sent or stored anywhere. We use a cryptographically secure random number generator (crypto.getRandomValues) for maximum password security. You can set the password length from 8 to 64 characters and choose which character types to include: uppercase, lowercase, digits and special symbols."
+        }
+      ]
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate unique UUID v4 identifiers with one click.",
+      "seoTitle": "UUID Generator Online - Free Identifier Generator",
+      "seoDescription": "Free UUID v4 generator online. Create unique identifiers for your projects."
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate Lorem Ipsum placeholder text for your projects.",
+      "seoTitle": "Lorem Ipsum Generator Online - Placeholder Text",
+      "seoDescription": "Free Lorem Ipsum text generator. Create paragraphs, sentences and words for your projects.",
+      "paragraphs": "Paragraphs",
+      "sentences": "Sentences",
+      "words": "Words",
+      "count": "Count",
+      "generate": "Generate New Text",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is Lorem Ipsum?",
+          "body": "Lorem Ipsum is the standard placeholder text used in printing and typesetting since the 16th century. It is a distorted excerpt from Cicero's \"De finibus bonorum et malorum\". Our generator creates random Lorem Ipsum text in three formats: paragraphs, sentences and single words. You can adjust the amount of text with the slider. Lorem Ipsum is widely used by designers and developers to fill mockups and prototypes before adding real content."
+        }
+      ]
+    },
+    "color-converter": {
+      "name": "Color Converter",
+      "description": "Convert colors between HEX, RGB, HSL formats.",
+      "seoTitle": "Color Converter Online - HEX, RGB, HSL",
+      "seoDescription": "Free online color converter. Convert between HEX, RGB and HSL."
+    },
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "description": "Format and validate JSON data with syntax highlighting.",
+      "seoTitle": "JSON Formatter Online - Format & Validate",
+      "seoDescription": "Free online JSON formatter. Format, validate and browse JSON data."
+    },
+    "base64": {
+      "name": "Base64",
+      "description": "Encode and decode text in Base64 format.",
+      "seoTitle": "Base64 Encoder/Decoder Online",
+      "seoDescription": "Free online Base64 encoder and decoder. Convert text to and from Base64."
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Generate MD5, SHA-1, SHA-256 hashes for text.",
+      "seoTitle": "Hash Generator Online - MD5, SHA-1, SHA-256",
+      "seoDescription": "Free online hash generator. Create MD5, SHA-1, SHA-256 hashes for any text."
+    },
+    "qr-generator": {
+      "name": "QR Generator",
+      "description": "Create QR codes for links, text and other data.",
+      "seoTitle": "QR Code Generator Online - Free QR Code Maker | utllo",
+      "seoDescription": "Free online QR code generator. Create QR codes for links, text, WiFi and contact data. Download as PNG in various sizes.",
+      "title": "QR Code Generator",
+      "subtitle": "Create QR codes for links, text and data",
+      "inputLabel": "Text or URL",
+      "inputPlaceholder": "Enter text, URL, phone number...",
+      "generate": "Generate QR code",
+      "download": "Download PNG",
+      "size": "Size",
+      "clear": "Clear",
+      "preview": "QR code preview",
+      "noContent": "Enter content to generate a QR code",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Free QR Code Generator Online",
+          "body": "Our QR code generator lets you create QR codes quickly and free, right in your browser. Just enter text, a URL, phone number or any data, and the tool will generate a ready-to-download QR code as PNG. A QR code (Quick Response) is a two-dimensional barcode that stores information in a black-and-white pattern. QR codes can be read by smartphone cameras and barcode scanners, making them ideal for sharing information fast."
+        },
+        {
+          "type": "grid",
+          "heading": "What are QR codes used for?",
+          "items": [
+            {
+              "title": "Links and websites",
+              "body": "Encode a URL so users can open a webpage quickly after scanning the code."
+            },
+            {
+              "title": "WiFi",
+              "body": "Share WiFi details with guests - after scanning, the phone connects to the network automatically."
+            },
+            {
+              "title": "Contact details",
+              "body": "Encode a vCard with name, phone and email in a single QR code."
+            },
+            {
+              "title": "Marketing and advertising",
+              "body": "Place QR codes on flyers, posters and packaging to direct customers to offers, product pages or social media."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "QR code vs barcode",
+          "headers": [
+            "Feature",
+            "QR code",
+            "Barcode"
+          ],
+          "rows": [
+            [
+              "Dimensions",
+              "Two-dimensional (2D)",
+              "One-dimensional (1D)"
+            ],
+            [
+              "Data capacity",
+              "Up to 4,296 characters",
+              "Usually 20-25 characters"
+            ],
+            [
+              "Data types",
+              "Text, URL, email, WiFi, vCard",
+              "Mainly numbers"
+            ],
+            [
+              "Error correction",
+              "Yes (up to 30%)",
+              "No"
+            ]
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to create effective QR codes?",
+          "items": [
+            "**Right size** - A QR code should be at least 2×2 cm for print. For billboards use at least 256×256 px.",
+            "**High contrast** - Keep a dark pattern on a light background. Avoid low colour contrast.",
+            "**Test before printing** - Always scan the code with different devices before printing.",
+            "**Short URLs** - The less data, the simpler and more readable the QR code.",
+            "**Quiet zone** - Leave an empty margin around the code so scanners can read it easily."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Do QR codes expire?",
+              "a": "Static QR codes (like those from our tool) never expire. They contain data directly in the code, so they work as long as the encoded data is valid."
+            },
+            {
+              "q": "What is the maximum QR code capacity?",
+              "a": "A QR code can store up to 4,296 alphanumeric characters, 7,089 digits or 2,953 bytes of binary data. Shorter data produces a simpler, easier-to-scan code."
+            },
+            {
+              "q": "Is the generator free?",
+              "a": "Yes, our QR code generator is completely free with no limits. You can create any number of QR codes without registering."
+            },
+            {
+              "q": "Can I use QR codes commercially?",
+              "a": "Of course! You can use the generated QR codes for any purpose - personal or commercial, in print or digital."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Our QR code generator runs entirely in your browser. Your data is not sent to any server - generation happens locally on your device."
+        }
+      ]
+    },
+    "character-counter": {
+      "name": "Character Counter",
+      "description": "Count characters, words, sentences and paragraphs in text.",
+      "seoTitle": "Character Counter Online - Count Characters in Text | Free Tool",
+      "seoDescription": "Free online character counter. Count characters with and without spaces, words, sentences, paragraphs. Perfect for SMS, Twitter, SEO and text limits.",
+      "title": "Character Counter",
+      "subtitle": "Count characters, words and more in text",
+      "placeholder": "Type or paste your text here...",
+      "characters": "Characters",
+      "charactersNoSpaces": "Characters (no spaces)",
+      "words": "Words",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs",
+      "readingTime": "Reading time",
+      "speakingTime": "Speaking time",
+      "minutes": "min",
+      "seconds": "sec",
+      "clear": "Clear",
+      "copy": "Copy text",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Character Counter Online - Count Characters in Text",
+          "body": "Our free character counter is the ideal tool for quickly counting characters in any text. Whether you're writing an SMS, tweet, SEO meta description or filling a form with a character limit - our counter helps you stay within the required limits."
+        },
+        {
+          "type": "list",
+          "heading": "What is a character counter for?",
+          "items": [
+            "**Social media** - Twitter (280 characters), Instagram bio (150 characters)",
+            "**SEO** - Meta title (60 characters), meta description (160 characters)",
+            "**SMS** - Check if your message fits in one SMS (160 characters)",
+            "**Online forms** - Many forms have character limits",
+            "**Copywriting** - Control headline and ad copy length"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to use the character counter?",
+          "items": [
+            "Type or paste text into the text box",
+            "Results update automatically in real time",
+            "Check character count, words, sentences and paragraphs",
+            "See estimated reading and speaking time"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Are spaces counted as characters?",
+              "a": "Yes, our counter shows both total characters (with spaces) and characters without spaces."
+            },
+            {
+              "q": "How is reading time calculated?",
+              "a": "Reading time is based on average reading speed (~200 words/min). Speaking time is based on ~150 words/min."
+            }
+          ]
+        }
+      ]
+    },
+    "word-counter": {
+      "name": "Word Counter",
+      "description": "Count words, sentences and paragraphs in text.",
+      "seoTitle": "Word Counter Online - Count Words in Text | Free Tool",
+      "seoDescription": "Free online word counter. Quickly count words, sentences, paragraphs. Check reading and speaking time. Perfect for writers, students and copywriters.",
+      "title": "Word Counter",
+      "subtitle": "Count words and analyze text",
+      "placeholder": "Type or paste your text here...",
+      "words": "Words",
+      "uniqueWords": "Unique words",
+      "characters": "Characters",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs",
+      "avgWordLength": "Avg word length",
+      "avgSentenceLength": "Avg sentence length",
+      "readingTime": "Reading time",
+      "speakingTime": "Speaking time",
+      "minutes": "min",
+      "seconds": "sec",
+      "wordsLabel": "words",
+      "clear": "Clear",
+      "copy": "Copy text",
+      "topWords": "Most common words",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Word Counter Online - Count Words in Text",
+          "body": "Our free word counter is a versatile tool for writers, students, bloggers and copywriters. It analyses text in real time, showing word count, sentences, paragraphs and estimated reading and speaking time."
+        },
+        {
+          "type": "list",
+          "heading": "Who is the word counter for?",
+          "items": [
+            "**Students** - Keep essays and assignments within length",
+            "**Copywriters** - Optimise copy length for the client",
+            "**Bloggers** - Optimise article length for SEO (1500+ words)",
+            "**Translators** - Quote jobs by word count",
+            "**Authors** - Track progress on a book or article"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "How many words should an article have?",
+          "headers": [
+            "Content type",
+            "Recommended length"
+          ],
+          "rows": [
+            [
+              "Blog post (SEO)",
+              "1500-2500 words"
+            ],
+            [
+              "Product description",
+              "300-500 words"
+            ],
+            [
+              "Social media post",
+              "40-80 words"
+            ],
+            [
+              "Email marketing",
+              "200-300 words"
+            ],
+            [
+              "Landing page",
+              "500-1000 words"
+            ]
+          ]
+        }
+      ]
+    },
+    "dice-roll": {
+      "name": "Dice Roller",
+      "description": "Virtual dice for games. Roll dice online!",
+      "seoTitle": "Dice Roller Online - Virtual Dice for Games | Free Tool",
+      "seoDescription": "Free online dice roller. Virtual dice for board games, RPG and draws. Choose number of dice and sides (D4, D6, D8, D10, D12, D20). Fast and fair rolling.",
+      "title": "Dice Roller",
+      "subtitle": "Virtual dice roller online",
+      "roll": "Roll dice",
+      "rolling": "Rolling...",
+      "result": "Result",
+      "total": "Total",
+      "numberOfDice": "Number of dice",
+      "diceType": "Dice type",
+      "history": "Roll history",
+      "clearHistory": "Clear history",
+      "sides": "sides",
+      "dice": "die",
+      "diceMultiple": "dice",
+      "average": "Average",
+      "min": "Min",
+      "max": "Max",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Dice Roller Online - Virtual Dice for Games",
+          "body": "Our free dice roller is the ideal tool for board games, RPGs, draws and fun. Choose the number of dice and type (D4, D6, D8, D10, D12, D20, D100) and roll as much as you like. Results are fully random and fair."
+        },
+        {
+          "type": "grid",
+          "heading": "Available dice types",
+          "items": [
+            {
+              "title": "D4",
+              "body": "Tetrahedron"
+            },
+            {
+              "title": "D6",
+              "body": "Classic cube"
+            },
+            {
+              "title": "D8",
+              "body": "Octahedron"
+            },
+            {
+              "title": "D10",
+              "body": "Pentagonal trapezohedron"
+            },
+            {
+              "title": "D12",
+              "body": "Dodecahedron"
+            },
+            {
+              "title": "D20",
+              "body": "Icosahedron"
+            },
+            {
+              "title": "D100",
+              "body": "Percentile (1-100)"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "What is a virtual dice for?",
+          "items": [
+            "**Board games** - Don't have a real dice? Use ours!",
+            "**RPG games** - D&D, Warhammer and other systems that use different dice",
+            "**Draws** - Fair drawing for order, prizes, tasks",
+            "**Education** - Learning probability and statistics",
+            "**Decision making** - Let the dice decide!",
+            "**Online games** - Playing remotely with friends"
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Features of our dice roller",
+          "items": [
+            {
+              "title": "Multiple dice at once",
+              "body": "Roll 1 to 10 dice at the same time and see the sum of all results."
+            },
+            {
+              "title": "Roll history",
+              "body": "Browse previous rolls with statistics."
+            },
+            {
+              "title": "Roll animation",
+              "body": "Realistic animation builds tension before the result."
+            },
+            {
+              "title": "Statistics",
+              "body": "See average, minimum and maximum across all rolls."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Are the results really random?",
+          "body": "Yes! Our generator uses cryptographically secure algorithms. Each face has the same probability, so results are as fair as rolling a real dice."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What do D6, D20 etc. mean?",
+              "a": "The \"D\" comes from \"dice\", and the number is the number of faces. D6 is the classic six-sided dice (1-6), D20 is the twenty-sided dice (1-20) popular in RPGs."
+            },
+            {
+              "q": "How do I roll multiple dice?",
+              "a": "Use the \"Number of dice\" slider to choose 1 to 10 dice. All dice will be the same type and rolled at once."
+            },
+            {
+              "q": "Can I use this dice for money games?",
+              "a": "This generator is for entertainment and education only. We do not recommend using it for gambling."
+            }
+          ]
+        }
+      ]
+    },
+    "font-generator": {
+      "name": "Font Generator",
+      "description": "Transform text into stylish Unicode fonts. Copy and paste anywhere!",
+      "seoTitle": "Font Generator Online - Stylish Fonts to Copy & Paste | Free Tool",
+      "seoDescription": "Free online stylish font generator. Transform text into bold, italic, gothic, and many other styles. Copy and paste on Instagram, Facebook, Twitter.",
+      "title": "Font Generator",
+      "subtitle": "Transform text into stylish copyable fonts",
+      "placeholder": "Type your text...",
+      "defaultText": "Your text here",
+      "fontSize": "Font size",
+      "allFonts": "All styles",
+      "serif": "Serif",
+      "sansSerif": "Sans-serif",
+      "display": "Display",
+      "handwriting": "Handwriting",
+      "monospace": "Monospace",
+      "copyFont": "Copy",
+      "copied": "Copied!",
+      "fontPairings": "Font pairings",
+      "heading": "Heading",
+      "body": "Body",
+      "searchFonts": "Search styles...",
+      "noResults": "No styles found",
+      "googleFonts": "Google Fonts",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Stylish Font Generator Online - Copy and Paste",
+          "body": "Our free font generator turns plain text into stylish Unicode fonts you can copy and paste anywhere - Instagram, Facebook, Twitter, TikTok, Discord and more. Over 25 unique styles to choose from!"
+        },
+        {
+          "type": "grid",
+          "heading": "Available font styles",
+          "items": [
+            {
+              "title": "Basic",
+              "body": "𝗕𝗼𝗹𝗱, 𝘪𝘵𝘢𝘭𝘪𝘤, 𝙗𝙤𝙡𝙙 𝙞𝙩𝙖𝙡𝙞𝙘, 𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎"
+            },
+            {
+              "title": "Decorative",
+              "body": "𝒮𝒸𝓇𝒾𝓅𝓉, 𝔉𝔯𝔞𝔨𝔱𝔲𝔯, 𝔾𝕠𝕥𝕙𝕚𝕔, 𝕯𝖔𝖚𝖇𝖑𝖊"
+            },
+            {
+              "title": "Symbols",
+              "body": "Ⓦ ⓚⓞⓛⓚⓊ, 🅦 🅝🅔🅖🅐🅣🅨🅦, 🄺🅆🄰🄳🅁🄰🅃"
+            }
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to use the generator?",
+          "items": [
+            "**Type text** - Enter the text you want to transform",
+            "**Choose style** - Browse the available font styles",
+            "**Copy** - Click the \"Copy\" button next to the chosen style",
+            "**Paste** - Paste the text anywhere (Ctrl+V / Cmd+V)"
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Where can you use stylish fonts?",
+          "items": [
+            "**Instagram** - Bio, posts, stories, comments",
+            "**Facebook** - Posts, comments, profile name",
+            "**Twitter/X** - Tweets, bio, username",
+            "**TikTok** - Bio, comments",
+            "**Discord** - Messages, server name"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How does it work?",
+              "a": "The generator uses special Unicode characters that look like stylish fonts. They are not real fonts but characters from different alphabets and mathematical symbols that can be copied and pasted as plain text."
+            },
+            {
+              "q": "Are accented characters supported?",
+              "a": "Some styles may not support accented characters (é, ñ, ü, etc.). In that case those letters will stay in the original form."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Our font generator runs entirely in your browser. Your text is not sent to any server - all conversion is done locally."
+        }
+      ]
+    },
+    "countdown-vacation": {
+      "name": "Vacation Countdown",
+      "description": "Check how many days until summer vacation!",
+      "seoTitle": "Vacation Countdown 2026 - How Many Days Until Vacation? | Online Timer",
+      "seoDescription": "Free online vacation countdown. Check how many days, hours and minutes until summer vacation 2026. Timer counting down to the end of the school year.",
+      "title": "Vacation Countdown",
+      "subtitle": "How much time until summer vacation?",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "vacationStart": "Vacation start",
+      "timeLeft": "Time left",
+      "vacationStarted": "Vacation has started!",
+      "enjoy": "Enjoy your free time!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Summer Vacation Countdown 2026",
+          "body": "See how much time is left until summer vacation! Our free countdown shows the time until the last day of the school year, when vacation begins. It displays days, hours, minutes and seconds in real time."
+        },
+        {
+          "type": "text",
+          "heading": "When does summer vacation start in 2026?",
+          "body": "Summer vacation dates vary by country and region. In many places it starts after the last day of the school year - check your local school calendar for the exact date in your area."
+        },
+        {
+          "type": "list",
+          "heading": "Who is this countdown for?",
+          "items": [
+            "**Students** - See how many days until freedom!",
+            "**Teachers** - Count down to well-deserved rest",
+            "**Parents** - Plan summer trips and activities",
+            "**Everyone** - Who doesn't look forward to summer?"
+          ]
+        }
+      ]
+    },
+    "countdown-christmas": {
+      "name": "Christmas Countdown",
+      "description": "Check how many days until Christmas!",
+      "seoTitle": "Christmas Countdown 2026 | How Many Days Until Christmas?",
+      "seoDescription": "Free online Christmas countdown. Check how many days, hours and minutes until Christmas Eve 2026. Festive countdown timer.",
+      "title": "Christmas Countdown",
+      "subtitle": "How long until Christmas?",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "christmasDate": "Christmas Eve",
+      "timeLeft": "Time left until Christmas Eve",
+      "christmasNow": "Merry Christmas!",
+      "merryChristmas": "Christmas time is here!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Christmas Countdown 2026",
+          "body": "How many days until Christmas? Our free countdown shows the time until Christmas Eve (24 December). It displays days, hours, minutes and seconds in real time. Get into the festive spirit with us!"
+        },
+        {
+          "type": "text",
+          "heading": "When is Christmas?",
+          "body": "Christmas Eve is on 24 December, and Christmas Day is celebrated on 25 and 26 December. In many countries, Christmas Eve is a special day - the time for family gatherings and festive meals."
+        },
+        {
+          "type": "list",
+          "heading": "Christmas traditions",
+          "items": [
+            "Christmas Eve dinner - Traditional festive meal",
+            "Exchanging wishes - Sharing love and good will",
+            "Carols - Singing together at the table",
+            "Presents under the tree - Exchanging gifts",
+            "Midnight Mass - Celebrating the birth of Christ"
+          ]
+        }
+      ]
+    },
+    "countdown-date": {
+      "name": "Date Countdown",
+      "description": "Set your own date and count down to any event!",
+      "seoTitle": "Date Countdown Online - Timer to Any Event",
+      "seoDescription": "Free online date countdown. Set a birthday, wedding, exam or other event date and check how much time is left.",
+      "title": "Date Countdown",
+      "subtitle": "Count down to any event",
+      "days": "days",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds",
+      "selectDate": "Select date",
+      "eventName": "Event name (optional)",
+      "eventPlaceholder": "e.g. My birthday",
+      "timeLeft": "Time left",
+      "dateReached": "Date has passed!",
+      "timeSince": "Time since this event",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Countdown to Any Date",
+          "body": "Set any date and watch the countdown in real time! Our free timer shows days, hours, minutes and seconds until your chosen event. The ideal tool for tracking important dates."
+        },
+        {
+          "type": "list",
+          "heading": "What can you count down to?",
+          "items": [
+            "**Birthdays** - Yours or a loved one's",
+            "**Wedding** - The big day is approaching!",
+            "**Exams** - How much time to study?",
+            "**Trips** - Count down to your dream holiday",
+            "**Concerts and events** - Build the excitement!",
+            "**Project deadline** - Stay motivated"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can I set any date?",
+              "a": "Yes, you can pick any future date."
+            },
+            {
+              "q": "What happens when the date passes?",
+              "a": "The countdown stops at zero and a message is displayed."
+            }
+          ]
+        }
+      ]
+    },
+    "white-screen": {
+      "name": "White Screen",
+      "description": "Display a white screen in fullscreen. Test dead pixels and clean your screen.",
+      "seoTitle": "White Screen Online - Dead Pixel Test & Screen Cleaning | Free Tool",
+      "seoDescription": "Free online white screen in fullscreen. Detect dead pixels, clean your monitor from dust and smudges. 12 colors + custom HEX color. Works on phone and computer.",
+      "title": "White Screen",
+      "subtitle": "Full-screen color display - pixel test and screen cleaning",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit fullscreen",
+      "pixelTest": "Pixel test",
+      "stopTest": "Click to stop test",
+      "customColor": "Custom color (HEX)",
+      "clickToExit": "Click to exit",
+      "presets": "Preset colors",
+      "currentColor": "Current color",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "White Screen Online - Pixel Test and Monitor Cleaning",
+          "body": "Our free white screen tool is a versatile way to test your monitor and clean the screen. Display a full-screen solid colour to detect dead pixels, smudges, stains or uneven backlighting. Works on computer, tablet and phone."
+        },
+        {
+          "type": "grid",
+          "heading": "What is a white screen used for?",
+          "items": [
+            {
+              "title": "Dead pixel test",
+              "body": "Find pixels that don't light up correctly."
+            },
+            {
+              "title": "Screen cleaning",
+              "body": "Display white to see dirt and smudges clearly."
+            },
+            {
+              "title": "Backlight test",
+              "body": "Check how even the monitor backlight is."
+            },
+            {
+              "title": "Photo and video",
+              "body": "Use as a background or soft light source."
+            }
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to detect dead pixels?",
+          "items": [
+            "Set the white screen to fullscreen",
+            "Scan the whole screen carefully for dark spots",
+            "Switch to black and look for bright spots",
+            "Test red, green and blue to find stuck subpixels"
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Types of faulty pixels",
+          "items": [
+            {
+              "title": "Dead pixel",
+              "body": "Pixel is always dark - doesn't respond to any signal."
+            },
+            {
+              "title": "Hot pixel",
+              "body": "Pixel is always bright - stays white regardless of image."
+            },
+            {
+              "title": "Stuck pixel",
+              "body": "Pixel shows a fixed colour (red, green or blue)."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can I fix a dead pixel?",
+              "a": "Stuck pixels can sometimes be fixed with special apps. Dead pixels (fully dark) usually cannot be fixed with software."
+            },
+            {
+              "q": "How many colours are available?",
+              "a": "The tool offers 12 preset colours plus any custom colour in HEX format."
+            },
+            {
+              "q": "Does it work on mobile?",
+              "a": "Yes, the white screen works on any device with a browser - computers, tablets and phones."
+            }
+          ]
+        }
+      ]
+    },
+    "amount-in-words": {
+      "name": "Amount in Words",
+      "description": "Convert any number or amount to written words.",
+      "seoTitle": "Amount in Words - Convert Numbers to Words | utllo",
+      "seoDescription": "Free number to words converter. Amount in words for invoices, contracts, transfers. Dollars and cents in words online.",
+      "title": "Amount in Words",
+      "subtitle": "Convert any number or amount to written words",
+      "inputLabel": "Enter number",
+      "inputPlaceholder": "e.g. 1234.56",
+      "result": "Result in words",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
+      "currency": "Currency mode (USD)",
+      "numberOnly": "Number only",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Amount in Words - Convert Numbers to Text in English",
+          "body": "Our free converter turns any number or monetary amount into words in English. The ideal tool for invoices, contracts, bank transfers and other documents that require the amount in words. It supports numbers up to trillions with cents."
+        },
+        {
+          "type": "list",
+          "heading": "When do you need amount in words?",
+          "items": [
+            "**Invoices** - Amount in words on VAT invoices",
+            "**Contracts** - Written amount in legal agreements",
+            "**Bank transfers** - Amount in words on transfer forms",
+            "**Cheques** - Writing the amount on cheques",
+            "**Official documents** - Applications, forms, reports",
+            "**Notarial deeds** - Property prices in words"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What numbers does the converter support?",
+              "a": "The converter supports whole and decimal numbers from 0 to trillions. Monetary amounts are rounded to two decimal places (cents)."
+            },
+            {
+              "q": "Does the converter support cents?",
+              "a": "Yes, the decimal part is converted to cents (e.g. 1234.56 → one thousand two hundred thirty-four dollars and 56/100)."
+            },
+            {
+              "q": "Is the result grammatically correct?",
+              "a": "Yes, the converter uses correct English number words and grammar."
+            }
+          ]
+        }
+      ]
+    },
+    "caesar-cipher": {
+      "name": "Caesar Cipher",
+      "description": "Encrypt and decrypt text using the classic Caesar cipher.",
+      "seoTitle": "Caesar Cipher Online - Text Encryption & Decryption | utllo",
+      "seoDescription": "Free online Caesar cipher. Encrypt and decrypt text with letter shifting. Learn cryptography basics with this interactive tool.",
+      "title": "Caesar Cipher",
+      "subtitle": "Encrypt and decrypt text with letter shifting",
+      "inputLabel": "Text to encrypt",
+      "inputPlaceholder": "Enter text...",
+      "result": "Result",
+      "shift": "Shift",
+      "encrypt": "Encrypt",
+      "decrypt": "Decrypt",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Caesar Cipher Online - Encrypt and Decrypt",
+          "body": "The Caesar cipher is one of the oldest and simplest substitution ciphers in the history of cryptography. It is named after Julius Caesar, who used it to encrypt military correspondence. Each letter in the text is shifted by a fixed number of positions in the alphabet."
+        },
+        {
+          "type": "text",
+          "heading": "How does the Caesar cipher work?",
+          "body": "The Caesar cipher shifts every letter in the text by a fixed number of positions in the alphabet. For example with a shift of 3: A→D, B→E, C→F, etc. Decryption is shifting in the opposite direction."
+        },
+        {
+          "type": "grid",
+          "heading": "Encryption examples",
+          "items": [
+            {
+              "title": "Shift +1",
+              "body": "ABC → BCD"
+            },
+            {
+              "title": "Shift +3 (Caesar)",
+              "body": "ABC → DEF"
+            },
+            {
+              "title": "Shift +13 (ROT13)",
+              "body": "ABC → NOP"
+            },
+            {
+              "title": "Shift +25",
+              "body": "ABC → ZAB"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "What is the Caesar cipher used for?",
+          "items": [
+            "**Education** - Learning cryptography and algorithms",
+            "**Puzzles and games** - Creating secret messages",
+            "**Geocaching** - Encrypting clues in outdoor games",
+            "**Escape rooms** - Logic puzzle element",
+            "**History** - Understanding the roots of cryptography"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "What is ROT13?",
+          "body": "ROT13 is a special case of the Caesar cipher with a shift of 13. Because the Latin alphabet has 26 letters, applying ROT13 twice restores the original text. ROT13 is often used online to hide spoilers and jokes."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Is the Caesar cipher secure?",
+              "a": "No, the Caesar cipher is easy to break - there are only 25 possible shifts. It's for learning cryptography, not protecting data."
+            },
+            {
+              "q": "Are accented characters supported?",
+              "a": "Yes, our cipher supports accented characters (é, ñ, ü, etc.) where the alphabet allows."
+            }
+          ]
+        }
+      ]
+    },
+    "pdf-to-word": {
+      "name": "PDF to Word",
+      "description": "Convert PDF documents to editable Word files.",
+      "seoTitle": "PDF to Word Converter Online - PDF to DOCX | utllo",
+      "seoDescription": "Free online PDF to Word converter. Extract text from PDF and save as editable DOCX document. No registration, works in browser.",
+      "title": "PDF to Word",
+      "subtitle": "Extract text from PDF and save as Word document",
+      "selectFile": "Select PDF file",
+      "dragDrop": "or drag and drop",
+      "dropHere": "Drop file here",
+      "maxSize": "Max size: 50MB",
+      "convert": "Convert to Word",
+      "download": "Download DOCX",
+      "converting": "Converting",
+      "extracting": "Extracting text",
+      "generating": "Generating Word document",
+      "page": "Page",
+      "of": "of",
+      "done": "Done!",
+      "error": "An error occurred",
+      "newFile": "New file",
+      "textOnly": "This tool extracts text only. Formatting, images and tables are not transferred.",
+      "noText": "No text found in this PDF file. The file may contain scanned images instead of text.",
+      "pages": "pages",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is PDF to Word conversion?",
+          "body": "Converting PDF to Word means turning documents in PDF (Portable Document Format) into editable DOCX files that work in Microsoft Word, Google Docs or LibreOffice. This lets you easily edit, copy and change text from PDFs. Our tool extracts text from each page of the PDF and creates a clean Word document with page breaks. The whole process runs in your browser - files are not sent to any server."
+        },
+        {
+          "type": "list",
+          "heading": "When is PDF to Word useful?",
+          "items": [
+            "**Editing documents** - When you need to change text from a received PDF",
+            "**Copying content** - Quickly move text to another document or project",
+            "**Accessibility** - Editable format helps people with disabilities",
+            "**Archiving** - Save PDF content in a searchable, editable format",
+            "**Reports and presentations** - Reuse text from PDFs in new documents"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "PDF vs DOCX - format comparison",
+          "headers": [
+            "Feature",
+            "PDF",
+            "DOCX (Word)"
+          ],
+          "rows": [
+            [
+              "Editing",
+              "Hard, needs special software",
+              "Easy, in any text editor"
+            ],
+            [
+              "Appearance",
+              "Same on every device",
+              "Can vary with fonts and software"
+            ],
+            [
+              "File size",
+              "Usually smaller",
+              "Can be larger (especially with images)"
+            ],
+            [
+              "Printing",
+              "Excellent, keeps layout",
+              "Good, may need adjustment"
+            ],
+            [
+              "Use case",
+              "Sharing, archiving, print",
+              "Creating, editing, collaboration"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Tips for best results",
+          "items": [
+            "**Text-based PDFs** - PDFs created digitally (e.g. from Word, browser) convert best, not scanned documents",
+            "**Simple layouts** - Documents with simple text layout give the best results",
+            "**Check the result** - Always review the Word document and fix any issues",
+            "**Scanned PDFs** - If the PDF only contains images (scan), text will not be extracted. You need an OCR tool"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Is the converter free?",
+              "a": "Yes, the tool is completely free and requires no registration. You can convert as many files as you like."
+            },
+            {
+              "q": "Are my files safe?",
+              "a": "Yes, conversion runs entirely in your browser. Files are not sent to any server - you keep full control of your documents."
+            },
+            {
+              "q": "Will formatting be preserved?",
+              "a": "The tool extracts text only. Formatting (bold, italic, colours), images and tables are not transferred. You get plain text with paragraphs."
+            },
+            {
+              "q": "What about scanned PDFs?",
+              "a": "Scanned PDFs contain images instead of text and cannot be converted with this tool. You need OCR (Optical Character Recognition) software for scans."
+            },
+            {
+              "q": "What is the maximum file size?",
+              "a": "The maximum file size is 50 MB. Because conversion runs in the browser, very large files may take longer to process."
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Our free PDF to Word converter runs entirely in your browser. Your files are not sent to any server - full privacy and security."
+        }
+      ]
+    },
+    "word-to-pdf": {
+      "name": "Word to PDF",
+      "description": "Convert Word documents to PDF format.",
+      "seoTitle": "Word to PDF Converter Online - DOCX to PDF",
+      "seoDescription": "Free online Word to PDF converter. Convert Word documents to PDF format quickly and easily."
+    },
+    "pdf-to-jpg": {
+      "name": "PDF to JPG",
+      "description": "Convert PDF pages to JPG images.",
+      "seoTitle": "PDF to JPG Converter Online - PDF to Images",
+      "seoDescription": "Free online PDF to JPG converter. Convert PDF document pages to high-quality JPG images. Fast browser-based conversion without uploading files to a server.",
+      "uploadTitle": "Convert PDF to JPG",
+      "uploadDescription": "Drag a PDF file or click to select",
+      "dropHere": "Drop PDF file here",
+      "selectFile": "Select PDF file",
+      "orDragDrop": "or drag and drop",
+      "maxSize": "Max size: 50 MB",
+      "quality": "Quality",
+      "scale": "Scale",
+      "processing": "Processing...",
+      "page": "Page",
+      "downloadPage": "Download page",
+      "downloadAll": "Download all (ZIP)",
+      "converting": "Converting page",
+      "of": "of",
+      "newFile": "New file",
+      "seoContent": [
+        {
+          "type": "ordered-list",
+          "heading": "How to convert PDF to JPG?",
+          "items": [
+            "Select a PDF file from your disk or drag it onto the page",
+            "Adjust the scale and quality of the output images",
+            "Click \"Convert\" and wait for it to finish",
+            "Download single pages or all as ZIP"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Why JPG?",
+          "body": "JPG offers great compression while keeping good image quality. Ideal for photos, colour documents and graphics. JPG files are widely supported and take up little space."
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Our free PDF to JPG converter runs entirely in your browser. Your files are not sent to any server - full privacy."
+        }
+      ]
+    },
+    "pdf-to-png": {
+      "name": "PDF to PNG",
+      "description": "Convert PDF pages to PNG images.",
+      "seoTitle": "PDF to PNG Converter Online - PDF to PNG Images",
+      "seoDescription": "Free online PDF to PNG converter. Convert PDF document pages to PNG images with full transparency. Fast browser-based conversion.",
+      "uploadTitle": "Convert PDF to PNG",
+      "uploadDescription": "Drag a PDF file or click to select",
+      "dropHere": "Drop PDF file here",
+      "selectFile": "Select PDF file",
+      "orDragDrop": "or drag and drop",
+      "maxSize": "Max size: 50 MB",
+      "scale": "Scale",
+      "processing": "Processing...",
+      "page": "Page",
+      "downloadPage": "Download page",
+      "downloadAll": "Download all (ZIP)",
+      "converting": "Converting page",
+      "of": "of",
+      "newFile": "New file",
+      "seoContent": [
+        {
+          "type": "ordered-list",
+          "heading": "How to convert PDF to PNG?",
+          "items": [
+            "Select a PDF file from your disk or drag it onto the page",
+            "Adjust the scale of the output images",
+            "Click \"Convert\" and wait for it to finish",
+            "Download single pages or all as ZIP"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Why PNG?",
+          "body": "PNG offers lossless compression and supports transparency. Ideal for graphics, diagrams, text documents and logos. PNG files keep full quality on every save."
+        },
+        {
+          "type": "text",
+          "heading": null,
+          "body": "Our free PDF to PNG converter runs entirely in your browser. Your files are not sent to any server - full privacy."
+        }
+      ]
+    },
+    "random-number": {
+      "name": "Random Number",
+      "description": "Generate a random number in a selected range.",
+      "seoTitle": "Random Number Generator Online - Draw a Random Number",
+      "seoDescription": "Free online random number generator. Draw a number in any range quickly and easily.",
+      "min": "Minimum",
+      "max": "Maximum",
+      "result": "Drawn number",
+      "generate": "Draw New Number",
+      "history": "Draw history",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Online Random Number Generator",
+          "body": "Our random number generator uses a cryptographically secure algorithm to produce truly random results. Ideal for games, contests, decision making and any situation that needs a random number."
+        }
+      ]
+    },
+    "random-numbers": {
+      "name": "Random Numbers",
+      "description": "Draw multiple numbers at once in a selected range.",
+      "seoTitle": "Random Numbers Generator Online - Draw Multiple Random Numbers",
+      "seoDescription": "Free online multiple random number generator. Draw several numbers at once in any range. Perfect for lotteries, games and draws.",
+      "min": "Minimum",
+      "max": "Maximum",
+      "count": "Number count",
+      "unique": "No duplicates",
+      "sorted": "Sort ascending",
+      "results": "Drawn numbers",
+      "generate": "Draw Numbers",
+      "copyAll": "Copy all",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Draw Multiple Numbers at Once",
+          "body": "The generator lets you draw multiple numbers at once. You can choose whether numbers should be unique or can repeat. Ideal for lotteries, prize draws, picking groups and other uses that need many random values."
+        }
+      ]
+    },
+    "random-quote": {
+      "name": "Random Quote",
+      "description": "Discover inspiring quotes randomly.",
+      "seoTitle": "Random Quote Generator Online - Inspiring Random Quotes",
+      "seoDescription": "Free online random quote generator. Discover inspiring quotes from famous people."
+    },
+    "random-bible": {
+      "name": "Random Bible Quote",
+      "description": "Draw random verses and quotes from the Bible.",
+      "seoTitle": "Random Bible Quote Online - Random Bible Verses",
+      "seoDescription": "Free online random Bible quote generator. Discover Bible verses for every day."
+    },
+    "random-tarot": {
+      "name": "Random Tarot Card",
+      "description": "Draw a tarot card and discover its meaning.",
+      "seoTitle": "Draw a Tarot Card Online - Virtual Tarot Cards | utllo",
+      "seoDescription": "Free online tarot card drawing. Draw a card from the full 78-card deck and discover its meaning in upright and reversed position. Major and Minor Arcana.",
+      "title": "Draw a Tarot Card",
+      "subtitle": "Draw a card from the full 78-card deck and discover its meaning",
+      "draw": "Draw a Card",
+      "drawAnother": "Draw Another",
+      "upright": "Upright position",
+      "reversed": "Reversed position",
+      "meaning": "Meaning",
+      "keywords": "Keywords",
+      "history": "Draw history",
+      "clearHistory": "Clear history",
+      "majorArcana": "Major Arcana",
+      "minorArcana": "Minor Arcana",
+      "cardOf": "Card",
+      "of78": "of 78",
+      "cups": "Cups",
+      "pentacles": "Pentacles",
+      "swords": "Swords",
+      "wands": "Wands",
+      "clickToReveal": "Click the card to flip it",
+      "noHistory": "No draw history",
+      "imageDesc": "Card description",
+      "love": "Love",
+      "health": "Health",
+      "work": "Work",
+      "adviceLabel": "Advice",
+      "element": "Element",
+      "zodiacLabel": "Zodiac",
+      "planetLabel": "Planet",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is tarot?",
+          "body": "Tarot is a system of 78 cards used for centuries for reflection, meditation and seeking inner answers. The deck has two main groups: 22 Major Arcana cards, which symbolise important life themes and archetypes, and 56 Minor Arcana cards in four suits: Cups, Pentacles, Swords and Wands. Our tool draws a card from the full 78-card deck, upright or reversed, and shows its meaning."
+        },
+        {
+          "type": "text",
+          "heading": "Major Arcana - 22 cards of fate",
+          "body": "The Major Arcana are 22 cards numbered from 0 (The Fool) to 21 (The World). They represent major life themes, spiritual lessons and archetypes - from the Fool's innocence, through Death's transformation, to The World's fulfilment. They include: The Fool, The Magician, The High Priestess, The Empress, The Emperor, The Hierophant, The Lovers, The Chariot, Strength, The Hermit, Wheel of Fortune, Justice, The Hanged Man, Death, Temperance, The Devil, The Tower, The Star, The Moon, The Sun, Judgement and The World."
+        },
+        {
+          "type": "list",
+          "heading": "Minor Arcana - 56 cards of daily life",
+          "items": [
+            "**Cups** - Emotions, feelings, relationships, intuition (water element)",
+            "**Pentacles** - Finance, work, health, material world (earth element)",
+            "**Swords** - Thoughts, conflict, communication, intellect (air element)",
+            "**Wands** - Passion, energy, creativity, action (fire element)"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Upright vs reversed",
+          "body": "Each tarot card can appear in two positions: upright and reversed. Upright usually indicates the positive or direct meaning of the card, while reversed can suggest blocks, challenges or inner aspects of the theme. A reversed card does not always mean something negative - it often invites deeper reflection."
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to use the tarot card draw?",
+          "items": [
+            "Focus on a question or theme that matters to you",
+            "Click \"Draw a Card\" - a random card from the full 78-card deck will be chosen",
+            "Click the card to flip it and see which card you drew",
+            "Read the meaning for the drawn position (upright or reversed)",
+            "Reflect on how the card's message relates to your question"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Is the tarot card draw free?",
+              "a": "Yes, the tool is completely free and requires no registration."
+            },
+            {
+              "q": "How many cards are in the deck?",
+              "a": "Our deck has the full 78 cards - 22 Major Arcana and 56 Minor Arcana (Cups, Pentacles, Swords, Wands)."
+            },
+            {
+              "q": "How does the draw work?",
+              "a": "We use a cryptographically secure random number generator (crypto.getRandomValues), which ensures a fully random choice of card and position."
+            },
+            {
+              "q": "Does tarot predict the future?",
+              "a": "Tarot is a tool for reflection and self-knowledge, not fortune-telling. The cards can help you look at a situation from a new angle."
+            }
+          ]
+        }
+      ]
+    },
+    "random-yesno": {
+      "name": "Random Yes/No",
+      "description": "Let chance make the decision for you.",
+      "seoTitle": "Random Yes No Online - Yes or No Decision Generator",
+      "seoDescription": "Free online yes/no decision generator. Let chance decide for you. Perfect when you can't make up your mind!",
+      "yes": "YES",
+      "no": "NO",
+      "askQuestion": "Ask a question (optional)",
+      "questionPlaceholder": "E.g. Should I do this?",
+      "generate": "Draw Answer",
+      "result": "Fate's answer",
+      "tryAgain": "Try again",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Yes/No Decision Generator",
+          "body": "Can't decide? Let chance choose for you! Our generator gives a 50/50 chance for each outcome. The animated interface makes decision-making fun and exciting. Ideal for everyday dilemmas."
+        }
+      ]
+    },
+    "proportion-calculator": {
+      "name": "Proportion Calculator",
+      "description": "Calculate the missing value in a proportion A:B = C:X.",
+      "seoTitle": "Proportion Calculator Online - Solve Proportions",
+      "seoDescription": "Free online proportion calculator. Calculate the missing value in a proportion A:B = C:X. Fast and accurate math calculations.",
+      "title": "Proportion Calculator",
+      "subtitle": "Calculate the missing value X in a proportion",
+      "valueA": "Value A",
+      "valueB": "Value B",
+      "valueC": "Value C",
+      "valueX": "Value X (result)",
+      "calculate": "Calculate",
+      "result": "Result",
+      "formula": "Formula: A : B = C : X → X = (B × C) ÷ A",
+      "copy": "Copy result",
+      "clear": "Clear",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Proportion Calculator Online",
+          "body": "Our proportion calculator solves equations in the form A/B = C/X. Enter three known values and the calculator finds the fourth. Proportions are used in many areas: maths, cooking, photography, construction and design. Formula: X = (B × C) / A"
+        }
+      ]
+    },
+    "bmi-calculator": {
+      "name": "BMI Calculator",
+      "description": "Calculate body mass index (BMI) and check your weight category.",
+      "seoTitle": "BMI Calculator Online - Calculate Body Mass Index",
+      "seoDescription": "Free online BMI calculator. Calculate your body mass index and check if your weight is in the healthy range. Fast and accurate calculations.",
+      "title": "BMI Calculator",
+      "subtitle": "Calculate your body mass index",
+      "weight": "Weight (kg)",
+      "height": "Height (cm)",
+      "calculate": "Calculate BMI",
+      "result": "Your BMI",
+      "category": "Category",
+      "underweight": "Underweight",
+      "normal": "Normal weight",
+      "overweight": "Overweight",
+      "obese": "Obesity Class I",
+      "severelyObese": "Obesity Class II",
+      "morbidlyObese": "Obesity Class III",
+      "clear": "Clear",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "BMI Calculator Online - Calculate Your Body Mass Index",
+          "body": "BMI (Body Mass Index) is an international measure used to check whether an adult's weight is healthy for their height. Formula: BMI = weight (kg) ÷ height² (m). Example: 70 kg ÷ (1.75 m)² = 22.9"
+        },
+        {
+          "type": "table",
+          "heading": "BMI categories (WHO)",
+          "headers": [
+            "Category",
+            "BMI range"
+          ],
+          "rows": [
+            [
+              "Underweight",
+              "< 18.5"
+            ],
+            [
+              "Normal weight",
+              "18.5 - 24.9"
+            ],
+            [
+              "Overweight",
+              "25 - 29.9"
+            ],
+            [
+              "Obesity Class I",
+              "30 - 34.9"
+            ],
+            [
+              "Obesity Class II",
+              "35 - 39.9"
+            ],
+            [
+              "Obesity Class III",
+              "≥ 40"
+            ]
+          ]
+        }
+      ]
+    },
+    "weighted-average": {
+      "name": "Weighted Average",
+      "description": "Calculate weighted average for grades, scores and other data.",
+      "seoTitle": "Weighted Average Calculator Online - Calculate Weighted Average | Free Tool",
+      "seoDescription": "Free online weighted average calculator. Calculate weighted average of school grades, academic scores, exam results. Fast and accurate calculations with weights.",
+      "title": "Weighted Average Calculator",
+      "subtitle": "Calculate weighted average with weights",
+      "value": "Value",
+      "weight": "Weight",
+      "addRow": "Add row",
+      "removeRow": "Remove",
+      "calculate": "Calculate average",
+      "result": "Weighted average",
+      "sumOfWeights": "Sum of weights",
+      "clear": "Clear all",
+      "copy": "Copy result",
+      "example": "Example",
+      "loadExample": "Load grade example",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Weighted Average Calculator Online",
+          "body": "Weighted average is a type of average where each value has a weight that reflects its importance. It is widely used in school, university, finance and data analysis. Formula: x̄ = (w₁·x₁ + w₂·x₂ + ... + wₙ·xₙ) / (w₁ + w₂ + ... + wₙ)"
+        },
+        {
+          "type": "list",
+          "heading": "Where is weighted average used?",
+          "items": [
+            "**School and university** - Calculating grade averages with different weights",
+            "**Finance** - Weighted average cost of capital (WACC)",
+            "**Investments** - Average share purchase price",
+            "**Statistics** - Analysing data with different importance",
+            "**Performance reviews** - Weighted criteria"
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Weighted average vs arithmetic mean",
+          "headers": [
+            "Feature",
+            "Arithmetic mean",
+            "Weighted average"
+          ],
+          "rows": [
+            [
+              "Weights",
+              "All equal (1)",
+              "Different for each value"
+            ],
+            [
+              "Formula",
+              "Σx / n",
+              "Σ(w·x) / Σw"
+            ],
+            [
+              "Use case",
+              "Equivalent data",
+              "Data with different importance"
+            ]
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Do weights have to sum to 1 or 100%?",
+              "a": "No, weights can be any positive numbers. The calculator divides the sum of products by the sum of weights automatically."
+            },
+            {
+              "q": "How do I calculate weighted average for grades?",
+              "a": "Enter each grade as the value and its weight (e.g. test = 3, quiz = 2, oral = 1)."
+            },
+            {
+              "q": "Can I use negative weights?",
+              "a": "No, weights must be positive numbers."
+            }
+          ]
+        }
+      ]
+    },
+    "sleep-calculator": {
+      "name": "Sleep Calculator",
+      "description": "Calculate optimal sleep or wake time based on sleep cycles.",
+      "seoTitle": "Sleep Calculator Online - Calculate Optimal Sleep & Wake Time | Free Tool",
+      "seoDescription": "Free online sleep calculator. Calculate optimal bedtime or wake time based on 90-minute sleep cycles. Wake up refreshed every day!",
+      "title": "Sleep Calculator",
+      "subtitle": "Calculate optimal sleep or wake time",
+      "wakeUpAt": "I want to wake up at...",
+      "fallAsleepAt": "I want to fall asleep at...",
+      "calculate": "Calculate",
+      "clear": "Clear",
+      "cycles": "cycles",
+      "hours": "hours",
+      "optimal": "Optimal",
+      "good": "Good",
+      "minimum": "Minimum",
+      "timeToFallAsleep": "Time to fall asleep",
+      "results": "Results",
+      "bedtimeResults": "You should go to bed at:",
+      "wakeUpResults": "You should wake up at:",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Sleep Calculator Online - Find Your Optimal Sleep Time",
+          "body": "Our free sleep calculator helps you find the best bedtime or wake-up time based on 90-minute sleep cycles. Waking at the right point in your sleep cycle helps you feel rested and energised."
+        },
+        {
+          "type": "grid",
+          "heading": "What are sleep cycles?",
+          "items": [
+            {
+              "title": "Stage 1 - Falling asleep",
+              "body": "Light sleep, easy to wake. Lasts 5-10 minutes."
+            },
+            {
+              "title": "Stage 2 - Light sleep",
+              "body": "Body temperature drops, heart rate slows. ~20 min."
+            },
+            {
+              "title": "Stage 3 - Deep sleep",
+              "body": "Body recovery, tissue repair. Hardest to wake from."
+            },
+            {
+              "title": "REM stage",
+              "body": "Dreaming, memory processing. ~90 min full cycle."
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "How much sleep do you need?",
+          "headers": [
+            "Age group",
+            "Recommended sleep"
+          ],
+          "rows": [
+            [
+              "Newborns (0-3 months)",
+              "14-17 hours"
+            ],
+            [
+              "Infants (4-11 months)",
+              "12-15 hours"
+            ],
+            [
+              "Toddlers (1-2 years)",
+              "11-14 hours"
+            ],
+            [
+              "Preschool (3-5 years)",
+              "10-13 hours"
+            ],
+            [
+              "Children (6-13 years)",
+              "9-11 hours"
+            ],
+            [
+              "Teens (14-17 years)",
+              "8-10 hours"
+            ],
+            [
+              "Adults (18-64 years)",
+              "7-9 hours"
+            ],
+            [
+              "Older adults (65+)",
+              "7-8 hours"
+            ]
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Sleep hygiene tips",
+          "items": [
+            "**Regular schedule** - Go to bed and wake at the same time",
+            "**Dark bedroom** - Use curtains or an eye mask",
+            "**No screens** - Put your phone away at least 30 min before bed",
+            "**Right temperature** - Keep the bedroom at 18-20°C",
+            "**Avoid caffeine** - No coffee at least 6 hours before bed"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Why is the sleep cycle 90 minutes?",
+              "a": "90 minutes is the average time for one full sleep cycle (through all stages). It can vary from 80 to 120 minutes."
+            },
+            {
+              "q": "How many sleep cycles do I need?",
+              "a": "Adults need 5-6 full cycles (7.5-9 hours). At least 4 cycles (6 hours) to function properly."
+            }
+          ]
+        }
+      ]
+    },
+    "calorie-calculator": {
+      "name": "Calorie Calculator",
+      "description": "Calculate daily caloric needs based on weight, height, age and activity.",
+      "seoTitle": "Calorie Calculator Online - Calculate Daily Caloric Needs (BMR & TDEE) | Free Tool",
+      "seoDescription": "Free online calorie calculator. Calculate BMR, TDEE and daily caloric needs based on weight, height, age and activity level. Goals: weight loss, muscle gain, maintenance.",
+      "title": "Calorie Calculator",
+      "subtitle": "Calculate daily caloric needs",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "age": "Age (years)",
+      "weight": "Weight (kg)",
+      "height": "Height (cm)",
+      "activityLevel": "Activity level",
+      "sedentary": "Sedentary (no exercise)",
+      "lightlyActive": "Lightly active (1-3 days/week)",
+      "moderatelyActive": "Moderately active (3-5 days/week)",
+      "veryActive": "Very active (6-7 days/week)",
+      "extremelyActive": "Extremely active (athlete)",
+      "calculate": "Calculate calories",
+      "clear": "Clear",
+      "bmr": "BMR",
+      "bmrDesc": "Basal Metabolic Rate",
+      "tdee": "TDEE",
+      "tdeeDesc": "Total Daily Energy Expenditure",
+      "loseWeight": "Weight loss",
+      "slowCut": "Slow cut",
+      "maintenance": "Maintenance",
+      "leanBulk": "Lean bulk",
+      "bulk": "Bulk",
+      "protein": "Protein",
+      "carbs": "Carbs",
+      "fat": "Fat",
+      "kcalPerDay": "kcal/day",
+      "weeklyChange": "Weekly",
+      "goalResults": "Caloric needs by goal",
+      "macros": "Macronutrients",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Calorie Calculator Online - Calculate Your Daily Needs",
+          "body": "Our calorie calculator works out your daily calorie needs using the Mifflin-St Jeor formula. It uses weight, height, age, sex and activity level to calculate BMR (basal metabolic rate) and TDEE (total daily energy expenditure)."
+        },
+        {
+          "type": "text",
+          "heading": "What are BMR and TDEE?",
+          "body": "BMR (Basal Metabolic Rate) is the calories you burn at rest - the energy needed for basic bodily functions. TDEE (Total Daily Energy Expenditure) is BMR plus calories burned through physical activity. We use TDEE for diet planning."
+        },
+        {
+          "type": "table",
+          "heading": "Activity levels",
+          "headers": [
+            "Level",
+            "Description",
+            "Multiplier"
+          ],
+          "rows": [
+            [
+              "Sedentary",
+              "Office work, no exercise",
+              "×1.2"
+            ],
+            [
+              "Lightly active",
+              "Exercise 1-3 times per week",
+              "×1.375"
+            ],
+            [
+              "Moderately active",
+              "Exercise 3-5 times per week",
+              "×1.55"
+            ],
+            [
+              "Very active",
+              "Intense exercise 6-7 times per week",
+              "×1.725"
+            ],
+            [
+              "Extremely active",
+              "Athlete, heavy physical work",
+              "×1.9"
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "heading": "Macronutrients",
+          "headers": [
+            "Macronutrient",
+            "Calories per gram",
+            "Role in the body"
+          ],
+          "rows": [
+            [
+              "Protein",
+              "4 kcal/g",
+              "Muscle building and repair, enzymes, hormones"
+            ],
+            [
+              "Carbs",
+              "4 kcal/g",
+              "Main energy source, fuel for brain and muscles"
+            ],
+            [
+              "Fat",
+              "9 kcal/g",
+              "Hormones, vitamin absorption, organ protection"
+            ]
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is the difference between BMR and TDEE?",
+              "a": "BMR is calories burned at rest. TDEE is BMR plus calories from physical activity and digestion. We use TDEE for diet planning."
+            },
+            {
+              "q": "How accurate is the calculator?",
+              "a": "The Mifflin-St Jeor formula is about ±10% accurate. Use the result as a starting point - track your weight for 2-3 weeks and adjust."
+            },
+            {
+              "q": "How much protein should I eat?",
+              "a": "For active people: 1.6-2.2 g of protein per kg of body weight per day. When losing weight: 2.0-2.4 g/kg."
+            }
+          ]
+        }
+      ]
+    },
+    "blood-type-calculator": {
+      "name": "Blood Type Calculator",
+      "description": "Calculate the probable blood type of a child based on parents' blood types.",
+      "seoTitle": "Blood Type Calculator Online - Calculate Child's Blood Type | Free Tool",
+      "seoDescription": "Free online blood type calculator. Calculate possible child blood type based on parents' blood types. ABO blood group and Rh factor inheritance.",
+      "title": "Blood Type Calculator",
+      "subtitle": "Calculate possible child blood type",
+      "parent1": "Parent 1",
+      "parent2": "Parent 2",
+      "bloodGroup": "Blood group (ABO)",
+      "rhFactor": "Rh factor",
+      "calculate": "Calculate blood type",
+      "clear": "Clear",
+      "results": "Results",
+      "probability": "Probability",
+      "possibleTypes": "Possible child blood types",
+      "noResults": "No results",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Blood Type Calculator - Work Out Your Child's Blood Type",
+          "body": "Our blood type calculator works out the probability of each blood type for a child based on the parents' blood types. It uses ABO system and Rh factor inheritance according to Mendelian genetics."
+        },
+        {
+          "type": "text",
+          "heading": "How does blood type inheritance work?",
+          "body": "Blood type is determined by genes inherited from both parents. The ABO system has three alleles: A, B and O. A and B are dominant over O. The Rh factor (+ or -) is inherited independently - the Rh+ allele is dominant over Rh-."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can two type O parents have a child with a different blood type?",
+              "a": "No. Both parents with type O have genotype OO, so the child can only inherit O - they will have type O."
+            },
+            {
+              "q": "Is this calculator 100% accurate?",
+              "a": "The calculator shows probabilities based on standard genetics. In very rare cases, genetic mutations can give unexpected results."
+            },
+            {
+              "q": "What is the Rh factor?",
+              "a": "The Rh factor is a protein on the surface of red blood cells. Rh+ (present) is dominant over Rh- (absent). About 85% of the population is Rh+."
+            }
+          ]
+        }
+      ]
+    },
+    "inflation-calculator": {
+      "name": "Inflation Calculator",
+      "description": "Calculate how inflation affects the value of your money over time.",
+      "seoTitle": "Inflation Calculator Online - Calculate Purchasing Power | Free Tool",
+      "seoDescription": "Free online inflation calculator. Calculate how inflation decreases the value of your money. Check purchasing power, value loss and year-by-year projections.",
+      "title": "Inflation Calculator",
+      "subtitle": "Calculate the impact of inflation on money value",
+      "amount": "Amount (USD)",
+      "inflationRate": "Annual inflation (%)",
+      "years": "Number of years",
+      "calculate": "Calculate inflation",
+      "clear": "Clear",
+      "futureValue": "Equivalent in X years",
+      "purchasingPowerLoss": "Purchasing power loss",
+      "purchasingPowerPercent": "Value loss",
+      "yearByYear": "Year by year value change",
+      "year": "Year",
+      "value": "Value",
+      "loss": "Loss",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Inflation Calculator - Work Out Purchasing Power",
+          "body": "Our inflation calculator shows how inflation affects the value of your money over time. See what your savings will be worth in 5, 10 or 20 years at different inflation rates. View the loss of purchasing power year by year."
+        },
+        {
+          "type": "text",
+          "heading": "How does inflation work?",
+          "body": "Inflation is a rise in the general level of prices in the economy. That means the same amount of money buys less over time. Inflation of 5% per year means that after 10 years your $1000 will be worth only about $614 in today's prices."
+        },
+        {
+          "type": "list",
+          "heading": "How to protect savings from inflation?",
+          "items": [
+            "**Savings accounts** - Basic protection, but often below inflation",
+            "**Government bonds** - Inflation-linked bonds protect capital",
+            "**Stocks** - Tend to outpace inflation over the long term",
+            "**Property** - Property prices usually rise with inflation",
+            "**Gold and precious metals** - Traditional inflation hedge"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "What is the current inflation rate?",
+              "a": "The current inflation rate changes every month. Check your country's official statistics office (e.g. BLS in the US, ONS in the UK)."
+            },
+            {
+              "q": "Why does inflation matter?",
+              "a": "Inflation reduces the purchasing power of savings. If your money doesn't grow faster than inflation, you lose real value."
+            },
+            {
+              "q": "Is deflation better than inflation?",
+              "a": "Moderate inflation (2-3%) is considered healthy for the economy. Deflation (falling prices) can lead to recession."
+            }
+          ]
+        }
+      ]
+    },
+    "dog-years-calculator": {
+      "name": "Dog Years to Human Years",
+      "description": "Convert dog age to human years. Takes dog size into account.",
+      "seoTitle": "Dog Years to Human Years - Dog Age Calculator Online | Free Tool",
+      "seoDescription": "Free online dog years calculator. Convert dog age to human years. Modern formula accounting for dog size - small, medium, large, giant.",
+      "title": "Dog Years to Human Years",
+      "subtitle": "Convert your dog's age to human years",
+      "dogAge": "Dog age (years)",
+      "dogSize": "Dog size",
+      "small": "Small",
+      "smallDesc": "e.g. Yorkie, Chihuahua, Shih Tzu",
+      "medium": "Medium",
+      "mediumDesc": "e.g. Beagle, Cocker Spaniel, Bulldog",
+      "large": "Large",
+      "largeDesc": "e.g. Labrador, Shepherd, Husky",
+      "giant": "Giant",
+      "giantDesc": "e.g. Great Dane, Saint Bernard",
+      "calculate": "Calculate age",
+      "clear": "Clear",
+      "humanYears": "Age in human years",
+      "lifeStage": "Life stage",
+      "result": "human years",
+      "lifeExpectancy": "Average life expectancy",
+      "puppy": "Puppy",
+      "young": "Young",
+      "adult": "Adult",
+      "senior": "Senior",
+      "geriatric": "Geriatric",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Dog Years to Human Years - Dog Age Calculator",
+          "body": "Our dog years calculator converts your dog's age to human years and takes size into account. The \"multiply by 7\" rule is a simplification - dogs actually age faster early in life and then slow down. Small dogs tend to live longer than large dogs."
+        },
+        {
+          "type": "text",
+          "heading": "Why \"multiply by 7\" is a myth",
+          "body": "The rule \"1 dog year = 7 human years\" is too simple. A 1-year-old dog is much more mature than a 7-year-old child. Modern formulas reflect that dogs age in a non-linear way - faster when young and slower in later years."
+        },
+        {
+          "type": "list",
+          "heading": "Dog life stages",
+          "items": [
+            "**Puppy (0-1 year)** - Rapid growth and development",
+            "**Junior (1-2 years)** - Maturing, full of energy",
+            "**Adult (2-7 years)** - Prime years",
+            "**Senior (7-10 years)** - Slowing down, needs more care",
+            "**Geriatric (10+ years)** - Special diet and care"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Do large dogs age faster?",
+              "a": "Yes, large and giant breeds age faster than small ones. A Chihuahua may live 15-20 years, while a Great Dane often lives 7-10 years."
+            },
+            {
+              "q": "When is a dog \"old\"?",
+              "a": "It depends on size: small dogs become seniors around 10, medium around 8, large around 6, giant around 5."
+            }
+          ]
+        }
+      ]
+    },
+    "roman-numerals": {
+      "name": "Roman Numerals Calculator",
+      "description": "Convert Arabic numbers to Roman numerals and vice versa.",
+      "seoTitle": "Roman Numerals Calculator Online - Roman Number Converter | utllo",
+      "seoDescription": "Free online Roman numerals calculator. Convert Arabic numbers to Roman numerals and vice versa. Roman numerals table from 1 to 3999.",
+      "title": "Roman Numerals Calculator",
+      "subtitle": "Convert Arabic numbers to Roman numerals and back",
+      "arabicToRoman": "Arabic → Roman",
+      "romanToArabic": "Roman → Arabic",
+      "inputArabic": "Arabic number (1-3999)",
+      "inputRoman": "Roman numeral",
+      "placeholderArabic": "e.g. 2024",
+      "placeholderRoman": "e.g. MMXXIV",
+      "result": "Result",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "clear": "Clear",
+      "invalidNumber": "Enter a number from 1 to 3999",
+      "invalidRoman": "Invalid Roman numeral",
+      "referenceTable": "Reference table",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Roman Numerals - Converter and Calculator Online",
+          "body": "Our free Roman numerals converter lets you switch quickly between Arabic (1, 2, 3...) and Roman (I, II, III...). Enter an Arabic or Roman number and the calculator converts it. It supports numbers from 1 to 3999."
+        },
+        {
+          "type": "table",
+          "heading": "The 7 basic symbols",
+          "headers": [
+            "Symbol",
+            "Value"
+          ],
+          "rows": [
+            [
+              "I",
+              "1"
+            ],
+            [
+              "V",
+              "5"
+            ],
+            [
+              "X",
+              "10"
+            ],
+            [
+              "L",
+              "50"
+            ],
+            [
+              "C",
+              "100"
+            ],
+            [
+              "D",
+              "500"
+            ],
+            [
+              "M",
+              "1000"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "How does subtractive notation work?",
+          "body": "When a smaller symbol appears before a larger one, we subtract its value. For example: IV = 5-1 = 4, IX = 10-1 = 9, XL = 50-10 = 40, XC = 100-10 = 90, CD = 500-100 = 400, CM = 1000-100 = 900."
+        },
+        {
+          "type": "list",
+          "heading": "Where are Roman numerals used today?",
+          "items": [
+            "**Clocks** - Clock faces often use Roman numerals",
+            "**Book chapters** - Chapter and volume numbering",
+            "**Dates** - Years on buildings, films (e.g. MMXXVI = 2026)",
+            "**Monarchs and popes** - Elizabeth II, John Paul II",
+            "**Events** - Super Bowl LVIII, Olympic Games XXXIII"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Why is the maximum 3999?",
+              "a": "In the standard system there is no symbol for 5000. Larger numbers need special notation (e.g. vinculum = ×1000)."
+            },
+            {
+              "q": "Is 4 written as IIII or IV?",
+              "a": "Both are correct. IV (subtractive) is more common, but IIII appears on many clocks."
+            },
+            {
+              "q": "Is there a symbol for zero?",
+              "a": "No. The Romans did not have a concept of zero as a number. Their system was additive and did not need a symbol for nothing."
+            }
+          ]
+        }
+      ]
+    },
+    "cat-years-calculator": {
+      "name": "Cat Years to Human Years",
+      "description": "Convert cat age to human years.",
+      "seoTitle": "Cat Years to Human Years - Cat Age Calculator Online | utllo",
+      "seoDescription": "Free online cat years calculator. Convert cat age to human years. Modern nonlinear formula accounting for cat life stages.",
+      "title": "Cat Years to Human Years",
+      "subtitle": "Convert your cat's age to human years",
+      "catAge": "Cat age (years)",
+      "calculate": "Calculate age",
+      "clear": "Clear",
+      "humanYears": "Age in human years",
+      "lifeStage": "Life stage",
+      "result": "human years",
+      "lifeExpectancy": "Average life expectancy",
+      "indoor": "Indoor cat",
+      "outdoor": "Outdoor cat",
+      "kitten": "Kitten",
+      "junior": "Junior",
+      "adult": "Adult",
+      "mature": "Mature",
+      "senior": "Senior",
+      "geriatric": "Geriatric",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Cat Years to Human Years - Cat Age Calculator",
+          "body": "Our cat years calculator converts your cat's age to human years. The \"multiply by 7\" rule is a simplification. Cats age quickly in the first two years, then the rate slows down."
+        },
+        {
+          "type": "text",
+          "heading": "Why multiply by 7 doesn't work",
+          "body": "A 1-year-old cat is more mature than a 7-year-old child. According to AAHA, a cat after the first year is roughly equivalent to a 15-year-old human, and after the second year to a 24-year-old. Each additional year is about 4 human years."
+        },
+        {
+          "type": "table",
+          "heading": "Cat years conversion table",
+          "headers": [
+            "Cat age",
+            "Human age"
+          ],
+          "rows": [
+            [
+              "1 year",
+              "15 years"
+            ],
+            [
+              "2 years",
+              "24 years"
+            ],
+            [
+              "5 years",
+              "36 years"
+            ],
+            [
+              "10 years",
+              "56 years"
+            ],
+            [
+              "15 years",
+              "76 years"
+            ],
+            [
+              "20 years",
+              "96 years"
+            ]
+          ]
+        },
+        {
+          "type": "grid",
+          "heading": "Cat life stages",
+          "items": [
+            {
+              "title": "Kitten (0-6 months)",
+              "body": "Rapid growth, learning, socialisation"
+            },
+            {
+              "title": "Junior (7 months-2 years)",
+              "body": "Reaching full size"
+            },
+            {
+              "title": "Adult (3-6 years)",
+              "body": "Prime years"
+            },
+            {
+              "title": "Mature (7-10 years)",
+              "body": "Less active"
+            },
+            {
+              "title": "Senior (11-14 years)",
+              "body": "Needs more health care"
+            },
+            {
+              "title": "Geriatric (15+ years)",
+              "body": "Special diet and monitoring"
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How long do cats usually live?",
+              "a": "Indoor cats live on average 12-18 years. Outdoor cats tend to live shorter (10-12 years) due to risks."
+            },
+            {
+              "q": "What is the oldest cat on record?",
+              "a": "The oldest documented cat was Creme Puff from Texas, who lived 38 years and 3 days (1967-2005)."
+            },
+            {
+              "q": "How can I help my cat live longer?",
+              "a": "Regular vet check-ups, a healthy diet, keeping a healthy weight, and mental and physical activity."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "common": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "generate": "Generate",
+    "clear": "Clear",
+    "comingSoon": "Coming soon",
+    "placeholder": "This tool is being prepared. Come back soon!"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "about": "About",
+    "terms": "Terms of Service",
+    "description": "Free online tools for everyone. Generators, converters, calculators and randomizers - all in one place.",
+    "categories": "Categories",
+    "popularTools": "Popular tools",
+    "legal": "Legal",
+    "madeWith": "Made with",
+    "inPoland": "in Poland"
+  }
+}
