@@ -5,13 +5,37 @@ import Link from "next/link";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { getConsent, setConsent, GA_ID } from "@/lib/consent";
 
+const bannerText: Record<string, { message: string; privacyLink: string; reject: string; accept: string }> = {
+  pl: {
+    message: "Ta strona korzysta z plików cookies i Google Analytics w celu analizy ruchu i ulepszania serwisu. Twoje dane są anonimowe.",
+    privacyLink: "Polityka prywatności",
+    reject: "Odrzucam",
+    accept: "Akceptuję",
+  },
+  en: {
+    message: "This site uses cookies and Google Analytics to analyze traffic and improve the service. Your data is anonymous.",
+    privacyLink: "Privacy Policy",
+    reject: "Reject",
+    accept: "Accept",
+  },
+};
+
+function getLocaleFromPath(): string {
+  if (typeof window === "undefined") return "en";
+  const segments = window.location.pathname.split("/").filter(Boolean);
+  const locale = segments[0];
+  return locale === "pl" ? "pl" : "en";
+}
+
 export function CookieBanner() {
   const [consent, setConsentState] = useState<boolean | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const [locale, setLocale] = useState("en");
 
   useEffect(() => {
     const current = getConsent();
     setConsentState(current);
+    setLocale(getLocaleFromPath());
     setLoaded(true);
   }, []);
 
@@ -28,6 +52,8 @@ export function CookieBanner() {
   // Don't render anything on server or before hydration
   if (!loaded) return null;
 
+  const t = bannerText[locale] || bannerText.en;
+
   return (
     <>
       {/* Load GA only if consent is granted */}
@@ -40,13 +66,12 @@ export function CookieBanner() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <div className="flex-1 text-sm text-muted-foreground">
                 <p>
-                  Ta strona korzysta z plików cookies i Google Analytics w celu 
-                  analizy ruchu i ulepszania serwisu. Twoje dane są anonimowe.{" "}
+                  {t.message}{" "}
                   <Link
-                    href="/pl/polityka-prywatnosci"
+                    href={`/${locale}/polityka-prywatnosci`}
                     className="underline hover:text-foreground transition-colors"
                   >
-                    Polityka prywatności
+                    {t.privacyLink}
                   </Link>
                 </p>
               </div>
@@ -55,13 +80,13 @@ export function CookieBanner() {
                   onClick={handleReject}
                   className="px-4 py-2 text-sm rounded-lg border border-border hover:bg-muted transition-colors"
                 >
-                  Odrzucam
+                  {t.reject}
                 </button>
                 <button
                   onClick={handleAccept}
                   className="px-4 py-2 text-sm rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
                 >
-                  Akceptuję
+                  {t.accept}
                 </button>
               </div>
             </div>

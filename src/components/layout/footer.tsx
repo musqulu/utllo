@@ -15,6 +15,10 @@ interface FooterProps {
       calculators: string;
     };
     tools: Record<string, { name: string; description: string }>;
+    categoryPages?: {
+      allTools?: string;
+      [key: string]: unknown;
+    };
     footer: {
       rights: string;
       privacy: string;
@@ -219,7 +223,7 @@ export function Footer({ locale, dictionary }: FooterProps) {
         {/* Tools Summary - SEO Links */}
         <div className="mt-12 pt-8 border-t">
           <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
-            Wszystkie narzędzia
+            {dictionary.categoryPages?.allTools || "All tools"}
           </h4>
           <div className="flex flex-wrap gap-x-4 gap-y-2">
             {allTools.filter(t => t.isReady).slice(0, 20).map((tool) => {

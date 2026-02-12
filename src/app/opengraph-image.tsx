@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "utllo - Darmowe Narzędzia Online";
+export const alt = "utllo - Free Online Tools";
 export const size = {
   width: 1200,
   height: 630,
@@ -79,7 +79,7 @@ export default function OgImage() {
             margin: 0,
           }}
         >
-          Darmowe narzędzia online dla każdego
+          Free online tools for everyone
         </p>
 
         {/* Tool categories */}
@@ -90,7 +90,7 @@ export default function OgImage() {
             marginTop: "40px",
           }}
         >
-          {["Generatory", "Kalkulatory", "Konwertery", "Narzędzia", "Losuj"].map(
+          {["Generators", "Calculators", "Converters", "Tools", "Random"].map(
             (cat) => (
               <div
                 key={cat}

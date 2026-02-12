@@ -12,20 +12,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     template: "%s | utllo",
-    default: "utllo - Darmowe Narzędzia Online",
+    default: "utllo - Free Online Tools",
   },
   description:
-    "Darmowe narzędzia online dla każdego. Generator haseł, odliczanie do wakacji, kalkulatory, konwertery i wiele więcej. Wszystko działa w przeglądarce.",
+    "Free online tools for everyone. Password generator, vacation countdown, calculators, converters and more. Everything runs in your browser.",
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL || "https://utllo.com"
   ),
   keywords: [
-    "narzędzia online",
-    "darmowe narzędzia",
-    "generator haseł",
-    "odliczanie do wakacji",
-    "kalkulator BMI",
-    "konwerter PDF",
+    "online tools",
+    "free tools",
+    "password generator",
+    "vacation countdown",
+    "BMI calculator",
+    "PDF converter",
     "utllo",
   ],
   authors: [{ name: "utllo" }],
@@ -33,12 +33,21 @@ export const metadata: Metadata = {
   publisher: "utllo",
   openGraph: {
     type: "website",
-    locale: "pl_PL",
+    locale: "en_US",
+    alternateLocale: ["pl_PL"],
     siteName: "utllo",
+    title: "utllo - Free Online Tools",
+    description:
+      "Free online tools for everyone. Password generator, vacation countdown, calculators, converters and more.",
+    url: "https://utllo.com",
   },
   twitter: {
     card: "summary_large_image",
+    site: "@utllo",
     creator: "@utllo",
+    title: "utllo - Free Online Tools",
+    description:
+      "Free online tools for everyone. Password generator, vacation countdown, calculators, converters and more.",
   },
   robots: {
     index: true,
