@@ -22,6 +22,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : "Masz pytanie, sugestię lub problem? Skontaktuj się z zespołem utllo. Odpowiadamy na wiadomości w ciągu 24-48 godzin.",
     alternates: {
       canonical: `${BASE_URL}/${locale}/kontakt`,
+      languages: {
+        pl: `${BASE_URL}/pl/kontakt`,
+        en: `${BASE_URL}/en/kontakt`,
+      },
     },
     openGraph: {
       title: isEn ? "Contact Us | utllo" : "Kontakt - Skontaktuj się z nami | utllo",

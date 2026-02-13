@@ -23,6 +23,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : "Poznaj utllo - darmowe narzędzia online dla każdego. Dowiedz się o naszej misji, technologii i dlaczego tworzymy bezpłatne narzędzia internetowe.",
     alternates: {
       canonical: `${BASE_URL}/${locale}/o-nas`,
+      languages: {
+        pl: `${BASE_URL}/pl/o-nas`,
+        en: `${BASE_URL}/en/o-nas`,
+      },
     },
     openGraph: {
       title: isEn ? "About Us | utllo" : "O nas - Kim jesteśmy | utllo",
@@ -121,8 +125,8 @@ export default async function AboutPage({ params }: PageProps) {
               </h3>
               <p className="text-sm text-muted-foreground">
                 {isEn
-                  ? "Password generator, Lorem Ipsum, UUID, QR codes and many other tools for quickly creating the data you need."
-                  : "Generator haseł, Lorem Ipsum, UUID, QR kodów i wiele innych narzędzi do szybkiego tworzenia potrzebnych danych."}
+                  ? "Password generator, Lorem Ipsum, QR codes and many other tools for quickly creating the data you need."
+                  : "Generator haseł, Lorem Ipsum, QR kodów i wiele innych narzędzi do szybkiego tworzenia potrzebnych danych."}
               </p>
             </CardContent>
           </Card>

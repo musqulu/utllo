@@ -350,12 +350,6 @@
         }
       ]
     },
-    "uuid-generator": {
-      "name": "UUID Generator",
-      "description": "Generate unique UUID v4 identifiers with one click.",
-      "seoTitle": "UUID Generator Online - Free Identifier Generator",
-      "seoDescription": "Free UUID v4 generator online. Create unique identifiers for your projects."
-    },
     "lorem-ipsum": {
       "name": "Lorem Ipsum Generator",
       "description": "Generate Lorem Ipsum placeholder text for your projects.",
@@ -373,30 +367,6 @@
           "body": "Lorem Ipsum is the standard placeholder text used in printing and typesetting since the 16th century. It is a distorted excerpt from Cicero's \"De finibus bonorum et malorum\". Our generator creates random Lorem Ipsum text in three formats: paragraphs, sentences and single words. You can adjust the amount of text with the slider. Lorem Ipsum is widely used by designers and developers to fill mockups and prototypes before adding real content."
         }
       ]
-    },
-    "color-converter": {
-      "name": "Color Converter",
-      "description": "Convert colors between HEX, RGB, HSL formats.",
-      "seoTitle": "Color Converter Online - HEX, RGB, HSL",
-      "seoDescription": "Free online color converter. Convert between HEX, RGB and HSL."
-    },
-    "json-formatter": {
-      "name": "JSON Formatter",
-      "description": "Format and validate JSON data with syntax highlighting.",
-      "seoTitle": "JSON Formatter Online - Format & Validate",
-      "seoDescription": "Free online JSON formatter. Format, validate and browse JSON data."
-    },
-    "base64": {
-      "name": "Base64",
-      "description": "Encode and decode text in Base64 format.",
-      "seoTitle": "Base64 Encoder/Decoder Online",
-      "seoDescription": "Free online Base64 encoder and decoder. Convert text to and from Base64."
-    },
-    "hash-generator": {
-      "name": "Hash Generator",
-      "description": "Generate MD5, SHA-1, SHA-256 hashes for text.",
-      "seoTitle": "Hash Generator Online - MD5, SHA-1, SHA-256",
-      "seoDescription": "Free online hash generator. Create MD5, SHA-1, SHA-256 hashes for any text."
     },
     "qr-generator": {
       "name": "QR Generator",
@@ -1329,12 +1299,6 @@
         }
       ]
     },
-    "word-to-pdf": {
-      "name": "Word to PDF",
-      "description": "Convert Word documents to PDF format.",
-      "seoTitle": "Word to PDF Converter Online - DOCX to PDF",
-      "seoDescription": "Free online Word to PDF converter. Convert Word documents to PDF format quickly and easily."
-    },
     "pdf-to-jpg": {
       "name": "PDF to JPG",
       "description": "Convert PDF pages to JPG images.",
@@ -1458,18 +1422,6 @@
           "body": "The generator lets you draw multiple numbers at once. You can choose whether numbers should be unique or can repeat. Ideal for lotteries, prize draws, picking groups and other uses that need many random values."
         }
       ]
-    },
-    "random-quote": {
-      "name": "Random Quote",
-      "description": "Discover inspiring quotes randomly.",
-      "seoTitle": "Random Quote Generator Online - Inspiring Random Quotes",
-      "seoDescription": "Free online random quote generator. Discover inspiring quotes from famous people."
-    },
-    "random-bible": {
-      "name": "Random Bible Quote",
-      "description": "Draw random verses and quotes from the Bible.",
-      "seoTitle": "Random Bible Quote Online - Random Bible Verses",
-      "seoDescription": "Free online random Bible quote generator. Discover Bible verses for every day."
     },
     "random-tarot": {
       "name": "Random Tarot Card",

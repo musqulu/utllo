@@ -350,12 +350,6 @@
         }
       ]
     },
-    "uuid-generator": {
-      "name": "Generator UUID",
-      "description": "Generuj unikalne identyfikatory UUID v4 jednym kliknięciem.",
-      "seoTitle": "Generator UUID Online - Darmowy Generator Identyfikatorów",
-      "seoDescription": "Darmowy generator UUID v4 online. Twórz unikalne identyfikatory dla swoich projektów."
-    },
     "lorem-ipsum": {
       "name": "Generator Lorem Ipsum",
       "description": "Generuj tekst zastępczy Lorem Ipsum do projektów.",
@@ -373,30 +367,6 @@
           "body": "Lorem Ipsum to standardowy tekst zastępczy używany w przemyśle poligraficznym i typograficznym od XVI wieku. Jest to zniekształcony fragment traktatu Cycerona \"De finibus bonorum et malorum\". Nasz generator tworzy losowy tekst Lorem Ipsum w trzech formatach: akapity, zdania i pojedyncze słowa. Możesz dostosować ilość generowanego tekstu za pomocą suwaka. Tekst Lorem Ipsum jest powszechnie używany przez projektantów i deweloperów do wypełniania makiet i prototypów przed dodaniem właściwej treści."
         }
       ]
-    },
-    "color-converter": {
-      "name": "Konwerter Kolorów",
-      "description": "Konwertuj kolory między formatami HEX, RGB, HSL.",
-      "seoTitle": "Konwerter Kolorów Online - HEX, RGB, HSL",
-      "seoDescription": "Darmowy konwerter kolorów online. Konwertuj między HEX, RGB i HSL."
-    },
-    "json-formatter": {
-      "name": "Formatter JSON",
-      "description": "Formatuj i waliduj dane JSON z podświetlaniem składni.",
-      "seoTitle": "Formatter JSON Online - Formatowanie i Walidacja",
-      "seoDescription": "Darmowy formatter JSON online. Formatuj, waliduj i przeglądaj dane JSON."
-    },
-    "base64": {
-      "name": "Base64",
-      "description": "Enkoduj i dekoduj tekst w formacie Base64.",
-      "seoTitle": "Enkoder/Dekoder Base64 Online",
-      "seoDescription": "Darmowy enkoder i dekoder Base64 online. Konwertuj tekst do i z Base64."
-    },
-    "hash-generator": {
-      "name": "Generator Hashy",
-      "description": "Generuj hashe MD5, SHA-1, SHA-256 dla tekstu.",
-      "seoTitle": "Generator Hashy Online - MD5, SHA-1, SHA-256",
-      "seoDescription": "Darmowy generator hashy online. Twórz hashe MD5, SHA-1, SHA-256 dla dowolnego tekstu."
     },
     "qr-generator": {
       "name": "Generator QR",
@@ -1329,12 +1299,6 @@
         }
       ]
     },
-    "word-to-pdf": {
-      "name": "Word na PDF",
-      "description": "Konwertuj dokumenty Word do formatu PDF.",
-      "seoTitle": "Konwerter Word na PDF Online - DOCX do PDF",
-      "seoDescription": "Darmowy konwerter Word na PDF online. Konwertuj dokumenty Word do formatu PDF szybko i łatwo."
-    },
     "pdf-to-jpg": {
       "name": "PDF na JPG",
       "description": "Konwertuj strony PDF do obrazów JPG.",
@@ -1458,18 +1422,6 @@
           "body": "Generator pozwala na losowanie wielu liczb na raz. Możesz wybrać czy liczby mają być unikalne czy mogą się powtarzać. Idealny do loterii, losowania nagród, wybierania grup i innych zastosowań wymagających wielu losowych wartości."
         }
       ]
-    },
-    "random-quote": {
-      "name": "Losuj Cytat",
-      "description": "Odkryj inspirujące cytaty losowo.",
-      "seoTitle": "Losuj Cytat Online - Losowe Cytaty Inspirujące",
-      "seoDescription": "Darmowy generator losowych cytatów online. Odkryj inspirujące cytaty znanych osób."
-    },
-    "random-bible": {
-      "name": "Losuj Cytat z Biblii",
-      "description": "Losuj wersety i cytaty z Biblii.",
-      "seoTitle": "Losuj Cytat z Biblii Online - Losowe Wersety Biblijne",
-      "seoDescription": "Darmowy generator losowych cytatów z Biblii. Odkryj wersety biblijne na każdy dzień."
     },
     "random-tarot": {
       "name": "Losuj Kartę Tarota",

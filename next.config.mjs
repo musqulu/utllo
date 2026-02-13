@@ -21,11 +21,6 @@ const nextConfig = {
       { old: 'generator-qr', category: 'generatory' },
 
       // Narzędzia (Tools)
-      { old: 'generator-uuid', category: 'narzedzia' },
-      { old: 'konwerter-kolorow', category: 'narzedzia' },
-      { old: 'formatter-json', category: 'narzedzia' },
-      { old: 'base64', category: 'narzedzia' },
-      { old: 'generator-hashy', category: 'narzedzia' },
       { old: 'licznik-znakow', category: 'narzedzia' },
       { old: 'licznik-slow', category: 'narzedzia' },
       { old: 'rzut-kostka', category: 'losuj' },
@@ -38,15 +33,12 @@ const nextConfig = {
       
       // Konwertery (Converters)
       { old: 'pdf-na-word', category: 'konwertery' },
-      { old: 'word-na-pdf', category: 'konwertery' },
       { old: 'pdf-na-jpg', category: 'konwertery' },
       { old: 'pdf-na-png', category: 'konwertery' },
       
       // Losuj (Randomizers)
       { old: 'losuj-liczbe', category: 'losuj' },
       { old: 'losuj-liczby', category: 'losuj' },
-      { old: 'losuj-cytat', category: 'losuj' },
-      { old: 'losuj-cytat-biblia', category: 'losuj' },
       { old: 'losuj-karte-tarota', category: 'losuj' },
       { old: 'losuj-tak-nie', category: 'losuj' },
       

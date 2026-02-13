@@ -27,6 +27,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : "Polityka prywatności serwisu utllo. Dowiedz się, jak chronimy Twoje dane i jakie informacje zbieramy podczas korzystania z naszych narzędzi online.",
     alternates: {
       canonical: `${BASE_URL}/${locale}/polityka-prywatnosci`,
+      languages: {
+        pl: `${BASE_URL}/pl/polityka-prywatnosci`,
+        en: `${BASE_URL}/en/polityka-prywatnosci`,
+      },
     },
     openGraph: {
       title: isEn ? "Privacy Policy | utllo" : "Polityka Prywatności | utllo",

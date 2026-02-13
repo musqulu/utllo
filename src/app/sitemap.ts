@@ -53,7 +53,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}${getToolUrl(tool, locale)}`,
         lastModified: new Date(),
         changeFrequency: "monthly",
-        priority: tool.isReady ? 0.8 : 0.5,
+        priority: 0.8,
+        alternates: { languages: alternates },
+      });
+    }
+  }
+
+  // Static pages for each locale
+  const staticPages = ["kontakt", "o-nas", "regulamin", "polityka-prywatnosci"];
+  for (const locale of i18n.locales) {
+    for (const page of staticPages) {
+      const alternates: Record<string, string> = {};
+      for (const loc of i18n.locales) {
+        alternates[loc] = `${baseUrl}/${loc}/${page}`;
+      }
+
+      routes.push({
+        url: `${baseUrl}/${locale}/${page}`,
+        lastModified: new Date(),
+        changeFrequency: "yearly",
+        priority: 0.3,
         alternates: { languages: alternates },
       });
     }

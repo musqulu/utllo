@@ -28,6 +28,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       : "Regulamin korzystania z serwisu utllo.pl. Zasady użytkowania darmowych narzędzi online, prawa i obowiązki użytkowników.",
     alternates: {
       canonical: `${BASE_URL}/${locale}/regulamin`,
+      languages: {
+        pl: `${BASE_URL}/pl/regulamin`,
+        en: `${BASE_URL}/en/regulamin`,
+      },
     },
     openGraph: {
       title: isEn ? "Terms of Service | utllo" : "Regulamin | utllo",
