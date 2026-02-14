@@ -15,6 +15,7 @@ import { CountdownDate } from "@/components/countdown/countdown-date";
 import { WhiteScreenTool } from "@/components/white-screen/white-screen-tool";
 import { AmountInWords } from "@/components/amount-in-words/amount-in-words";
 import { CaesarCipher } from "@/components/caesar-cipher/caesar-cipher";
+import { Metronome } from "@/components/metronome/metronome";
 import { PdfConverter } from "@/components/pdf-converter/pdf-converter";
 import { PdfToWordConverter } from "@/components/pdf-converter/pdf-to-word-converter";
 import { BMICalculator } from "@/components/calculators/bmi-calculator";
@@ -350,6 +351,30 @@ export function renderToolComponent(
             copy: toolDict.copy || "Copy",
             copied: toolDict.copied || "Copied!",
             clear: toolDict.clear || "Clear",
+          }}
+        />
+      );
+    case "metronome":
+      return (
+        <Metronome
+          dictionary={{
+            title: toolDict.title || "Metronome",
+            subtitle: toolDict.subtitle || "Keep perfect tempo while practicing",
+            bpm: toolDict.bpm || "BPM",
+            start: toolDict.start || "Start",
+            stop: toolDict.stop || "Stop",
+            tapTempo: toolDict.tapTempo || "Tap",
+            timeSignature: toolDict.timeSignature || "Time signature",
+            beat: toolDict.beat || "Beat",
+            accentFirst: toolDict.accentFirst || "Accent first beat",
+            tempoPresets: toolDict.tempoPresets || "Tempo presets",
+            largo: toolDict.largo || "Largo",
+            adagio: toolDict.adagio || "Adagio",
+            andante: toolDict.andante || "Andante",
+            moderato: toolDict.moderato || "Moderato",
+            allegro: toolDict.allegro || "Allegro",
+            presto: toolDict.presto || "Presto",
+            vivace: toolDict.vivace || "Vivace",
           }}
         />
       );

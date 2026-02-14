@@ -1179,6 +1179,118 @@
         }
       ]
     },
+    "metronome": {
+      "name": "Metronom Online",
+      "description": "Darmowy metronom online do ćwiczeń muzycznych. Ustaw tempo i ćwicz z precyzyjnym rytmem.",
+      "seoTitle": "Metronom Online - Darmowy Metronom do Ćwiczeń Muzycznych | utllo",
+      "seoDescription": "Darmowy metronom online. Ustaw BPM, metrum i ćwicz z precyzyjnym rytmem. Tap tempo, presety tempa i wizualny wskaźnik uderzenia. Bez instalacji, działa w przeglądarce.",
+      "title": "Metronom Online",
+      "subtitle": "Utrzymuj idealne tempo podczas ćwiczeń muzycznych",
+      "bpm": "BPM",
+      "start": "Start",
+      "stop": "Stop",
+      "tapTempo": "Tap",
+      "timeSignature": "Metrum",
+      "beat": "Uderzenie",
+      "accentFirst": "Akcent na pierwszy uderzenie",
+      "tempoPresets": "Presety tempa",
+      "largo": "Largo",
+      "adagio": "Adagio",
+      "andante": "Andante",
+      "moderato": "Moderato",
+      "allegro": "Allegro",
+      "presto": "Presto",
+      "vivace": "Vivace",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest metronom online?",
+          "body": "Metronom to urządzenie lub narzędzie służące do odmierzania tempa w muzyce. Nasz darmowy metronom online działa bezpośrednio w przeglądarce i pozwala na precyzyjne ustawienie tempa w zakresie od 20 do 300 BPM (uderzeń na minutę). Jest idealnym narzędziem zarówno dla początkujących muzyków, jak i profesjonalistów, którzy chcą doskonalić swoje poczucie rytmu."
+        },
+        {
+          "type": "text",
+          "heading": "Jak korzystać z metronomu online?",
+          "body": "Korzystanie z naszego metronomu jest proste. Ustaw żądane tempo za pomocą suwaka lub wpisz wartość BPM ręcznie. Wybierz metrum (np. 4/4, 3/4, 6/8), a następnie naciśnij przycisk Start. Metronom zacznie odmierzać tempo z wyraźnym akcentem na pierwszym uderzeniu każdego taktu. Możesz też użyć funkcji Tap Tempo — stukaj w przycisk w pożądanym tempie, a metronom automatycznie wykryje BPM."
+        },
+        {
+          "type": "grid",
+          "heading": "Oznaczenia tempa w muzyce",
+          "items": [
+            {
+              "title": "Largo (40-60 BPM)",
+              "body": "Bardzo wolne tempo, szerokie i majestatyczne. Często spotykane w klasycznych adagiach i uroczystych utworach."
+            },
+            {
+              "title": "Adagio (60-76 BPM)",
+              "body": "Wolne tempo, spokojne i pełne ekspresji. Popularne w balladach i wolnych częściach sonat."
+            },
+            {
+              "title": "Andante (76-108 BPM)",
+              "body": "Umiarkowane tempo, tempo spacerowe. Naturalne i komfortowe dla wielu stylów muzycznych."
+            },
+            {
+              "title": "Moderato (108-120 BPM)",
+              "body": "Umiarkowanie szybkie tempo. Złoty środek, często używany w muzyce pop i rockowej."
+            },
+            {
+              "title": "Allegro (120-156 BPM)",
+              "body": "Szybkie i energiczne tempo. Dominujące w wielu gatunkach, od klasyki po muzykę taneczną."
+            },
+            {
+              "title": "Vivace (156-176 BPM)",
+              "body": "Żywe i ożywione tempo. Nadaje utworom radosny i porywający charakter."
+            },
+            {
+              "title": "Presto (168-200 BPM)",
+              "body": "Bardzo szybkie tempo, wymagające zaawansowanej techniki. Spotykane w finałach i wirtuozowskich kompozycjach."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "Do czego przydaje się metronom?",
+          "items": [
+            "**Ćwiczenie gry na instrumencie** - Utrzymuj stałe tempo podczas nauki nowych utworów na gitarze, pianinie, perkusji czy skrzypcach",
+            "**Nauka śpiewu** - Rozwijaj poczucie rytmu i precyzję wokalną ćwicząc z metronomem",
+            "**Ćwiczenia z zespołem** - Synchronizuj grę wszystkich muzyków dzięki wspólnemu tempu",
+            "**Nauka tańca** - Utrzymuj regularny rytm podczas ćwiczeń tanecznych i choreografii",
+            "**Trening sportowy** - Utrzymuj stałe tempo podczas biegania, ćwiczeń cardio czy jogi",
+            "**Logopedia i rehabilitacja** - Metronomiczne ćwiczenia rytmiczne wspierają terapię mowy i koordynację"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Czym jest BPM?",
+          "body": "BPM (Beats Per Minute) to jednostka mierzenia tempa muzycznego, oznaczająca liczbę uderzeń na minutę. Im wyższa wartość BPM, tym szybsze tempo utworu. Przykładowo: ballada ma zazwyczaj 60-80 BPM, muzyka pop oscyluje wokół 100-130 BPM, a techno czy drum and bass mogą osiągać nawet 160-180 BPM. Nasz metronom pozwala na ustawienie tempa w zakresie od 20 do 300 BPM."
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy metronom online jest tak samo dokładny jak fizyczny?",
+              "a": "Tak, nasz metronom korzysta z Web Audio API, która zapewnia dokładność na poziomie milisekund. Jest to dokładniejsze niż wiele tanich metronomów mechanicznych."
+            },
+            {
+              "q": "Co to jest metrum (takt)?",
+              "a": "Metrum określa sposób grupowania uderzeń w takcie. Najczęstsze to 4/4 (cztery ćwierćnuty w takcie), 3/4 (walc) i 6/8 (dwa główne uderzenia z podziałem trójkowym). Górna liczba oznacza liczbę uderzeń, dolna — wartość nuty."
+            },
+            {
+              "q": "Jak działa funkcja Tap Tempo?",
+              "a": "Stukaj w przycisk Tap w pożądanym tempie. Metronom analizuje odstępy między stuknięciami i automatycznie oblicza średnie BPM. Im więcej stuknięć, tym dokładniejszy wynik."
+            },
+            {
+              "q": "Jakie tempo jest odpowiednie dla początkujących?",
+              "a": "Zacznij od wolnego tempa (60-80 BPM) i stopniowo je zwiększaj. Ważniejsza jest precyzja niż szybkość. Gdy opanujesz utwór w wolnym tempie, możesz przejść do szybszego."
+            },
+            {
+              "q": "Czy potrzebuję instalować jakąś aplikację?",
+              "a": "Nie, nasz metronom działa bezpośrednio w przeglądarce internetowej. Nie wymaga instalacji, rejestracji ani pobierania żadnych plików."
+            }
+          ]
+        }
+      ]
+    },
     "pdf-to-word": {
       "name": "PDF na Word",
       "description": "Konwertuj dokumenty PDF do edytowalnych plików Word.",

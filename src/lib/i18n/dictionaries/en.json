@@ -1179,6 +1179,118 @@
         }
       ]
     },
+    "metronome": {
+      "name": "Online Metronome",
+      "description": "Free online metronome for music practice. Set tempo and practice with a precise beat.",
+      "seoTitle": "Online Metronome - Free Metronome for Music Practice | utllo",
+      "seoDescription": "Free online metronome. Set BPM, time signature and practice with a precise beat. Tap tempo, tempo presets and visual beat indicator. No installation, works in browser.",
+      "title": "Online Metronome",
+      "subtitle": "Keep perfect tempo while practicing music",
+      "bpm": "BPM",
+      "start": "Start",
+      "stop": "Stop",
+      "tapTempo": "Tap",
+      "timeSignature": "Time signature",
+      "beat": "Beat",
+      "accentFirst": "Accent first beat",
+      "tempoPresets": "Tempo presets",
+      "largo": "Largo",
+      "adagio": "Adagio",
+      "andante": "Andante",
+      "moderato": "Moderato",
+      "allegro": "Allegro",
+      "presto": "Presto",
+      "vivace": "Vivace",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is an online metronome?",
+          "body": "A metronome is a device or tool used to keep time in music. Our free online metronome works directly in your browser and allows you to set a precise tempo ranging from 20 to 300 BPM (beats per minute). It is the perfect tool for both beginner musicians and professionals who want to improve their sense of rhythm and timing."
+        },
+        {
+          "type": "text",
+          "heading": "How to use the online metronome?",
+          "body": "Using our metronome is simple. Set the desired tempo using the slider or type a BPM value manually. Choose a time signature (e.g. 4/4, 3/4, 6/8), then press Start. The metronome will begin keeping time with a clear accent on the first beat of each measure. You can also use the Tap Tempo feature — tap the button at your desired speed and the metronome will automatically detect the BPM."
+        },
+        {
+          "type": "grid",
+          "heading": "Tempo markings in music",
+          "items": [
+            {
+              "title": "Largo (40-60 BPM)",
+              "body": "Very slow and broad tempo. Majestic and solemn. Often found in classical adagios and ceremonial pieces."
+            },
+            {
+              "title": "Adagio (60-76 BPM)",
+              "body": "Slow and expressive tempo. Calm and full of emotion. Popular in ballads and slow sonata movements."
+            },
+            {
+              "title": "Andante (76-108 BPM)",
+              "body": "Moderate walking pace tempo. Natural and comfortable for many musical styles and genres."
+            },
+            {
+              "title": "Moderato (108-120 BPM)",
+              "body": "Moderately fast tempo. The sweet spot, commonly used in pop, rock and many other genres."
+            },
+            {
+              "title": "Allegro (120-156 BPM)",
+              "body": "Fast and energetic tempo. Dominant in many genres from classical to dance music."
+            },
+            {
+              "title": "Vivace (156-176 BPM)",
+              "body": "Lively and animated tempo. Gives pieces a joyful and exhilarating character."
+            },
+            {
+              "title": "Presto (168-200 BPM)",
+              "body": "Very fast tempo requiring advanced technique. Found in finales and virtuosic compositions."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "heading": "What is a metronome used for?",
+          "items": [
+            "**Instrument practice** - Maintain steady tempo while learning new pieces on guitar, piano, drums or violin",
+            "**Vocal training** - Develop your sense of rhythm and vocal precision by practicing with a metronome",
+            "**Band rehearsals** - Synchronize all musicians by playing to a shared tempo reference",
+            "**Dance practice** - Keep a regular beat during dance exercises and choreography rehearsals",
+            "**Sports training** - Maintain consistent pace during running, cardio workouts or yoga",
+            "**Speech therapy and rehabilitation** - Rhythmic metronome exercises support speech therapy and motor coordination"
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "What is BPM?",
+          "body": "BPM (Beats Per Minute) is the unit of measuring musical tempo, indicating the number of beats per minute. The higher the BPM value, the faster the tempo. For example, a ballad typically has 60-80 BPM, pop music hovers around 100-130 BPM, while techno and drum and bass can reach 160-180 BPM. Our metronome lets you set the tempo anywhere from 20 to 300 BPM."
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Is an online metronome as accurate as a physical one?",
+              "a": "Yes, our metronome uses the Web Audio API which provides millisecond-level accuracy. This is more precise than many cheap mechanical metronomes."
+            },
+            {
+              "q": "What is a time signature?",
+              "a": "A time signature defines how beats are grouped in a measure. The most common are 4/4 (four quarter notes per measure), 3/4 (waltz time) and 6/8 (two main beats with triplet subdivisions). The top number indicates beats per measure, the bottom number indicates the note value."
+            },
+            {
+              "q": "How does the Tap Tempo feature work?",
+              "a": "Tap the Tap button at your desired tempo. The metronome analyzes the intervals between taps and automatically calculates the average BPM. The more taps you make, the more accurate the result."
+            },
+            {
+              "q": "What tempo is suitable for beginners?",
+              "a": "Start with a slow tempo (60-80 BPM) and gradually increase it. Precision is more important than speed. Once you master a piece at a slow tempo, you can move to a faster one."
+            },
+            {
+              "q": "Do I need to install any app?",
+              "a": "No, our metronome works directly in your web browser. It requires no installation, registration or file downloads."
+            }
+          ]
+        }
+      ]
+    },
     "pdf-to-word": {
       "name": "PDF to Word",
       "description": "Convert PDF documents to editable Word files.",

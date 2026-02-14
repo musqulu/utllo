@@ -27,6 +27,7 @@ import {
   Lock,
   Crown,
   Cat,
+  Timer,
   LucideIcon,
 } from "lucide-react";
 
@@ -147,6 +148,13 @@ export const tools: Tool[] = [
     id: "caesar-cipher",
     slugs: { pl: "szyfr-cezara", en: "caesar-cipher" },
     icon: Lock,
+    isReady: true,
+    category: "tools",
+  },
+  {
+    id: "metronome",
+    slugs: { pl: "metronom", en: "metronome" },
+    icon: Timer,
     isReady: true,
     category: "tools",
   },

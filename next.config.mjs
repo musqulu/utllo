@@ -30,6 +30,7 @@ const nextConfig = {
       { old: 'bialy-ekran', category: 'narzedzia' },
       { old: 'kwota-slownie', category: 'narzedzia' },
       { old: 'szyfr-cezara', category: 'narzedzia' },
+      { old: 'metronom', category: 'narzedzia' },
       
       // Konwertery (Converters)
       { old: 'pdf-na-word', category: 'konwertery' },
