@@ -1356,6 +1356,98 @@
         }
       ]
     },
+    "online-alarm-clock": {
+      "name": "Online Alarm Clock",
+      "description": "Free browser alarm clock. Set a time (24h), use quick presets, snooze, and get a sound alert. No install.",
+      "seoTitle": "Online Alarm Clock - Free Browser Alarm | utllo",
+      "seoDescription": "Free online alarm clock in your browser. Set hour and minute (24-hour), arm the alarm, snooze for 5 or 10 minutes, test sound, and optional notifications. Works on desktop and mobile; keep the tab open.",
+      "title": "Online Alarm Clock",
+      "subtitle": "Set a wake time and get an alert in this tab",
+      "hour": "Hour (0–23)",
+      "minute": "Minute (0–59)",
+      "arm": "Arm alarm",
+      "cancel": "Cancel alarm",
+      "presetsTitle": "Quick presets",
+      "preset5": "In 5 minutes",
+      "preset10": "In 10 minutes",
+      "testSound": "Test sound",
+      "countdownLabel": "Time until alarm",
+      "ringsAt": "Rings at",
+      "tomorrow": "next day",
+      "mute": "Mute alarm",
+      "unmute": "Unmute alarm",
+      "dismiss": "Dismiss",
+      "snooze5": "Snooze 5 min",
+      "snooze10": "Snooze 10 min",
+      "alarmFiring": "Alarm!",
+      "notificationBody": "Open the tab to dismiss or snooze.",
+      "disclaimer": "The alarm runs in this browser tab. If you close the tab or the site, the alarm stops. Some devices may delay timers when the tab is in the background or the screen is off.",
+      "hiddenTabWarning": "This tab is in the background; the alarm may be delayed on some devices.",
+      "soundLabel": "Alarm sound",
+      "soundClassic": "Classic beeps",
+      "soundDigital": "Digital beeps",
+      "soundBell": "Bell",
+      "soundChime": "Chime",
+      "soundSoft": "Soft melody",
+      "soundRadar": "Radar ping",
+      "soundPulse": "Pulse alert",
+      "strictStopLabel": "Ringing ignores mute",
+      "strictStopHint": "When on, only Dismiss or Snooze stops the sound while the alarm is ringing. Mute does not silence it until you press a button.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is an online alarm clock?",
+          "body": "An online alarm clock lets you pick a time and get reminded in your web browser—without installing an app. You choose hour and minute (24-hour format), optionally start a quick alarm in five or ten minutes, then stay on the page until it rings."
+        },
+        {
+          "type": "list",
+          "heading": "Features",
+          "items": [
+            "**24-hour time** - Set hour and minute for the next ring today or tomorrow",
+            "**Quick presets** - Start an alarm in 5 or 10 minutes",
+            "**Countdown** - See time remaining until the alarm",
+            "**Snooze** - Delay by 5 or 10 minutes after the alarm fires",
+            "**Test sound** - Check volume before you arm the alarm",
+            "**Mute** - Visual alarm only when you prefer silence (unless you turn on “ringing ignores mute”)",
+            "**Sound styles** - Seven built-in styles: classic, digital, bell, chime, soft melody, radar ping, and pulse",
+            "**Optional strict stop** - Optional mode where mute does not silence the alarm while ringing—only Dismiss or Snooze does",
+            "**Optional notifications** - You may allow browser notifications when arming (helps if the tab is behind other windows)"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to use this alarm clock",
+          "items": [
+            "Set the hour (0–23) and minute (0–59), or tap a quick preset",
+            "Click **Arm alarm**",
+            "Keep this tab open until the alarm time",
+            "When it rings, dismiss it or snooze for 5 or 10 minutes"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Does the alarm work if I close the tab?",
+              "a": "No. The alarm is powered by this page. Closing the tab or leaving the site stops it."
+            },
+            {
+              "q": "Will it wake my phone from sleep?",
+              "a": "Not reliably. Mobile browsers often slow down background tabs. For important wake-ups, use your device clock app as well."
+            },
+            {
+              "q": "Why allow notifications?",
+              "a": "If you allow notifications when prompted, your browser can show a message when the alarm fires—even if this tab is not in front. Sound follows your mute setting unless you enable “Ringing ignores mute.”"
+            },
+            {
+              "q": "Is this alarm clock free?",
+              "a": "Yes. No account or payment is required."
+            }
+          ]
+        }
+      ]
+    },
     "world-time-dashboard": {
       "name": "World Time Dashboard",
       "description": "Live world clock and timezone converter. Compare time between cities, add custom locations, and save conversion presets.",

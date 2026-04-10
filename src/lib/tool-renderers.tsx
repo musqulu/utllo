@@ -18,6 +18,7 @@ import { AmountInWords } from "@/components/amount-in-words/amount-in-words";
 import { CaesarCipher } from "@/components/caesar-cipher/caesar-cipher";
 import { Metronome } from "@/components/metronome/metronome";
 import { OnlineTimer } from "@/components/online-timer/online-timer";
+import { AlarmClock } from "@/components/alarm-clock/alarm-clock";
 import { WorldTimeDashboard } from "@/components/world-time/world-time-dashboard";
 import { OnlineNotepad } from "@/components/online-notepad/online-notepad";
 import { DiffChecker } from "@/components/diff-checker/diff-checker";
@@ -422,6 +423,48 @@ export function renderToolComponent(
             mute: toolDict.mute || "Mute alert",
             unmute: toolDict.unmute || "Unmute alert",
             timeUp: toolDict.timeUp || "Time is up!",
+          }}
+        />
+      );
+
+    case "online-alarm-clock":
+      return (
+        <AlarmClock
+          dictionary={{
+            title: toolDict.title || "Online alarm clock",
+            subtitle: toolDict.subtitle || "Set a time and get a browser alarm",
+            hour: toolDict.hour || "Hour",
+            minute: toolDict.minute || "Minute",
+            arm: toolDict.arm || "Arm alarm",
+            cancel: toolDict.cancel || "Cancel",
+            presetsTitle: toolDict.presetsTitle || "Quick presets",
+            preset5: toolDict.preset5 || "In 5 minutes",
+            preset10: toolDict.preset10 || "In 10 minutes",
+            testSound: toolDict.testSound || "Test sound",
+            countdownLabel: toolDict.countdownLabel || "Time until alarm",
+            ringsAt: toolDict.ringsAt || "Rings at",
+            tomorrow: toolDict.tomorrow || "tomorrow",
+            mute: toolDict.mute || "Mute alarm",
+            unmute: toolDict.unmute || "Unmute alarm",
+            dismiss: toolDict.dismiss || "Dismiss",
+            snooze5: toolDict.snooze5 || "Snooze 5 min",
+            snooze10: toolDict.snooze10 || "Snooze 10 min",
+            alarmFiring: toolDict.alarmFiring || "Alarm!",
+            notificationBody: toolDict.notificationBody || "Open the tab to stop the alarm.",
+            disclaimer: toolDict.disclaimer || "Keep this tab open. Closing it stops the alarm.",
+            hiddenTabWarning: toolDict.hiddenTabWarning || "The tab is in the background; timing may be less reliable.",
+            soundLabel: toolDict.soundLabel || "Alarm sound",
+            soundClassic: toolDict.soundClassic || "Classic beeps",
+            soundDigital: toolDict.soundDigital || "Digital beeps",
+            soundBell: toolDict.soundBell || "Bell",
+            soundChime: toolDict.soundChime || "Chime",
+            soundSoft: toolDict.soundSoft || "Soft melody",
+            soundRadar: toolDict.soundRadar || "Radar ping",
+            soundPulse: toolDict.soundPulse || "Pulse alert",
+            strictStopLabel: toolDict.strictStopLabel || "Ringing ignores mute",
+            strictStopHint:
+              toolDict.strictStopHint ||
+              "When on, only Dismiss or Snooze stops the sound while the alarm is ringing.",
           }}
         />
       );

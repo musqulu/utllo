@@ -1356,6 +1356,98 @@
         }
       ]
     },
+    "online-alarm-clock": {
+      "name": "Budzik online",
+      "description": "Darmowy budzik w przeglądarce. Ustaw godzinę (24h), skróty czasowe, drzemkę i alarm dźwiękowy. Bez instalacji.",
+      "seoTitle": "Budzik Online - Darmowy Alarm w Przeglądarce | utllo",
+      "seoDescription": "Darmowy budzik online w przeglądarce. Ustaw godzinę i minutę (format 24h), włącz alarm, drzemka 5 lub 10 minut, test dźwięku i opcjonalne powiadomienia. Działa na komputerze i telefonie; zostaw kartę otwartą.",
+      "title": "Budzik online",
+      "subtitle": "Ustaw godzinę pobudki i otrzymaj alarm w tej karcie",
+      "hour": "Godzina (0–23)",
+      "minute": "Minuta (0–59)",
+      "arm": "Włącz alarm",
+      "cancel": "Anuluj alarm",
+      "presetsTitle": "Szybkie ustawienia",
+      "preset5": "Za 5 minut",
+      "preset10": "Za 10 minut",
+      "testSound": "Test dźwięku",
+      "countdownLabel": "Czas do alarmu",
+      "ringsAt": "Alarm o",
+      "tomorrow": "następnego dnia",
+      "mute": "Wycisz alarm",
+      "unmute": "Włącz dźwięk",
+      "dismiss": "Wyłącz",
+      "snooze5": "Drzemka 5 min",
+      "snooze10": "Drzemka 10 min",
+      "alarmFiring": "Alarm!",
+      "notificationBody": "Otwórz kartę, aby wyłączyć alarm lub włączyć drzemkę.",
+      "disclaimer": "Alarm działa w tej karcie przeglądarki. Po zamknięciu karty lub strony alarm przestaje działać. Na niektórych urządzeniach liczniki w tle mogą być opóźnione, gdy karta nie jest aktywna lub ekran jest wyłączony.",
+      "hiddenTabWarning": "Karta jest w tle; na części urządzeń alarm może być opóźniony.",
+      "soundLabel": "Dźwięk alarmu",
+      "soundClassic": "Klasyczne bipnięcia",
+      "soundDigital": "Cyfrowe bipnięcia",
+      "soundBell": "Dzwonek",
+      "soundChime": "Dzwonki (akord)",
+      "soundSoft": "Łagodna melodia",
+      "soundRadar": "Ping radaru",
+      "soundPulse": "Pulsujący alarm",
+      "strictStopLabel": "Ignoruj wyciszenie podczas dzwonienia",
+      "strictStopHint": "Gdy włączone, tylko Wyłącz lub Drzemka wyłącza dźwięk; wyciszenie nie działa, dopóki alarm dzwoni.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest budzik online?",
+          "body": "Budzik online pozwala ustawić godzinę przypomnienia bezpośrednio w przeglądarce, bez instalowania aplikacji. Wybierasz godzinę i minutę (format 24 godzinny), możesz też szybko ustawić alarm za 5 lub 10 minut, a następnie zostajesz na stronie do momentu alarmu."
+        },
+        {
+          "type": "list",
+          "heading": "Możliwości",
+          "items": [
+            "**Czas 24h** - Ustaw godzinę i minutę na najbliższy dzwonek dziś lub jutro",
+            "**Szybkie presety** - Alarm za 5 lub 10 minut",
+            "**Odliczanie** - Widzisz, ile zostało do alarmu",
+            "**Drzemka** - Opóźnienie o 5 lub 10 minut po zadzwonieniu",
+            "**Test dźwięku** - Sprawdź głośność przed włączeniem alarmu",
+            "**Wyciszenie** - Tylko komunikat wizualny, gdy nie chcesz dźwięku (chyba że włączysz „ignoruj wyciszenie podczas dzwonienia”)",
+            "**Style dźwięku** - Siedem zestawów: klasyczne, cyfrowe, dzwonek, akord, łagodna melodia, ping radaru, puls",
+            "**Opcjonalny tryb** - Możesz wymusić, by wyciszenie nie działało podczas dzwonienia—tylko Wyłącz lub Drzemka gasi alarm",
+            "**Opcjonalne powiadomienia** - Przy włączaniu alarmu możesz zezwolić na powiadomienia przeglądarki (pomocne, gdy karta jest za innymi oknami)"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak korzystać z budzika",
+          "items": [
+            "Ustaw godzinę (0–23) i minutę (0–59) albo wybierz szybki preset",
+            "Kliknij **Włącz alarm**",
+            "Zostaw tę kartę otwartą do czasu alarmu",
+            "Po zadzwonieniu wyłącz alarm lub wybierz drzemkę 5 lub 10 minut"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy alarm zadziała po zamknięciu karty?",
+              "a": "Nie. Alarm jest uruchamiany przez tę stronę. Zamknięcie karty lub opuszczenie witryny go wyłącza."
+            },
+            {
+              "q": "Czy obudzi telefon ze snu?",
+              "a": "Nie zawsze. Przeglądarki często ograniczają działanie kart w tle. Ważne pobudki zabezpiecz też budzikiem systemowym."
+            },
+            {
+              "q": "Po co zezwalać na powiadomienia?",
+              "a": "Jeśli zezwolisz przy monicie, przeglądarka może pokazać komunikat przy alarmie, nawet gdy karta nie jest na pierwszym planie. Dźwięk nadal zależy od wyciszenia."
+            },
+            {
+              "q": "Czy budzik jest darmowy?",
+              "a": "Tak. Nie wymaga konta ani płatności."
+            }
+          ]
+        }
+      ]
+    },
     "world-time-dashboard": {
       "name": "Zegar Stref Czasowych",
       "description": "Zegar światowy na żywo i konwerter stref czasowych. Porównuj godziny między miastami, dodawaj własne lokalizacje i zapisuj presety.",

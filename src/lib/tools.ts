@@ -34,6 +34,7 @@ import {
   GitCompareArrows,
   Coins,
   Globe2,
+  Bell,
   LucideIcon,
 } from "lucide-react";
 
@@ -178,6 +179,13 @@ export const tools: Tool[] = [
     id: "world-time-dashboard",
     slugs: { pl: "zegar-stref-czasowych", en: "world-time-dashboard" },
     icon: Globe2,
+    isReady: true,
+    category: "tools",
+  },
+  {
+    id: "online-alarm-clock",
+    slugs: { pl: "budzik-online", en: "online-alarm-clock" },
+    icon: Bell,
     isReady: true,
     category: "tools",
   },
