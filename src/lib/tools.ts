@@ -33,6 +33,7 @@ import {
   StickyNote,
   GitCompareArrows,
   Coins,
+  Globe2,
   LucideIcon,
 } from "lucide-react";
 
@@ -170,6 +171,13 @@ export const tools: Tool[] = [
     id: "online-timer",
     slugs: { pl: "minutnik-online", en: "online-timer" },
     icon: Timer,
+    isReady: true,
+    category: "tools",
+  },
+  {
+    id: "world-time-dashboard",
+    slugs: { pl: "zegar-stref-czasowych", en: "world-time-dashboard" },
+    icon: Globe2,
     isReady: true,
     category: "tools",
   },

@@ -1356,6 +1356,81 @@
         }
       ]
     },
+    "world-time-dashboard": {
+      "name": "World Time Dashboard",
+      "description": "Live world clock and timezone converter. Compare time between cities, add custom locations, and save conversion presets.",
+      "seoTitle": "World Time Dashboard - World Clock and Time Zone Converter | utllo",
+      "seoDescription": "Check live time in major world time zones and convert time between cities like Warsaw and Tokyo. Add custom cities and save conversion presets.",
+      "title": "World Time Dashboard",
+      "subtitle": "Live clocks and quick timezone conversion",
+      "dashboardTitle": "World clock",
+      "dashboardHint": "One representative city from major world time zones. Add your own cities below.",
+      "localLabel": "Your local time",
+      "addCityTitle": "Add custom city",
+      "cityName": "City name",
+      "cityNamePlaceholder": "e.g. Singapore",
+      "timeZone": "Time zone",
+      "addCity": "Add city",
+      "conversionTitle": "Time zone converter",
+      "fromCity": "From city",
+      "toCity": "To city",
+      "baseTime": "Time in source city",
+      "convert": "Convert",
+      "convertedTime": "Converted time",
+      "dayShift": "Day shift",
+      "sameDay": "Same day",
+      "nextDay": "Next day",
+      "previousDay": "Previous day",
+      "savePreset": "Save preset",
+      "presets": "Saved conversions",
+      "noPresets": "No saved conversions yet",
+      "remove": "Remove",
+      "noCities": "No cities selected yet.",
+      "customTag": "Custom",
+      "cityPicker": "Choose city",
+      "cityPickerPlaceholder": "Start typing a city name...",
+      "autoTimeZone": "Timezone is auto-detected based on selected city.",
+      "switchToManual": "City not listed? Enter manually",
+      "switchToList": "Back to city list",
+      "cityRequiredError": "Please select a city first.",
+      "duplicateCityError": "This city is already on your dashboard.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "World clock and timezone conversion in one place",
+          "body": "This world time dashboard shows live local time for major global time zones and lets you quickly convert between cities. Use it to compare time in places like Warsaw, London, New York, Tokyo, or Sydney without manually calculating offsets."
+        },
+        {
+          "type": "list",
+          "heading": "What you can do with this tool",
+          "items": [
+            "**Check current time worldwide** - See live time and date for major regions",
+            "**Convert city-to-city time** - Pick source and target city with exact date and hour",
+            "**Handle day differences** - Instantly see if the converted time is previous, same, or next day",
+            "**Add custom locations** - Save cities important for your work or travel",
+            "**Store presets** - Keep frequently used conversions for one-click reuse"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Can I convert Warsaw time to Tokyo time?",
+              "a": "Yes. Select Warsaw as the source city, Tokyo as the target city, choose the date and hour, and click Convert."
+            },
+            {
+              "q": "Are daylight saving time changes included?",
+              "a": "Yes. The converter uses IANA timezone rules, so DST transitions are applied automatically where relevant."
+            },
+            {
+              "q": "Can I save my own cities?",
+              "a": "Yes. Add custom cities and timezone presets. They are stored in your browser for future visits."
+            }
+          ]
+        }
+      ]
+    },
     "online-notepad": {
       "name": "Online Notepad",
       "description": "Free online notepad in your browser. Write, edit and save notes without registration.",

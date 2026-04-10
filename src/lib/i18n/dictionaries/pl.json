@@ -1356,6 +1356,81 @@
         }
       ]
     },
+    "world-time-dashboard": {
+      "name": "Zegar Stref Czasowych",
+      "description": "Zegar światowy na żywo i konwerter stref czasowych. Porównuj godziny między miastami, dodawaj własne lokalizacje i zapisuj presety.",
+      "seoTitle": "Zegar Stref Czasowych - Zegar Światowy i Konwerter Godzin | utllo",
+      "seoDescription": "Sprawdź aktualny czas w najważniejszych strefach świata i konwertuj godziny między miastami, np. Warszawa i Tokio. Dodawaj własne miasta i zapisuj konwersje.",
+      "title": "Zegar Stref Czasowych",
+      "subtitle": "Zegary na żywo i szybka konwersja czasu",
+      "dashboardTitle": "Zegar światowy",
+      "dashboardHint": "Jedno reprezentacyjne miasto dla głównych stref czasowych. Niżej możesz dodać własne miasta.",
+      "localLabel": "Twój czas lokalny",
+      "addCityTitle": "Dodaj własne miasto",
+      "cityName": "Nazwa miasta",
+      "cityNamePlaceholder": "np. Singapur",
+      "timeZone": "Strefa czasowa",
+      "addCity": "Dodaj miasto",
+      "conversionTitle": "Konwerter stref czasowych",
+      "fromCity": "Z miasta",
+      "toCity": "Do miasta",
+      "baseTime": "Godzina w mieście źródłowym",
+      "convert": "Przelicz",
+      "convertedTime": "Przeliczona godzina",
+      "dayShift": "Różnica dnia",
+      "sameDay": "Ten sam dzień",
+      "nextDay": "Następny dzień",
+      "previousDay": "Poprzedni dzień",
+      "savePreset": "Zapisz preset",
+      "presets": "Zapisane konwersje",
+      "noPresets": "Brak zapisanych konwersji",
+      "remove": "Usuń",
+      "noCities": "Nie wybrano jeszcze żadnych miast.",
+      "customTag": "Własne",
+      "cityPicker": "Wybierz miasto",
+      "cityPickerPlaceholder": "Zacznij wpisywać nazwę miasta...",
+      "autoTimeZone": "Strefa czasowa jest uzupełniana automatycznie na podstawie miasta.",
+      "switchToManual": "Nie ma miasta na liście? Wpisz ręcznie",
+      "switchToList": "Wróć do listy miast",
+      "cityRequiredError": "Najpierw wybierz miasto.",
+      "duplicateCityError": "To miasto jest już dodane na dashboardzie.",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Zegar światowy i konwerter godzin w jednym narzędziu",
+          "body": "To narzędzie pokazuje aktualny czas w najważniejszych strefach czasowych oraz pozwala szybko przeliczać godzinę między miastami. Możesz łatwo porównać czas w Warszawie, Londynie, Nowym Jorku, Tokio czy Sydney bez ręcznego liczenia różnic."
+        },
+        {
+          "type": "list",
+          "heading": "Co możesz zrobić w tym narzędziu",
+          "items": [
+            "**Sprawdzić aktualny czas na świecie** - Podgląd godziny i daty dla głównych regionów",
+            "**Przeliczać czas miasto-miasto** - Wybierz miasto źródłowe, docelowe, datę i godzinę",
+            "**Uwzględniać zmianę dnia** - Od razu widać, czy to poprzedni, ten sam, czy następny dzień",
+            "**Dodać własne lokalizacje** - Zapisz miasta ważne dla pracy, klientów lub podróży",
+            "**Zapisać presety konwersji** - Najczęstsze przeliczenia uruchomisz jednym kliknięciem"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy mogę przeliczyć godzinę z Warszawy na Tokio?",
+              "a": "Tak. Wybierz Warszawę jako miasto źródłowe, Tokio jako docelowe, ustaw datę i godzinę, a następnie kliknij Przelicz."
+            },
+            {
+              "q": "Czy narzędzie uwzględnia zmianę czasu letni/zimowy?",
+              "a": "Tak. Konwerter korzysta z reguł IANA, więc automatycznie uwzględnia DST tam, gdzie obowiązuje."
+            },
+            {
+              "q": "Czy mogę zapisać własne miasta?",
+              "a": "Tak. Możesz dodać własne miasta i zapisać presety konwersji. Dane są zapisywane w Twojej przeglądarce."
+            }
+          ]
+        }
+      ]
+    },
     "online-notepad": {
       "name": "Notatnik Online",
       "description": "Darmowy notatnik online w przeglądarce. Pisz, edytuj i zapisuj notatki bez rejestracji.",

@@ -18,6 +18,7 @@ import { AmountInWords } from "@/components/amount-in-words/amount-in-words";
 import { CaesarCipher } from "@/components/caesar-cipher/caesar-cipher";
 import { Metronome } from "@/components/metronome/metronome";
 import { OnlineTimer } from "@/components/online-timer/online-timer";
+import { WorldTimeDashboard } from "@/components/world-time/world-time-dashboard";
 import { OnlineNotepad } from "@/components/online-notepad/online-notepad";
 import { DiffChecker } from "@/components/diff-checker/diff-checker";
 import { PdfConverter } from "@/components/pdf-converter/pdf-converter";
@@ -421,6 +422,47 @@ export function renderToolComponent(
             mute: toolDict.mute || "Mute alert",
             unmute: toolDict.unmute || "Unmute alert",
             timeUp: toolDict.timeUp || "Time is up!",
+          }}
+        />
+      );
+
+    case "world-time-dashboard":
+      return (
+        <WorldTimeDashboard
+          dictionary={{
+            title: toolDict.title || "World Time Dashboard",
+            subtitle: toolDict.subtitle || "Check current times and convert across cities",
+            dashboardTitle: toolDict.dashboardTitle || "World clock",
+            dashboardHint: toolDict.dashboardHint || "Live times for major world time zones",
+            localLabel: toolDict.localLabel || "Your local time",
+            addCityTitle: toolDict.addCityTitle || "Add custom city",
+            cityName: toolDict.cityName || "City name",
+            cityNamePlaceholder: toolDict.cityNamePlaceholder || "e.g. Singapore",
+            timeZone: toolDict.timeZone || "Time zone",
+            addCity: toolDict.addCity || "Add city",
+            conversionTitle: toolDict.conversionTitle || "Time zone converter",
+            fromCity: toolDict.fromCity || "From city",
+            toCity: toolDict.toCity || "To city",
+            baseTime: toolDict.baseTime || "Time in selected city",
+            convert: toolDict.convert || "Convert",
+            convertedTime: toolDict.convertedTime || "Converted time",
+            dayShift: toolDict.dayShift || "Day shift",
+            sameDay: toolDict.sameDay || "Same day",
+            nextDay: toolDict.nextDay || "Next day",
+            previousDay: toolDict.previousDay || "Previous day",
+            savePreset: toolDict.savePreset || "Save preset",
+            presets: toolDict.presets || "Saved conversions",
+            noPresets: toolDict.noPresets || "No saved conversions yet",
+            remove: toolDict.remove || "Remove",
+            noCities: toolDict.noCities || "No cities selected.",
+            customTag: toolDict.customTag || "Custom",
+            cityPicker: toolDict.cityPicker || "Choose city",
+            cityPickerPlaceholder: toolDict.cityPickerPlaceholder || "Search city...",
+            autoTimeZone: toolDict.autoTimeZone || "Timezone is detected automatically from city.",
+            switchToManual: toolDict.switchToManual || "City not listed? Enter manually",
+            switchToList: toolDict.switchToList || "Back to city list",
+            cityRequiredError: toolDict.cityRequiredError || "Pick a city first.",
+            duplicateCityError: toolDict.duplicateCityError || "This city is already added.",
           }}
         />
       );
