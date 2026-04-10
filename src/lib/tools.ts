@@ -167,6 +167,13 @@ export const tools: Tool[] = [
     category: "tools",
   },
   {
+    id: "online-timer",
+    slugs: { pl: "minutnik-online", en: "online-timer" },
+    icon: Timer,
+    isReady: true,
+    category: "tools",
+  },
+  {
     id: "online-notepad",
     slugs: { pl: "notatnik-online", en: "online-notepad" },
     icon: StickyNote,

@@ -1291,6 +1291,71 @@
         }
       ]
     },
+    "online-timer": {
+      "name": "Online Timer",
+      "description": "Free online countdown timer. Set minutes and seconds, start the timer, and get an alert when time is up.",
+      "seoTitle": "Online Timer - Free Countdown Timer | utllo",
+      "seoDescription": "Free online timer in your browser. Set time, start/pause/resume/reset, with visual and sound alert at zero. No installation and no sign-up required.",
+      "title": "Online Timer",
+      "subtitle": "Simple countdown timer directly in your browser",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "start": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "mute": "Mute alert",
+      "unmute": "Unmute alert",
+      "timeUp": "Time is up!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "What is an online timer?",
+          "body": "An online timer is a simple countdown tool that runs directly in your browser. Enter minutes and seconds, start the countdown, and receive a sound and visual notification when it reaches zero. No app installation or account is needed."
+        },
+        {
+          "type": "list",
+          "heading": "Key timer features",
+          "items": [
+            "**Quick time setup** - Set minutes and seconds before starting",
+            "**Start, pause, and resume** - Full control over the countdown while working",
+            "**One-click reset** - Instantly return to the configured time",
+            "**Sound and visual alert** - Clear signal when countdown ends",
+            "**Mute option** - Turn off audio alert whenever needed",
+            "**Works on mobile and desktop** - Responsive and easy to use anywhere"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "How to use the online timer?",
+          "items": [
+            "Enter the number of minutes and seconds",
+            "Click Start to begin countdown",
+            "Use Pause or Resume when needed",
+            "When time ends, you will see and hear an alert",
+            "Click Reset to set a new countdown"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Frequently asked questions",
+          "items": [
+            {
+              "q": "Is this online timer free?",
+              "a": "Yes, this timer is completely free and available without login."
+            },
+            {
+              "q": "Does it work on phones?",
+              "a": "Yes, it works in modern mobile and desktop browsers."
+            },
+            {
+              "q": "Can I disable the alert sound?",
+              "a": "Yes, use the mute button to switch the alarm to silent mode."
+            }
+          ]
+        }
+      ]
+    },
     "online-notepad": {
       "name": "Online Notepad",
       "description": "Free online notepad in your browser. Write, edit and save notes without registration.",

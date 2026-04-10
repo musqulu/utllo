@@ -17,6 +17,7 @@ import { WhiteScreenTool } from "@/components/white-screen/white-screen-tool";
 import { AmountInWords } from "@/components/amount-in-words/amount-in-words";
 import { CaesarCipher } from "@/components/caesar-cipher/caesar-cipher";
 import { Metronome } from "@/components/metronome/metronome";
+import { OnlineTimer } from "@/components/online-timer/online-timer";
 import { OnlineNotepad } from "@/components/online-notepad/online-notepad";
 import { DiffChecker } from "@/components/diff-checker/diff-checker";
 import { PdfConverter } from "@/components/pdf-converter/pdf-converter";
@@ -401,6 +402,25 @@ export function renderToolComponent(
             allegro: toolDict.allegro || "Allegro",
             presto: toolDict.presto || "Presto",
             vivace: toolDict.vivace || "Vivace",
+          }}
+        />
+      );
+
+    case "online-timer":
+      return (
+        <OnlineTimer
+          dictionary={{
+            title: toolDict.title || "Online Timer",
+            subtitle: toolDict.subtitle || "Simple countdown timer in your browser",
+            minutes: toolDict.minutes || "Minutes",
+            seconds: toolDict.seconds || "Seconds",
+            start: toolDict.start || "Start",
+            pause: toolDict.pause || "Pause",
+            resume: toolDict.resume || "Resume",
+            reset: toolDict.reset || "Reset",
+            mute: toolDict.mute || "Mute alert",
+            unmute: toolDict.unmute || "Unmute alert",
+            timeUp: toolDict.timeUp || "Time is up!",
           }}
         />
       );

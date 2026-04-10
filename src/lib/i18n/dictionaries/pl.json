@@ -1291,6 +1291,71 @@
         }
       ]
     },
+    "online-timer": {
+      "name": "Minutnik Online",
+      "description": "Darmowy minutnik online z odliczaniem czasu. Ustaw minuty i sekundy, uruchom timer i otrzymaj sygnał po zakończeniu.",
+      "seoTitle": "Minutnik Online - Darmowy Timer z Odliczaniem | utllo",
+      "seoDescription": "Darmowy minutnik online w przeglądarce. Ustaw czas, start/pauza/wznów/reset, alarm dźwiękowy i wizualny po zakończeniu. Bez instalacji i bez rejestracji.",
+      "title": "Minutnik Online",
+      "subtitle": "Proste odliczanie czasu bezpośrednio w przeglądarce",
+      "minutes": "Minuty",
+      "seconds": "Sekundy",
+      "start": "Start",
+      "pause": "Pauza",
+      "resume": "Wznów",
+      "reset": "Reset",
+      "mute": "Wycisz alarm",
+      "unmute": "Włącz alarm",
+      "timeUp": "Czas minął!",
+      "seoContent": [
+        {
+          "type": "text",
+          "heading": "Czym jest minutnik online?",
+          "body": "Minutnik online to proste narzędzie do odliczania czasu, które działa od razu w przeglądarce. Wpisujesz minuty i sekundy, uruchamiasz licznik i dostajesz sygnał dźwiękowy oraz wizualny po zakończeniu. Nie musisz instalować aplikacji ani zakładać konta."
+        },
+        {
+          "type": "list",
+          "heading": "Najważniejsze funkcje minutnika",
+          "items": [
+            "**Szybkie ustawienie czasu** - Podaj minuty i sekundy przed startem",
+            "**Start, pauza i wznowienie** - Pełna kontrola nad odliczaniem w trakcie pracy",
+            "**Reset jednym kliknięciem** - Błyskawiczny powrót do ustawionego czasu",
+            "**Alarm dźwiękowy i wizualny** - Wyraźna informacja, że odliczanie dobiegło końca",
+            "**Tryb wyciszenia** - Możliwość wyłączenia dźwięku alarmu",
+            "**Działa na telefonie i komputerze** - Narzędzie responsywne, zawsze pod ręką"
+          ]
+        },
+        {
+          "type": "ordered-list",
+          "heading": "Jak korzystać z minutnika online?",
+          "items": [
+            "Wpisz liczbę minut i sekund",
+            "Kliknij Start, aby rozpocząć odliczanie",
+            "W razie potrzeby użyj Pauza lub Wznów",
+            "Po zakończeniu czasu pojawi się komunikat i alarm",
+            "Kliknij Reset, aby ustawić nowy czas"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Często zadawane pytania",
+          "items": [
+            {
+              "q": "Czy minutnik online jest darmowy?",
+              "a": "Tak, narzędzie jest całkowicie darmowe i dostępne bez logowania."
+            },
+            {
+              "q": "Czy działa na telefonie?",
+              "a": "Tak, minutnik działa w nowoczesnych przeglądarkach mobilnych i desktopowych."
+            },
+            {
+              "q": "Czy mogę wyłączyć dźwięk alarmu?",
+              "a": "Tak, użyj przycisku wyciszenia, aby przełączyć alarm na tryb cichy."
+            }
+          ]
+        }
+      ]
+    },
     "online-notepad": {
       "name": "Notatnik Online",
       "description": "Darmowy notatnik online w przeglądarce. Pisz, edytuj i zapisuj notatki bez rejestracji.",
