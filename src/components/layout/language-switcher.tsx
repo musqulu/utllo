@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { i18n } from "@/lib/i18n/config";
+import { translateStaticPageSlug } from "@/lib/i18n/static-pages";
 import {
   tools,
   categoryMeta,
@@ -97,26 +99,33 @@ function translatePath(pathname: string, fromLocale: string, toLocale: string): 
     }
   }
 
+  // Static legal/info pages (kontakt ↔ contact, etc.)
+  if (translated.length === 1) {
+    const mapped = translateStaticPageSlug(
+      translated[0],
+      fromLocale,
+      toLocale
+    );
+    if (mapped) {
+      translated[0] = mapped;
+    }
+  }
+
   // Build final path: default locale → root, non-default → /{locale}/...
   const prefix = toLocale === i18n.defaultLocale ? "" : `/${toLocale}`;
   return `${prefix}/${translated.join("/")}`;
 }
 
+function setLocaleCookie(targetLocale: string) {
+  if (typeof document === "undefined") return;
+  document.cookie = `NEXT_LOCALE=${targetLocale};path=/;max-age=${60 * 60 * 24 * 365}`;
+}
+
 export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
   const pathname = usePathname();
-  const router = useRouter();
 
   // Detect the actual locale from the URL (since PL pages have no prefix)
   const detectedLocale = detectLocaleFromPath(pathname);
-
-  const switchLocale = (targetLocale: string) => {
-    // Set cookie for persistence
-    document.cookie = `NEXT_LOCALE=${targetLocale};path=/;max-age=${60 * 60 * 24 * 365}`;
-
-    // Translate the current path to the target locale
-    const newPath = translatePath(pathname, detectedLocale, targetLocale);
-    router.push(newPath);
-  };
 
   return (
     <DropdownMenu>
@@ -127,16 +136,22 @@ export function LanguageSwitcher({ locale }: LanguageSwitcherProps) {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[140px]">
-        {i18n.locales.map((loc) => (
-          <DropdownMenuItem
-            key={loc}
-            onClick={() => switchLocale(loc)}
-            className={`gap-2 ${loc === locale ? "font-semibold" : ""}`}
-          >
-            <span className="text-xs font-mono w-6">{LOCALE_FLAGS[loc]}</span>
-            <span>{LOCALE_LABELS[loc]}</span>
-          </DropdownMenuItem>
-        ))}
+        {i18n.locales.map((loc) => {
+          const href = translatePath(pathname, detectedLocale, loc);
+          return (
+            <DropdownMenuItem key={loc} asChild>
+              <Link
+                href={href}
+                hrefLang={loc === "pl" ? "pl-PL" : "en"}
+                className={`gap-2 cursor-pointer flex w-full ${loc === locale ? "font-semibold" : ""}`}
+                onClick={() => setLocaleCookie(loc)}
+              >
+                <span className="text-xs font-mono w-6">{LOCALE_FLAGS[loc]}</span>
+                <span>{LOCALE_LABELS[loc]}</span>
+              </Link>
+            </DropdownMenuItem>
+          );
+        })}
       </DropdownMenuContent>
     </DropdownMenu>
   );

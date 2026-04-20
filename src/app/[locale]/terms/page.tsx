@@ -26,37 +26,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   );
 
   return {
-    title: "Regulamin | utllo",
+    title: "Terms of Service | utllo",
     description:
-      "Regulamin korzystania z serwisu utllo.pl. Zasady użytkowania darmowych narzędzi online, prawa i obowiązki użytkowników.",
+      "Terms of service for utllo.com. Rules for using free online tools, user rights and obligations.",
     alternates: {
-      canonical: `${BASE_URL}/regulamin`,
+      canonical: `${BASE_URL}/en/terms`,
       languages,
     },
     openGraph: {
-      title: "Regulamin | utllo",
-      description:
-        "Regulamin korzystania z serwisu utllo.pl. Zasady użytkowania darmowych narzędzi online.",
-      url: `${BASE_URL}/regulamin`,
+      title: "Terms of Service | utllo",
+      description: "Terms of service for utllo.com. Rules for using free online tools.",
+      url: `${BASE_URL}/en/terms`,
       type: "website",
-      locale: "pl_PL",
+      locale: "en_US",
     },
   };
 }
 
 export async function generateStaticParams() {
-  return [{ locale: "pl" }];
+  return [{ locale: "en" }];
 }
 
 export default async function TermsPage({ params }: PageProps) {
   const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
-  const isEn = false;
+  const isEn = locale === "en";
 
   const lp = getLocalePath(locale);
   const breadcrumbItems = [
     { name: dictionary.nav.home, url: lp || "/" },
-    { name: "Regulamin", url: `${lp}/regulamin` },
+    { name: "Terms of Service", url: `${lp}/terms` },
   ];
 
   return (

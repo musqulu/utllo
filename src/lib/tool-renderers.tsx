@@ -1,13 +1,20 @@
+import dynamic from "next/dynamic";
 import { GeneratorCard as PasswordGenerator } from "@/components/password-generator/generator-card";
 import { LoremGenerator } from "@/components/lorem-ipsum/lorem-generator";
-import { FontGenerator } from "@/components/fonts/font-generator";
 import { QRGenerator } from "@/components/qr-generator/qr-generator";
 import { NumberGenerator } from "@/components/random-number/number-generator";
 import { NumbersGenerator } from "@/components/random-numbers/numbers-generator";
 import { YesNoGenerator } from "@/components/random-yesno/yesno-generator";
 import { CoinFlipper } from "@/components/coin-flip/coin-flipper";
 import { DiceRoller } from "@/components/dice/dice-roller";
-import { TarotReader } from "@/components/tarot/tarot-reader";
+const FontGenerator = dynamic(
+  () => import("@/components/fonts/font-generator").then((m) => m.FontGenerator),
+  { ssr: true }
+);
+const TarotReader = dynamic(
+  () => import("@/components/tarot/tarot-reader").then((m) => m.TarotReader),
+  { ssr: true }
+);
 import { CharacterCounter } from "@/components/text-counter/character-counter";
 import { WordCounter } from "@/components/text-counter/word-counter";
 import { CountdownVacation } from "@/components/countdown/countdown-vacation";
@@ -22,17 +29,47 @@ import { AlarmClock } from "@/components/alarm-clock/alarm-clock";
 import { WorldTimeDashboard } from "@/components/world-time/world-time-dashboard";
 import { OnlineNotepad } from "@/components/online-notepad/online-notepad";
 import { DiffChecker } from "@/components/diff-checker/diff-checker";
-import { PdfConverter } from "@/components/pdf-converter/pdf-converter";
-import { PdfToWordConverter } from "@/components/pdf-converter/pdf-to-word-converter";
-import { BMICalculator } from "@/components/calculators/bmi-calculator";
+const PdfConverter = dynamic(
+  () => import("@/components/pdf-converter/pdf-converter").then((m) => m.PdfConverter),
+  { ssr: true }
+);
+const PdfToWordConverter = dynamic(
+  () =>
+    import("@/components/pdf-converter/pdf-to-word-converter").then(
+      (m) => m.PdfToWordConverter
+    ),
+  { ssr: true }
+);
+const BMICalculator = dynamic(
+  () => import("@/components/calculators/bmi-calculator").then((m) => m.BMICalculator),
+  { ssr: true }
+);
+const SleepCalculator = dynamic(
+  () => import("@/components/calculators/sleep-calculator").then((m) => m.SleepCalculator),
+  { ssr: true }
+);
+const CalorieCalculator = dynamic(
+  () => import("@/components/calculators/calorie-calculator").then((m) => m.CalorieCalculator),
+  { ssr: true }
+);
+const BloodTypeCalculator = dynamic(
+  () => import("@/components/calculators/blood-type-calculator").then((m) => m.BloodTypeCalculator),
+  { ssr: true }
+);
+const DogYearsCalculator = dynamic(
+  () => import("@/components/calculators/dog-years-calculator").then((m) => m.DogYearsCalculator),
+  { ssr: true }
+);
+const RomanNumeralsCalculator = dynamic(
+  () =>
+    import("@/components/calculators/roman-numerals-calculator").then(
+      (m) => m.RomanNumeralsCalculator
+    ),
+  { ssr: true }
+);
 import { ProportionCalculator } from "@/components/calculators/proportion-calculator";
 import { WeightedAverageCalculator } from "@/components/calculators/weighted-average-calculator";
-import { SleepCalculator } from "@/components/calculators/sleep-calculator";
-import { CalorieCalculator } from "@/components/calculators/calorie-calculator";
-import { BloodTypeCalculator } from "@/components/calculators/blood-type-calculator";
 import { InflationCalculator } from "@/components/calculators/inflation-calculator";
-import { DogYearsCalculator } from "@/components/calculators/dog-years-calculator";
-import { RomanNumeralsCalculator } from "@/components/calculators/roman-numerals-calculator";
 import { CatYearsCalculator } from "@/components/calculators/cat-years-calculator";
 import { FuelCalculator } from "@/components/calculators/fuel-calculator";
 import { ElectricityCalculator } from "@/components/calculators/electricity-calculator";

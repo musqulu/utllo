@@ -21,36 +21,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   );
 
   return {
-    title: "O nas - Kim jesteśmy | utllo",
+    title: "About Us | utllo",
     description:
-      "Poznaj utllo - darmowe narzędzia online dla każdego. Dowiedz się o naszej misji, technologii i dlaczego tworzymy bezpłatne narzędzia internetowe.",
+      "Discover utllo - free online tools for everyone. Learn about our mission, technology, and why we build free internet tools.",
     alternates: {
-      canonical: `${BASE_URL}/o-nas`,
+      canonical: `${BASE_URL}/en/about`,
       languages,
     },
     openGraph: {
-      title: "O nas - Kim jesteśmy | utllo",
-      description: "Poznaj utllo - darmowe narzędzia online dla każdego.",
-      url: `${BASE_URL}/o-nas`,
+      title: "About Us | utllo",
+      description: "Discover utllo - free online tools for everyone.",
+      url: `${BASE_URL}/en/about`,
       type: "website",
-      locale: "pl_PL",
+      locale: "en_US",
     },
   };
 }
 
 export async function generateStaticParams() {
-  return [{ locale: "pl" }];
+  return [{ locale: "en" }];
 }
 
 export default async function AboutPage({ params }: PageProps) {
   const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
-  const isEn = false;
+  const isEn = locale === "en";
 
   const lp = getLocalePath(locale);
   const breadcrumbItems = [
     { name: dictionary.nav.home, url: lp || "/" },
-    { name: "O nas", url: `${lp}/o-nas` },
+    { name: "About us", url: `${lp}/about` },
   ];
 
   return (
@@ -117,20 +117,18 @@ export default async function AboutPage({ params }: PageProps) {
                 <FileCheck className="h-6 w-6" />
               </div>
               <div>
-                <h2 className="text-2xl font-bold mb-4">Standardy redakcyjne</h2>
+                <h2 className="text-2xl font-bold mb-4">Editorial standards</h2>
                 <p className="text-muted-foreground mb-4">
-                  Opisy narzędzi i sekcje SEO na utllo mają charakter <strong>edukacyjny</strong>. Starannie
-                  sprawdzamy, czy wzory (np. BMI, TDEE) i definicje są zrozumiałe; gdy pojawiają się nowe
-                  wytyczne naukowe lub znajdziemy błąd — aktualizujemy treść.
+                  Tool descriptions and on-page explainers are written for <strong>education and clarity</strong>.
+                  We revise copy when formulas or guidance change (e.g. WHO categories) or when we fix mistakes.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  <strong>Narzędzia zdrowotne</strong> (BMI, kalkulator kalorii, sen, grupa krwi) służą do
-                  orientacji i nauki; <strong>nie zastępują porady lekarskiej, diagnozy ani leczenia</strong>.
-                  W sprawach medycznych zawsze skonsultuj się z lekarzem lub dietetykiem klinicznym.
+                  <strong>Health-related calculators</strong> (BMI, calories, sleep, blood type) are for orientation
+                  only; they <strong>do not replace professional medical advice, diagnosis or treatment</strong>.
+                  Always speak to a qualified clinician for health decisions.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  Właściciel serwisu i redakcja treści: <strong>zespół utllo</strong> (Polska). Kontakt:
-                  przez formularz w zakładce „Kontakt”.
+                  Publisher & editorial: <strong>the utllo team</strong> (Poland). Contact via the Contact page.
                 </p>
               </div>
             </div>
@@ -263,7 +261,7 @@ export default async function AboutPage({ params }: PageProps) {
           href={getStaticPagePath("contact", locale)}
           className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
         >
-          Kontakt
+          Contact
         </Link>
       </section>
     </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Zap, Heart } from "lucide-react";
-import { getToolsByCategory, getToolUrl, getCategoryUrl, getLocalePath, Tool } from "@/lib/tools";
+import { getToolsByCategory, getToolUrl, getCategoryUrl, getLocalePath, tools as allToolsList, Tool } from "@/lib/tools";
+import { getStaticPagePath } from "@/lib/i18n/static-pages";
 
 interface FooterProps {
   locale: string;
@@ -31,6 +32,8 @@ interface FooterProps {
       legal?: string;
       madeWith?: string;
       inPoland?: string;
+      /** E-E-A-T: publisher / editorial line */
+      organization?: string;
     };
   };
 }
@@ -56,6 +59,15 @@ export function Footer({ locale, dictionary }: FooterProps) {
   const calculatorsCategory = getToolsByCategory("calculators");
   
   const allTools = [...toolsCategory, ...convertersCategory, ...randomizersCategory, ...calculatorsCategory];
+
+  const pdfToolIds = ["pdf-to-word", "pdf-to-jpg", "pdf-to-png"] as const;
+  const textToolIds = ["character-counter", "word-counter", "diff-checker"] as const;
+  const healthToolIds = [
+    "bmi-calculator",
+    "calorie-calculator",
+    "sleep-calculator",
+    "blood-type-calculator",
+  ] as const;
   const popularTools = FOOTER_POPULAR_TOOLS
     .map(id => allTools.find(t => t.id === id))
     .filter((t): t is Tool => t !== undefined);
@@ -186,7 +198,7 @@ export function Footer({ locale, dictionary }: FooterProps) {
             <ul className="space-y-3" role="list">
               <li>
                 <Link 
-                  href={`${getLocalePath(locale)}/o-nas`}
+                  href={getStaticPagePath("about", locale)}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {dictionary.footer.about || "O nas"}
@@ -194,7 +206,7 @@ export function Footer({ locale, dictionary }: FooterProps) {
               </li>
               <li>
                 <Link 
-                  href={`${getLocalePath(locale)}/kontakt`}
+                  href={getStaticPagePath("contact", locale)}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {dictionary.footer.contact}
@@ -202,7 +214,7 @@ export function Footer({ locale, dictionary }: FooterProps) {
               </li>
               <li>
                 <Link 
-                  href={`${getLocalePath(locale)}/polityka-prywatnosci`}
+                  href={getStaticPagePath("privacy", locale)}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {dictionary.footer.privacy}
@@ -210,7 +222,7 @@ export function Footer({ locale, dictionary }: FooterProps) {
               </li>
               <li>
                 <Link 
-                  href={`${getLocalePath(locale)}/regulamin`}
+                  href={getStaticPagePath("terms", locale)}
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {dictionary.footer.terms || "Regulamin"}
@@ -220,13 +232,82 @@ export function Footer({ locale, dictionary }: FooterProps) {
           </div>
         </div>
 
-        {/* Tools Summary - SEO Links */}
-        <div className="mt-12 pt-8 border-t">
+        {/* Topical clusters + full tool index */}
+        <div className="mt-12 pt-8 border-t grid gap-8 md:grid-cols-3">
+          <div>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              PDF
+            </h4>
+            <ul className="space-y-2">
+              {pdfToolIds.map((id) => {
+                const tool = allToolsList.find((t) => t.id === id);
+                if (!tool) return null;
+                const toolDict = dictionary.tools[tool.id];
+                return (
+                  <li key={id}>
+                    <Link
+                      href={getToolUrl(tool, locale)}
+                      className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {toolDict?.name || tool.id}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              {locale === "en" ? "Text tools" : "Tekst"}
+            </h4>
+            <ul className="space-y-2">
+              {textToolIds.map((id) => {
+                const tool = allToolsList.find((t) => t.id === id);
+                if (!tool) return null;
+                const toolDict = dictionary.tools[tool.id];
+                return (
+                  <li key={id}>
+                    <Link
+                      href={getToolUrl(tool, locale)}
+                      className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {toolDict?.name || tool.id}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">
+              {locale === "en" ? "Health" : "Zdrowie"}
+            </h4>
+            <ul className="space-y-2">
+              {healthToolIds.map((id) => {
+                const tool = allToolsList.find((t) => t.id === id);
+                if (!tool) return null;
+                const toolDict = dictionary.tools[tool.id];
+                return (
+                  <li key={id}>
+                    <Link
+                      href={getToolUrl(tool, locale)}
+                      className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      {toolDict?.name || tool.id}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-8 pt-8 border-t">
           <h4 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-4">
             {dictionary.categoryPages?.allTools || "All tools"}
           </h4>
           <div className="flex flex-wrap gap-x-4 gap-y-2">
-            {allTools.filter(t => t.isReady).slice(0, 20).map((tool) => {
+            {allTools.filter(t => t.isReady).map((tool) => {
               const toolDict = dictionary.tools[tool.id];
               return (
                 <Link
@@ -242,15 +323,22 @@ export function Footer({ locale, dictionary }: FooterProps) {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-8 pt-8 border-t flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">
-            &copy; {currentYear} {dictionary.brand}. {dictionary.footer.rights}.
-          </p>
-          <p className="text-xs text-muted-foreground flex items-center gap-1">
-            {dictionary.footer.madeWith || "Stworzone z"}
-            <Heart className="h-3 w-3 text-red-500 fill-red-500" />
-            {dictionary.footer.inPoland || "w Polsce"}
-          </p>
+        <div className="mt-8 pt-8 border-t flex flex-col gap-4">
+          {dictionary.footer.organization ? (
+            <p className="text-xs text-muted-foreground w-full leading-relaxed">
+              {dictionary.footer.organization}
+            </p>
+          ) : null}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-muted-foreground">
+              &copy; {currentYear} {dictionary.brand}. {dictionary.footer.rights}.
+            </p>
+            <p className="text-xs text-muted-foreground flex items-center gap-1">
+              {dictionary.footer.madeWith || "Stworzone z"}
+              <Heart className="h-3 w-3 text-red-500 fill-red-500" />
+              {dictionary.footer.inPoland || "w Polsce"}
+            </p>
+          </div>
         </div>
       </div>
     </footer>

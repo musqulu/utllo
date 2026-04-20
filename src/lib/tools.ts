@@ -415,13 +415,52 @@ export function getToolByCategoryAndSlug(
   return tools.find((tool) => tool.category === category && Object.values(tool.slugs).includes(toolSlug));
 }
 
-export function getRelatedTools(currentToolId: string, limit: number = 3): Tool[] {
+/**
+ * Related tools: prefer same category (up to 3), then one tool from each other category,
+ * then fill with any remaining ready tools — improves cross-topic internal links.
+ */
+export function getRelatedTools(currentToolId: string, limit: number = 6): Tool[] {
   const currentTool = getToolById(currentToolId);
   if (!currentTool) return [];
-  
-  return tools
-    .filter((tool) => tool.category === currentTool.category && tool.id !== currentToolId)
-    .slice(0, limit);
+
+  const used = new Set<string>([currentToolId]);
+  const out: Tool[] = [];
+
+  const sameCategory = tools.filter(
+    (t) =>
+      t.category === currentTool.category &&
+      t.id !== currentToolId &&
+      t.isReady
+  );
+  for (const t of sameCategory) {
+    if (out.length >= Math.min(3, limit)) break;
+    out.push(t);
+    used.add(t.id);
+  }
+
+  for (const cat of allCategoryIds) {
+    if (cat === currentTool.category) continue;
+    if (out.length >= limit) break;
+    const pick = tools.find(
+      (t) => t.category === cat && t.isReady && !used.has(t.id)
+    );
+    if (pick) {
+      out.push(pick);
+      used.add(pick.id);
+    }
+  }
+
+  if (out.length < limit) {
+    for (const t of tools) {
+      if (out.length >= limit) break;
+      if (!used.has(t.id) && t.isReady) {
+        out.push(t);
+        used.add(t.id);
+      }
+    }
+  }
+
+  return out.slice(0, limit);
 }
 
 /**

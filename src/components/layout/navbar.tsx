@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Zap, ChevronDown, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -55,7 +55,6 @@ const CATEGORY_COLORS: Record<ToolCategory, string> = {
 
 export function Navbar({ locale, dictionary }: NavbarProps) {
   const pathname = usePathname();
-  const router = useRouter();
   const [openCategory, setOpenCategory] = useState<ToolCategory | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -119,7 +118,9 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
                 onMouseEnter={() => handleMouseEnter(key)}
                 onMouseLeave={handleMouseLeave}
               >
-                <button
+                <Link
+                  href={getCategoryUrl(key, locale)}
+                  onMouseEnter={() => handleMouseEnter(key)}
                   onClick={() =>
                     setOpenCategory(openCategory === key ? null : key)
                   }
@@ -134,8 +135,9 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
                     className={`h-4 w-4 transition-transform duration-200 ${
                       openCategory === key ? "rotate-180" : ""
                     }`}
+                    aria-hidden
                   />
-                </button>
+                </Link>
 
                 {/* Popover panel - rendered inside this wrapper so mouse hover covers both */}
                 {openCategory === key && (
@@ -145,10 +147,7 @@ export function Navbar({ locale, dictionary }: NavbarProps) {
                       tools={tools}
                       locale={locale}
                       dictionary={dictionary}
-                      onNavigate={(href: string) => {
-                        setOpenCategory(null);
-                        router.push(href);
-                      }}
+                      onClose={() => setOpenCategory(null)}
                     />
                   </div>
                 )}
@@ -223,7 +222,7 @@ interface PopoverPanelProps {
   tools: Tool[];
   locale: string;
   dictionary: NavbarProps["dictionary"];
-  onNavigate: (href: string) => void;
+  onClose: () => void;
 }
 
 function PopoverPanel({
@@ -231,7 +230,7 @@ function PopoverPanel({
   tools,
   locale,
   dictionary,
-  onNavigate,
+  onClose,
 }: PopoverPanelProps) {
   const readyTools = tools.filter((t) => t.isReady);
   const useWideLayout = readyTools.length > 8;
@@ -241,21 +240,23 @@ function PopoverPanel({
       <div className={`rounded-2xl border bg-background shadow-xl shadow-black/5 dark:shadow-none p-2 ${useWideLayout ? "w-[680px]" : "w-[420px]"}`}>
         {/* Category header */}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
-          <button
-            onClick={() => onNavigate(getCategoryUrl(category, locale))}
+          <Link
+            href={getCategoryUrl(category, locale)}
+            onClick={onClose}
             className="flex items-center gap-2 text-sm font-semibold text-foreground hover:text-primary transition-colors"
           >
             <div
               className={`w-2 h-2 rounded-full ${CATEGORY_COLORS[category]}`}
             />
             {dictionary.categories[category]}
-          </button>
-          <button
-            onClick={() => onNavigate(getCategoryUrl(category, locale))}
+          </Link>
+          <Link
+            href={getCategoryUrl(category, locale)}
+            onClick={onClose}
             className="text-xs text-muted-foreground hover:text-primary transition-colors"
           >
             Zobacz wszystkie
-          </button>
+          </Link>
         </div>
 
         {/* Tool list */}
@@ -264,9 +265,10 @@ function PopoverPanel({
             const Icon = tool.icon;
             const toolDict = dictionary.tools[tool.id];
             return (
-              <button
+              <Link
                 key={tool.id}
-                onClick={() => onNavigate(getToolUrl(tool, locale))}
+                href={getToolUrl(tool, locale)}
+                onClick={onClose}
                 className="group relative flex items-start gap-3 rounded-xl p-3 hover:bg-accent transition-colors text-left w-full"
               >
                 <div className="flex-shrink-0 mt-0.5 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
@@ -282,7 +284,7 @@ function PopoverPanel({
                     </p>
                   )}
                 </div>
-              </button>
+              </Link>
             );
           })}
         </div>

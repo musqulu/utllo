@@ -4,6 +4,8 @@
  * and renders them as semantic HTML for search engines.
  */
 
+import { JsonLd, generateFaqPageSchema } from "@/components/seo/json-ld";
+
 export interface SeoTextBlock {
   type: "text";
   heading: string;
@@ -62,8 +64,18 @@ function inlineMd(text: string): string {
 export function SeoContent({ blocks, className = "" }: SeoContentProps) {
   if (!blocks || blocks.length === 0) return null;
 
+  const faqItems = blocks.flatMap((b) =>
+    b.type === "faq"
+      ? b.items.map((item) => ({ question: item.q, answer: item.a }))
+      : []
+  );
+
   return (
-    <section className={`mt-16 max-w-3xl mx-auto space-y-10 ${className}`}>
+    <>
+      {faqItems.length > 0 && (
+        <JsonLd data={generateFaqPageSchema(faqItems)} />
+      )}
+      <section className={`mt-16 max-w-3xl mx-auto space-y-10 ${className}`}>
       {blocks.map((block, i) => {
         switch (block.type) {
           case "text":
@@ -164,5 +176,6 @@ export function SeoContent({ blocks, className = "" }: SeoContentProps) {
         }
       })}
     </section>
+    </>
   );
 }

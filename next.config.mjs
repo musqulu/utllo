@@ -1,3 +1,16 @@
+import {
+  legacyToolRedirects,
+  toolEnSlugToPlPath,
+} from "./next.config.redirects.mjs";
+
+const plCatToEnCat = {
+  generatory: "generators",
+  narzedzia: "tools",
+  konwertery: "converters",
+  losuj: "randomizers",
+  kalkulatory: "calculators",
+};
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config) => {
@@ -8,74 +21,65 @@ const nextConfig = {
     return config;
   },
   async redirects() {
+    const redirects = [];
+
+    // Old English URLs with Polish slugs → canonical English slugs
+    redirects.push(
+      { source: "/en/kontakt", destination: "/en/contact", permanent: true },
+      { source: "/en/o-nas", destination: "/en/about", permanent: true },
+      { source: "/en/regulamin", destination: "/en/terms", permanent: true },
+      {
+        source: "/en/polityka-prywatnosci",
+        destination: "/en/privacy",
+        permanent: true,
+      }
+    );
+
     // =================================================================
     // 1. Legacy flat-URL redirects (old: /:locale/:tool-slug)
     //    Redirect to the new category-based structure.
     //    These run BEFORE middleware, so they still match /:locale/...
     // =================================================================
-    const legacyToolRedirects = [
-      // Generatory (Generators)
-      { old: 'generator-hasel', category: 'generatory' },
-      { old: 'lorem-ipsum', category: 'generatory' },
-      { old: 'generator-lorem-ipsum', category: 'generatory' },
-      { old: 'generator-czcionek', category: 'generatory' },
-      { old: 'generator-qr', category: 'generatory' },
-
-      // Narzędzia (Tools)
-      { old: 'licznik-znakow', category: 'narzedzia' },
-      { old: 'licznik-slow', category: 'narzedzia' },
-      { old: 'rzut-kostka', category: 'losuj' },
-      { old: 'odliczanie-do-wakacji', category: 'narzedzia' },
-      { old: 'odliczanie-do-swiat', category: 'narzedzia' },
-      { old: 'odliczanie-do-daty', category: 'narzedzia' },
-      { old: 'bialy-ekran', category: 'narzedzia' },
-      { old: 'kwota-slownie', category: 'narzedzia' },
-      { old: 'szyfr-cezara', category: 'narzedzia' },
-      { old: 'metronom', category: 'narzedzia' },
-      
-      // Konwertery (Converters)
-      { old: 'pdf-na-word', category: 'konwertery' },
-      { old: 'pdf-na-jpg', category: 'konwertery' },
-      { old: 'pdf-na-png', category: 'konwertery' },
-      
-      // Losuj (Randomizers)
-      { old: 'losuj-liczbe', category: 'losuj' },
-      { old: 'losuj-liczby', category: 'losuj' },
-      { old: 'losuj-karte-tarota', category: 'losuj' },
-      { old: 'losuj-tak-nie', category: 'losuj' },
-      
-      // Kalkulatory (Calculators)
-      { old: 'kalkulator-proporcji', category: 'kalkulatory' },
-      { old: 'kalkulator-bmi', category: 'kalkulatory' },
-      { old: 'srednia-wazona', category: 'kalkulatory' },
-      { old: 'kalkulator-snu', category: 'kalkulatory' },
-      { old: 'kalkulator-kalorii', category: 'kalkulatory' },
-      { old: 'kalkulator-grupy-krwi', category: 'kalkulatory' },
-      { old: 'kalkulator-inflacji', category: 'kalkulatory' },
-      { old: 'kalkulator-psich-lat', category: 'kalkulatory' },
-      { old: 'kalkulator-cyfr-rzymskich', category: 'kalkulatory' },
-      { old: 'kalkulator-kocich-lat', category: 'kalkulatory' },
-      { old: 'kalkulator-spalania', category: 'kalkulatory' },
-    ];
-
-    const redirects = [];
 
     // Legacy tool redirects for /en/:tool-slug → /en/:category/:tool-slug
-    // (for /pl/:tool-slug, middleware will 301 to /:tool-slug first,
-    //  then /:tool-slug hits the root-level legacy redirect below)
-    for (const { old, category } of legacyToolRedirects) {
+    // Root-level /:old → /:category/:old (Polish flat URLs after /pl strip)
+    for (const entry of legacyToolRedirects) {
+      const { old, category, plSlug, enToolSlug } = entry;
+      const targetPl = plSlug ?? old;
+      const targetEn = enToolSlug ?? old;
+      const enFolder = plCatToEnCat[category];
       redirects.push({
         source: `/en/${old}`,
-        destination: `/en/${category}/${old}`,
+        destination: `/en/${enFolder}/${targetEn}`,
+        permanent: true,
+      });
+      redirects.push({
+        source: `/${old}`,
+        destination: `/${category}/${targetPl}`,
         permanent: true,
       });
     }
 
-    // Root-level legacy tool redirects (Polish, no prefix)
-    // These catch /:tool-slug → /:category/:tool-slug after middleware rewrites
-    // Since next.config redirects run BEFORE middleware, these won't actually
-    // fire for rewritten URLs. But they catch direct visits.
-    // Middleware rewrite handles these internally, so this is a safety net.
+    // English slug at wrong English category path → correct Polish URL (root)
+    for (const [enSlug, plPath] of Object.entries(toolEnSlugToPlPath)) {
+      const segments = plPath.split("/").filter(Boolean);
+      const plCat = segments[0];
+      const enCat = plCatToEnCat[plCat];
+      if (enCat) {
+        redirects.push({
+          source: `/${enCat}/${enSlug}`,
+          destination: plPath,
+          permanent: true,
+        });
+        // /en/... English category + English slug → /en/polishCategory/polishSlug
+        const plToolSlug = segments[1];
+        redirects.push({
+          source: `/en/${enCat}/${enSlug}`,
+          destination: `/en/${plCat}/${plToolSlug}`,
+          permanent: true,
+        });
+      }
+    }
 
     // =================================================================
     // 2. Old category moves (tools that changed categories)
@@ -91,7 +95,7 @@ const nextConfig = {
 
       // English category moves (keep /en prefix)
       { source: '/en/narzedzia/generator-hasel', destination: '/en/generators/generator-hasel', permanent: true },
-      { source: '/en/narzedzia/lorem-ipsum', destination: '/en/generators/generator-lorem-ipsum', permanent: true },
+      { source: '/en/narzedzia/lorem-ipsum', destination: '/en/generators/lorem-ipsum-generator', permanent: true },
       { source: '/en/narzedzia/generator-czcionek', destination: '/en/generators/generator-czcionek', permanent: true },
       { source: '/en/narzedzia/rzut-kostka', destination: '/en/randomizers/rzut-kostka', permanent: true },
       { source: '/en/narzedzia/generator-qr', destination: '/en/generators/generator-qr', permanent: true },

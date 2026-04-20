@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Zap, Shield, UserX } from "lucide-react";
 import { i18n, Locale, getLocalePath } from "@/lib/i18n/config";
+import { homeHreflangAlternates } from "@/lib/i18n/hreflang";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import { tools, getToolUrl } from "@/lib/tools";
 import { CategoryTabs } from "@/components/layout/category-tabs";
@@ -15,13 +16,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const dictionary = await getDictionary(locale as Locale);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://utllo.com";
 
-  // Build hreflang alternates — Polish at root, English at /en
   const localePath = getLocalePath(locale);
-  const languages: Record<string, string> = {};
-  for (const loc of i18n.locales) {
-    languages[loc] = `${baseUrl}${getLocalePath(loc)}` || baseUrl;
-  }
-  languages["x-default"] = baseUrl;
+  const languages = homeHreflangAlternates(baseUrl);
 
   return {
     title: `${dictionary.home.title} | ${dictionary.brand}`,

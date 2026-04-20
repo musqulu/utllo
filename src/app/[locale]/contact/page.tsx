@@ -16,29 +16,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   );
 
   return {
-    title: "Kontakt - Skontaktuj się z nami | utllo",
+    title: "Contact Us | utllo",
     description:
-      "Masz pytanie, sugestię lub problem? Skontaktuj się z zespołem utllo. Odpowiadamy na wiadomości w ciągu 24-48 godzin.",
+      "Have a question, suggestion, or problem? Contact the utllo team. We respond to messages within 24-48 hours.",
     alternates: {
-      canonical: `${BASE_URL}/kontakt`,
+      canonical: `${BASE_URL}/en/contact`,
       languages,
     },
     openGraph: {
-      title: "Kontakt - Skontaktuj się z nami | utllo",
-      description:
-        "Masz pytanie, sugestię lub problem? Skontaktuj się z zespołem utllo.",
-      url: `${BASE_URL}/kontakt`,
+      title: "Contact Us | utllo",
+      description: "Have a question, suggestion, or problem? Contact the utllo team.",
+      url: `${BASE_URL}/en/contact`,
       type: "website",
-      locale: "pl_PL",
+      locale: "en_US",
     },
   };
 }
 
 export async function generateStaticParams() {
-  return [{ locale: "pl" }];
+  return [{ locale: "en" }];
 }
 
-export default async function KontaktPage({ params }: PageProps) {
+export default async function ContactPage({ params }: PageProps) {
   const { locale } = await params;
   return <ContactPageBody locale={locale} />;
 }

@@ -25,37 +25,36 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   );
 
   return {
-    title: "Polityka Prywatności | utllo",
+    title: "Privacy Policy | utllo",
     description:
-      "Polityka prywatności serwisu utllo. Dowiedz się, jak chronimy Twoje dane i jakie informacje zbieramy podczas korzystania z naszych narzędzi online.",
+      "Privacy policy of utllo. Learn how we protect your data and what information we collect when you use our free online tools.",
     alternates: {
-      canonical: `${BASE_URL}/polityka-prywatnosci`,
+      canonical: `${BASE_URL}/en/privacy`,
       languages,
     },
     openGraph: {
-      title: "Polityka Prywatności | utllo",
-      description:
-        "Polityka prywatności serwisu utllo. Dowiedz się, jak chronimy Twoje dane.",
-      url: `${BASE_URL}/polityka-prywatnosci`,
+      title: "Privacy Policy | utllo",
+      description: "Privacy policy of utllo. Learn how we protect your data.",
+      url: `${BASE_URL}/en/privacy`,
       type: "website",
-      locale: "pl_PL",
+      locale: "en_US",
     },
   };
 }
 
 export async function generateStaticParams() {
-  return [{ locale: "pl" }];
+  return [{ locale: "en" }];
 }
 
 export default async function PrivacyPolicyPage({ params }: PageProps) {
   const { locale } = await params;
   const dictionary = await getDictionary(locale as Locale);
-  const isEn = false;
+  const isEn = locale === "en";
 
   const lp = getLocalePath(locale);
   const breadcrumbItems = [
     { name: dictionary.nav.home, url: lp || "/" },
-    { name: "Polityka prywatności", url: `${lp}/polityka-prywatnosci` },
+    { name: "Privacy Policy", url: `${lp}/privacy` },
   ];
 
   return (

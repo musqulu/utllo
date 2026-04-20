@@ -365,6 +365,44 @@
           "type": "text",
           "heading": "What is Lorem Ipsum?",
           "body": "Lorem Ipsum is the standard placeholder text used in printing and typesetting since the 16th century. It is a distorted excerpt from Cicero's \"De finibus bonorum et malorum\". Our generator creates random Lorem Ipsum text in three formats: paragraphs, sentences and single words. You can adjust the amount of text with the slider. Lorem Ipsum is widely used by designers and developers to fill mockups and prototypes before adding real content."
+        },
+        {
+          "type": "text",
+          "heading": "Why generate instead of copy-pasting?",
+          "body": "Copy-pasted blocks often repeat across projects. Generating unique length and structure helps you stress-test grids, cards, product pages and mobile layouts without real legal or marketing copy. Adjust paragraphs, sentences or words to trigger overflow, truncation and “read more” behaviour before you ship."
+        },
+        {
+          "type": "list",
+          "heading": "Common use cases",
+          "items": [
+            "**UI/UX** — filling cards, lists, tables and modals in design tools or code.",
+            "**Responsive QA** — checking how layouts behave with short vs long text.",
+            "**Docs and templates** — training materials where final copy is not ready.",
+            "**CMS themes** — previewing a blog or site theme without publishing real articles."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Randomness vs “classic” Lorem",
+          "body": "Traditional Lorem uses a fixed Latin vocabulary. Variants can still mimic natural sentence rhythm so you can judge line length, heading hierarchy and vertical rhythm. Remember: it is fictional filler — it does not replace professional copy or localization."
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — Lorem Ipsum generator",
+          "items": [
+            {
+              "q": "Can I use the generated text commercially?",
+              "a": "Lorem is a common convention; you should still replace it with final copy before launch. For client work, follow your contract on placeholders."
+            },
+            {
+              "q": "Is this Polish-friendly?",
+              "a": "Lorem is Latin-style filler. For Polish typography tests, add short Polish sentences with diacritics separately."
+            },
+            {
+              "q": "How much text should I generate?",
+              "a": "Start with one paragraph and increase until the layout “breaks” — that shows where you need trimming or section splits."
+            }
+          ]
         }
       ]
     },
@@ -2103,8 +2141,50 @@
       "seoContent": [
         {
           "type": "text",
-          "heading": "Yes/No Decision Generator",
-          "body": "Can't decide? Let chance choose for you! Our generator gives a 50/50 chance for each outcome. The animated interface makes decision-making fun and exciting. Ideal for everyday dilemmas."
+          "heading": "Online Yes / No decision spinner",
+          "body": "Draw YES or NO when you want a neutral “second opinion” or a playful way to break a tie. The tool runs in your browser, requires no account, and does not send your questions to our servers — everything stays local. You can optionally type a question to remember the context (e.g. “Should I go to the gym today?”), but the answer is always one of two outcomes with equal probability."
+        },
+        {
+          "type": "text",
+          "heading": "How randomness works",
+          "body": "We use the browser’s cryptographically secure random number generator (`crypto.getRandomValues`), similar to what modern browsers use for keys and passwords. That means consecutive draws are not predetermined and you cannot predict the next outcome without access to the generator’s internal state. Over many draws, YES and NO each approach 50% — like a fair coin."
+        },
+        {
+          "type": "list",
+          "heading": "When to use a Yes/No generator",
+          "items": [
+            "**Quick decisions** — lunch, movie, turn order in a game, who goes first.",
+            "**Icebreakers** — parties, team events, playful challenges.",
+            "**Words instead of a coin** — when you prefer explicit YES/NO labels.",
+            "**Teaching** — show that short streaks of the same outcome are normal with true randomness."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Limitations",
+          "body": "This is not medical, legal or financial advice. Do not use it for decisions that affect health, safety or major commitments — those need analysis, not a random draw. Treat the result as inspiration or fun, not fate."
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — random Yes / No",
+          "items": [
+            {
+              "q": "Is the result really random?",
+              "a": "Yes. We use the cryptographic RNG from the Web Crypto API, not a trivial predictable PRNG."
+            },
+            {
+              "q": "Is my question stored?",
+              "a": "No. Optional text is only for you in the UI; nothing is sent to our server."
+            },
+            {
+              "q": "Why do I sometimes get the same answer several times in a row?",
+              "a": "Randomness does not mean alternating. Streaks happen — just like with real coin flips."
+            },
+            {
+              "q": "Can I change the odds from 50/50?",
+              "a": "This tool is intentionally symmetric. For weighted choices use other tools (e.g. random numbers or candidate lists)."
+            }
+          ]
         }
       ]
     },
@@ -2272,6 +2352,44 @@
               "Obesity Class III",
               "≥ 40"
             ]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "How to interpret BMI",
+          "body": "BMI relates weight to height in adults. It does not distinguish muscle from fat — an athlete with high muscle mass may have “overweight” BMI while having low body fat. Older adults and pregnancy need careful interpretation; children use age- and sex-specific percentile charts, not adult cut-off values."
+        },
+        {
+          "type": "text",
+          "heading": "Clinical limitations",
+          "body": "The calculator output is not a diagnosis or medical advice. If you have chronic conditions, take medications that affect weight, or worry about your weight — consult a clinician or registered dietitian. This text is educational only."
+        },
+        {
+          "type": "list",
+          "heading": "After you calculate BMI",
+          "items": [
+            "**Waist circumference** — complements BMI for metabolic risk (visceral fat).",
+            "**Habits** — sustainable activity and diet matter more than one number.",
+            "**Trends** — track over weeks, not day-to-day fluctuations.",
+            "**Prevention** — follow screening advice from your GP for your age and sex."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — BMI calculator",
+          "items": [
+            {
+              "q": "Is BMI the same as body fat percentage?",
+              "a": "No. BMI is weight/height²; body fat % needs different measurements (e.g. skinfold, DEXA) or formulas."
+            },
+            {
+              "q": "Why is my BMI “overweight” but I feel healthy?",
+              "a": "BMI is a population-level metric. Individual health depends on body composition, fitness and labs — discuss with a doctor."
+            },
+            {
+              "q": "How often should I check BMI?",
+              "a": "Occasionally when height is stable; monthly trends matter more than daily noise."
+            }
           ]
         }
       ]
@@ -3263,6 +3381,7 @@
     "popularTools": "Popular tools",
     "legal": "Legal",
     "madeWith": "Made with",
-    "inPoland": "in Poland"
+    "inPoland": "in Poland",
+    "organization": "Educational content is edited for clarity; health calculators do not replace professional medical advice."
   }
 }

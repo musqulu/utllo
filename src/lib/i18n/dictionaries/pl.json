@@ -347,6 +347,39 @@
           "type": "text",
           "heading": "Bezpieczny Generator Haseł Online",
           "body": "Nasz generator haseł tworzy silne i bezpieczne hasła bezpośrednio w Twojej przeglądarce. Hasła nie są nigdzie wysyłane ani zapisywane. Używamy kryptograficznie bezpiecznego generatora liczb losowych (crypto.getRandomValues) dla maksymalnego bezpieczeństwa Twoich haseł. Możesz dostosować długość hasła od 8 do 64 znaków oraz wybrać, jakie typy znaków mają być uwzględnione: wielkie litery, małe litery, cyfry i symbole specjalne."
+        },
+        {
+          "type": "text",
+          "heading": "Dlaczego silne hasło jest ważne?",
+          "body": "Słabe hasła (np. słownikowe, krótkie lub powtarzające się) są łamane w kilka sekund przez automatyczne narzędzia. Dobre hasło dla konta bankowego, e-maila medycznego lub mediów społecznościowych powinno mieć co najmniej 12–16 znaków, zawierać różne klasy znaków i być unikalne dla każdej usługi. Nie przechowuj haseł w jednym pliku tekstowym na pulpicie — rozważ menedżer haseł (np. Bitwarden, 1Password) lub przeglądarkowy zapis haseł zabezpieczony silnym hasłem głównym."
+        },
+        {
+          "type": "list",
+          "heading": "Zasady dobrej praktyki haseł",
+          "items": [
+            "**Unikalność** — każde usługowe konto ma mieć inne hasło.",
+            "**Długość** — im dłuższe, tym trudniejsze do złamania; 16+ znaków to dobry standard.",
+            "**Nie używaj danych osobowych** — imienia, dat urodzenia, numerów PESEL.",
+            "**Zmiana hasła** — po wycieku w bazie danych serwisu lub gdy podejrzewasz nieautoryzowany dostęp."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — generator haseł",
+          "items": [
+            {
+              "q": "Czy hasła są zapisywane na serwerze?",
+              "a": "Nie. Wszystko działa lokalnie w przeglądarce; żadne hasło nie opuszcza Twojego urządzenia."
+            },
+            {
+              "q": "Jak długie powinno być hasło?",
+              "a": "Dla kont wrażliwych celuj w 16+ znaków z mixem liter, cyfr i symboli. Generator pozwala ustawić do 64 znaków."
+            },
+            {
+              "q": "Czy mogę użyć tego samego hasła wszędzie?",
+              "a": "Nie. Jeśli jedna usługa wycieknie, atakujący sprawdzą to samo hasło na innych kontach. Używaj unikalnych haseł lub menedżera haseł."
+            }
+          ]
         }
       ]
     },
@@ -365,6 +398,44 @@
           "type": "text",
           "heading": "Czym jest Lorem Ipsum?",
           "body": "Lorem Ipsum to standardowy tekst zastępczy używany w przemyśle poligraficznym i typograficznym od XVI wieku. Jest to zniekształcony fragment traktatu Cycerona \"De finibus bonorum et malorum\". Nasz generator tworzy losowy tekst Lorem Ipsum w trzech formatach: akapity, zdania i pojedyncze słowa. Możesz dostosować ilość generowanego tekstu za pomocą suwaka. Tekst Lorem Ipsum jest powszechnie używany przez projektantów i deweloperów do wypełniania makiet i prototypów przed dodaniem właściwej treści."
+        },
+        {
+          "type": "text",
+          "heading": "Po co używać generatora zamiast kopiować z internetu?",
+          "body": "Gotowe bloki z sieci bywają identyczne w wielu projektach — lepiej wygenerować unikalną długość i strukturę akapitów, dopasowaną do siatki (grid), karty produktu czy makiety mobilnej. Nasze narzędzie pozwala szybko wybrać liczbę akapitów, zdań lub słów, co ułatwia testowanie składu, overflow tekstu i zachowania przycisków „Czytaj więcej” bez wklejania prawdziwej treści prawniczej."
+        },
+        {
+          "type": "list",
+          "heading": "Typowe zastosowania",
+          "items": [
+            "**UI/UX** — wypełnienie kart, list, tabel i modali w Figma lub w kodzie.",
+            "**Responsywność** — sprawdzenie, jak układ zachowuje się przy krótkim i długim tekście.",
+            "**Dokumentacja i szablony** — szkolenia, instrukcje, gdzie treść nie jest jeszcze gotowa.",
+            "**CMS i blogi** — podgląd motywu bez publikowania prawdziwych artykułów."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Losowość a „klasyczny” Lorem",
+          "body": "Tradycyjny Lorem Ipsum ma powtarzalny słownik łaciński. Generator może tworzyć warianty z podobnym rytmem zdań, żeby symulować naturalny blok tekstu — to pomaga ocenić interlinię, długość linii i hierarchię nagłówków. Pamiętaj, że to nadal tekst fikcyjny: nie zastępuje copywritingu ani tłumaczeń."
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — generator Lorem Ipsum",
+          "items": [
+            {
+              "q": "Czy mogę użyć wygenerowanego tekstu komercyjnie?",
+              "a": "Sam mechanizm Lorem Ipsum jest powszechną konwencją; nadal warto zastąpić go finalną treścią przed publikacją. W projektach klienckich używaj placeholderów zgodnie z umową."
+            },
+            {
+              "q": "Czy tekst jest w języku polskim?",
+              "a": "Lorem Ipsum to łaciński szablon; nie służy do treści PL. Do testów polskiego składu użyj osobnego copy lub krótkich zdań z polskimi znakami diakrytycznymi."
+            },
+            {
+              "q": "Jak dobrać długość?",
+              "a": "Zacznij od jednego akapitu i zwiększaj liczbę zdań, aż widok zacznie „pękać” — to pokaże, gdzie potrzebujesz skrótu lub podziału na sekcje."
+            }
+          ]
         }
       ]
     },
@@ -2103,8 +2174,50 @@
       "seoContent": [
         {
           "type": "text",
-          "heading": "Generator Decyzji Tak/Nie",
-          "body": "Nie możesz się zdecydować? Pozwól losowi wybrać za Ciebie! Nasz generator daje szansę 50/50 na każdy wynik. Animowany interfejs sprawia, że podejmowanie decyzji jest przyjemne i ekscytujące. Idealne do codziennych dylematów."
+          "heading": "Generator decyzji Tak / Nie online",
+          "body": "Losuj Tak lub Nie, gdy potrzebujesz obiektywnego „drugiego zdania” albo chcesz zabawić się w podejmowanie decyzji bez analizy w nieskończoność. Narzędzie działa w przeglądarce, nie wymaga konta i nie zapisuje Twoich pytań na serwerze — wszystko odbywa się lokalnie. Możesz opcjonalnie wpisać pytanie, aby lepiej zapamiętać kontekst losowania (np. „Czy dziś iść na siłownię?”), ale wynik zawsze jest jednym z dwóch: **TAK** albo **NIE**, z równym prawdopodobieństwem."
+        },
+        {
+          "type": "text",
+          "heading": "Jak działa losowanie i czy jest uczciwe?",
+          "body": "Do wylosowania odpowiedzi używamy kryptograficznie bezpiecznego generatora liczb losowych (`crypto.getRandomValues`), takiego samego typu jak w nowoczesnych przeglądarkach do haseł i kluczy. Oznacza to, że kolejne wyniki nie są z góry ustalone i nie da się przewidzieć następnego losowania bez dostępu do stanu generatora. Statystycznie, przy bardzo wielu powtórzeniach, udział odpowiedzi TAK i NIE zbliża się do 50% — dokładnie tak, jak przy rzucie idealną monetą."
+        },
+        {
+          "type": "list",
+          "heading": "Kiedy warto użyć generatora Tak/Nie?",
+          "items": [
+            "**Szybka decyzja** — wybór lunchu, filmu, kolejności w grze, kto pierwszy zaczyna.",
+            "**Zabawy i integracje** — icebreakery, gry towarzyskie, wyzwania w grupie.",
+            "**„Orzeł czy reszka” w formie słów** — gdy wolisz jawne TAK/NIE zamiast symboli monety.",
+            "**Edukacja** — pokazanie uczniom, jak wygląda losowość i że seria „samych TAK” przy małej liczbie rzutów jest normalna."
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Ograniczenia i zdrowy rozsądek",
+          "body": "Generator nie zastępuje porady lekarskiej, prawnej ani finansowej. Nie używaj go do decyzji wpływających na zdrowie, bezpieczeństwo lub duże zobowiązania — tam potrzebna jest analiza, a nie rzut losu. Traktuj wynik jako inspirację lub element zabawy, a nie wiążącą przepowiednię."
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — losuj tak / nie",
+          "items": [
+            {
+              "q": "Czy wynik jest naprawdę losowy?",
+              "a": "Tak. Używamy algorytmu kryptograficznego z API przeglądarki, a nie uproszczonego `Math.random()` w sposób, który mógłby być przewidywalny."
+            },
+            {
+              "q": "Czy moje pytanie jest gdzieś zapisywane?",
+              "a": "Nie. Tekst pytania służy tylko Tobie w interfejsie; nie wysyłamy go na serwer."
+            },
+            {
+              "q": "Dlaczego czasem dostaję kilka razy z rzędu to samo?",
+              "a": "Losowość nie oznacza „na przemian”. Przy prawdziwym losie seria identycznych wyników jest możliwa — tak jak przy rzucie monetą."
+            },
+            {
+              "q": "Czy mogę ustawić inne szanse niż 50/50?",
+              "a": "To narzędzie jest świadomie symetryczne (50/50). Do ważonych opcji użyj innych narzędzi (np. losowanie liczb lub lista kandydata)."
+            }
+          ]
         }
       ]
     },
@@ -2272,6 +2385,44 @@
               "Otyłość III stopnia",
               "≥ 40"
             ]
+          ]
+        },
+        {
+          "type": "text",
+          "heading": "Jak interpretować BMI?",
+          "body": "BMI to prosty wskaźnik zależności masy od wzrostu u dorosłych. Nie rozróżnia masy mięśniowej od tłuszczu — sportowiec z dużą masą mięśniową może mieć BMI „nadwagę”, mimo niskiej tkanki tłuszczowej. U osób powyżej 65. roku życia i u kobiet w ciąży interpretacja wymaga ostrożności; u dzieci stosuje się siaty percentylowe WHO, a nie te same progi co u dorosłych."
+        },
+        {
+          "type": "text",
+          "heading": "Ograniczenia kliniczne",
+          "body": "Wynik z kalkulatora nie jest diagnozą ani poradą medyczną. Jeśli masz choroby przewlekłe, przyjmujesz leki wpływające na masę ciała lub niepokoisz się o wagę — skonsultuj się z lekarzem lub dietetykiem klinicznym. Ten opis ma charakter wyłącznie edukacyjny."
+        },
+        {
+          "type": "list",
+          "heading": "Co dalej po obliczeniu BMI?",
+          "items": [
+            "**Obwód pasa** — uzupełnia ocenę ryzyka metabolicznego (tłuszcz brzuszny).",
+            "**Aktywność i dieta** — zmiany nawyków długoterminowo ważniejsze niż pojedyncza liczba.",
+            "**Regularne pomiary** — śledź trend co kilka tygodni, nie dzień po dniu.",
+            "**Profilaktyka** — badania zalecane przez lekarza rodzinnego wg wieku i płci."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — kalkulator BMI",
+          "items": [
+            {
+              "q": "Czy BMI jest tym samym co % tkanki tłuszczowej?",
+              "a": "Nie. BMI szacuje relację masy do wzrostu; procent tkanki tłuszczowej wymaga pomiarów (np. skóra-kalibracja, DEXA) lub orientacyjnych wzorów."
+            },
+            {
+              "q": "Dlaczego mój wynik jest w kategorii „nadwaga”, a czuję się zdrowo?",
+              "a": "BMI to prosty wskaźnik populacyjny. Indywidualna kondycja zależy od składu ciała, stylu życia i badań — omów to z lekarzem."
+            },
+            {
+              "q": "Jak często liczyć BMI?",
+              "a": "Wystarczy raz na jakiś czas przy stabilnym wzroście; ważniejszy jest trend w miesiącach niż wahania dobowe."
+            }
           ]
         }
       ]
@@ -3262,6 +3413,7 @@
     "popularTools": "Popularne narzędzia",
     "legal": "Informacje prawne",
     "madeWith": "Stworzone z",
-    "inPoland": "w Polsce"
+    "inPoland": "w Polsce",
+    "organization": "Treści edukacyjne redagowane pod kątem zrozumiałości; kalkulatory zdrowotne nie zastępują porady lekarskiej."
   }
 }

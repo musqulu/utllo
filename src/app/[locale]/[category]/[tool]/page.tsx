@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { i18n, Locale, getLocalePath } from "@/lib/i18n/config";
+import { Locale, getLocalePath, i18n } from "@/lib/i18n/config";
+import { buildHreflangAlternates } from "@/lib/i18n/hreflang";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import {
   tools as allTools,
@@ -18,6 +19,14 @@ import {
 import { JsonLd, generateWebApplicationSchema, generateBreadcrumbSchema } from "@/components/seo/json-ld";
 import { renderToolComponent } from "@/lib/tool-renderers";
 import { SeoContent, type SeoBlock } from "@/components/seo/seo-content";
+import { MedicalDisclaimer } from "@/components/seo/medical-disclaimer";
+
+const HEALTH_TOOL_IDS = new Set([
+  "bmi-calculator",
+  "calorie-calculator",
+  "sleep-calculator",
+  "blood-type-calculator",
+]);
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://utllo.com";
 
@@ -50,12 +59,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const dict = await getDictionary(locale);
   const toolDict = dict.tools[tool.id as keyof typeof dict.tools];
 
-  // Build hreflang alternates — Polish at root, English at /en
-  const languages: Record<string, string> = {};
-  for (const loc of i18n.locales) {
-    languages[loc] = `${BASE_URL}${getToolUrl(tool, loc)}`;
-  }
-  languages["x-default"] = `${BASE_URL}${getToolUrl(tool, i18n.defaultLocale)}`;
+  const languages = buildHreflangAlternates(BASE_URL, (loc) => getToolUrl(tool, loc));
 
   const canonicalUrl = `${BASE_URL}${getToolUrl(tool, locale)}`;
 
@@ -87,13 +91,14 @@ export default async function ToolPage({ params }: PageProps) {
   const dict = await getDictionary(locale);
   const toolDict = dict.tools[tool.id as keyof typeof dict.tools] as any;
   const categoryPage = dict.categoryPages[categoryId];
-  const relatedTools = getRelatedTools(tool.id, 3);
+  const relatedTools = getRelatedTools(tool.id, 6);
   const catSlug = getCategorySlug(categoryId, locale);
 
   const webAppSchema = generateWebApplicationSchema({
     name: toolDict?.seoTitle || tool.id,
     description: toolDict?.seoDescription || "",
     url: `${BASE_URL}${getToolUrl(tool, locale)}`,
+    locale,
   });
 
   const lp = getLocalePath(locale);
@@ -133,6 +138,9 @@ export default async function ToolPage({ params }: PageProps) {
             copy: dict.common.copy,
             copied: dict.common.copied,
           }, locale)}
+          {HEALTH_TOOL_IDS.has(tool.id) && (
+            <MedicalDisclaimer locale={locale} />
+          )}
         </div>
 
         {/* SEO Content */}
@@ -146,7 +154,7 @@ export default async function ToolPage({ params }: PageProps) {
             <h3 className="text-lg font-semibold mb-4 text-center">
               {dict.categoryPages.relatedTools}
             </h3>
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {relatedTools.map((relTool) => {
                 const relToolDict = dict.tools[relTool.id as keyof typeof dict.tools];
                 const Icon = relTool.icon;

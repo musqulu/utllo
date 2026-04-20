@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Zap, Shield, UserX } from "lucide-react";
 import { notFound } from "next/navigation";
 import { i18n, Locale, getLocalePath } from "@/lib/i18n/config";
+import { buildHreflangAlternates } from "@/lib/i18n/hreflang";
 import { getDictionary } from "@/lib/i18n/dictionaries";
 import {
   getToolsByCategory,
@@ -48,14 +49,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const dict = await getDictionary(locale);
   const categoryPage = dict.categoryPages[categoryId];
-  const catSlug = getCategorySlug(categoryId, locale);
 
-  // Build hreflang alternates — Polish at root, English at /en
-  const languages: Record<string, string> = {};
-  for (const loc of i18n.locales) {
-    languages[loc] = `${BASE_URL}${getCategoryUrl(categoryId, loc)}`;
-  }
-  languages["x-default"] = `${BASE_URL}/${getCategorySlug(categoryId, i18n.defaultLocale)}`;
+  const languages = buildHreflangAlternates(BASE_URL, (loc) =>
+    getCategoryUrl(categoryId, loc)
+  );
 
   const canonicalPath = getCategoryUrl(categoryId, locale);
 

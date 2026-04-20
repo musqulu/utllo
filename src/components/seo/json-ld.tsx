@@ -15,11 +15,15 @@ export function generateWebApplicationSchema({
   name,
   description,
   url,
+  locale = "pl",
 }: {
   name: string;
   description: string;
   url: string;
+  /** Used for Offer.priceCurrency (PLN vs USD) */
+  locale?: string;
 }) {
+  const priceCurrency = locale === "en" ? "USD" : "PLN";
   return {
     "@context": "https://schema.org",
     "@type": "WebApplication",
@@ -31,7 +35,7 @@ export function generateWebApplicationSchema({
     offers: {
       "@type": "Offer",
       price: "0",
-      priceCurrency: "PLN",
+      priceCurrency,
     },
   };
 }
@@ -74,11 +78,24 @@ export function generateWebsiteSchema({
     name,
     url,
     description,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${url}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
+  };
+}
+
+/** FAQ rich results — merge all faq blocks from a page into one graph node */
+export function generateFaqPageSchema(
+  items: { question: string; answer: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }
 
