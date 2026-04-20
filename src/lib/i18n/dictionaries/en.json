@@ -347,6 +347,39 @@
           "type": "text",
           "heading": "Secure Password Generator Online",
           "body": "Our password generator creates strong, secure passwords directly in your browser. Passwords are never sent or stored anywhere. We use a cryptographically secure random number generator (crypto.getRandomValues) for maximum password security. You can set the password length from 8 to 64 characters and choose which character types to include: uppercase, lowercase, digits and special symbols."
+        },
+        {
+          "type": "text",
+          "heading": "Why strong passwords matter",
+          "body": "Weak passwords (dictionary-based, short, or reused) can be cracked in seconds by automated tools. A good password for banking, medical email, or social accounts should be at least 12–16 characters, use several character classes, and be unique per service. Do not keep passwords in a plain text file on your desktop — use a password manager (for example Bitwarden or 1Password) or your browser’s built-in vault protected by a strong master password."
+        },
+        {
+          "type": "list",
+          "heading": "Password hygiene checklist",
+          "items": [
+            "**Uniqueness** — use a different password for every service.",
+            "**Length** — longer is harder to crack; 16+ characters is a solid target.",
+            "**Avoid personal data** — no names, birth dates, or national ID fragments.",
+            "**Rotate after incidents** — change passwords after a service breach or if you suspect unauthorized access."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "FAQ — password generator",
+          "items": [
+            {
+              "q": "Are passwords saved on your server?",
+              "a": "No. Everything runs locally in your browser; no password leaves your device."
+            },
+            {
+              "q": "How long should my password be?",
+              "a": "For sensitive accounts, aim for 16+ characters with a mix of letters, numbers, and symbols. The generator supports up to 64 characters."
+            },
+            {
+              "q": "Can I use the same password everywhere?",
+              "a": "No. If one service leaks credentials, attackers try the same password elsewhere. Use unique passwords or a password manager."
+            }
+          ]
         }
       ]
     },
@@ -3245,6 +3278,10 @@
             {
               "q": "How do I calculate trip cost?",
               "a": "Cost = (consumption L/100km / 100) x distance km x fuel price per liter. E.g. at 7 L/100km, 300 km trip, $1.60/L: (7/100) x 300 x 1.60 = $33.60. Leave the price field empty if you only need consumption figures."
+            },
+            {
+              "q": "What affects fuel consumption?",
+              "a": "Main factors: driving style, road conditions (city vs highway), vehicle weight, tire pressure, mechanical condition, air conditioning, and speed. Urban driving usually uses more fuel per km than steady motorway cruising."
             }
           ]
         }

@@ -60,7 +60,8 @@ const nextConfig = {
       });
     }
 
-    // English slug at wrong English category path → correct Polish URL (root)
+    // English slug at root (Polish site) → canonical Polish category + slug.
+    // Do NOT redirect /en/{enCat}/{enSlug}: those are valid English URLs and must not be rewritten.
     for (const [enSlug, plPath] of Object.entries(toolEnSlugToPlPath)) {
       const segments = plPath.split("/").filter(Boolean);
       const plCat = segments[0];
@@ -71,11 +72,19 @@ const nextConfig = {
           destination: plPath,
           permanent: true,
         });
-        // /en/... English category + English slug → /en/polishCategory/polishSlug
-        const plToolSlug = segments[1];
+      }
+    }
+
+    // Bookmarks from old bug chain: /en/{enCat}/{polishToolSlug} → canonical English slug
+    for (const [enSlug, plPath] of Object.entries(toolEnSlugToPlPath)) {
+      const segments = plPath.split("/").filter(Boolean);
+      const plCat = segments[0];
+      const plToolSlug = segments[1];
+      const enCat = plCatToEnCat[plCat];
+      if (enCat && plToolSlug && plToolSlug !== enSlug) {
         redirects.push({
-          source: `/en/${enCat}/${enSlug}`,
-          destination: `/en/${plCat}/${plToolSlug}`,
+          source: `/en/${enCat}/${plToolSlug}`,
+          destination: `/en/${enCat}/${enSlug}`,
           permanent: true,
         });
       }
