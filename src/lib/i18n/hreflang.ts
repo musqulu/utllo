@@ -10,8 +10,8 @@ const localeToHreflang: Record<string, string> = {
 };
 
 /**
- * Build hreflang map for Polish (root) + English (/en). Omits x-default so Google
- * does not treat PL as the global default over EN.
+ * Build hreflang map for Polish (root) + English (/en), with x-default → /en
+ * so Google has a fallback for non-PL/EN audiences.
  */
 export function buildHreflangAlternates(
   baseUrl: string,
@@ -22,6 +22,7 @@ export function buildHreflangAlternates(
     const key = localeToHreflang[loc] ?? loc;
     languages[key] = `${baseUrl}${getPathForLocale(loc as Locale)}`;
   }
+  languages["x-default"] = `${baseUrl}${getPathForLocale("en" as Locale)}`;
   return languages;
 }
 

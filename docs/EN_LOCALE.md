@@ -4,7 +4,7 @@
 
 Rationale:
 
-- Hreflang is implemented with `pl-PL` and `en` (no `x-default` pointing only at Polish).
+- Hreflang is implemented with `pl-PL`, `en`, and `x-default` pointing at the English URL. This gives Google a fallback for non-PL/EN audiences without claiming Polish is the global default.
 - English URLs use dedicated slugs (`/en/contact`, `/en/about`, `/en/terms`, `/en/privacy`) to avoid mixed-language paths.
 - Further ranking gains require **deeper English copy** and backlinks; if resources are limited, prioritize Polish content first rather than `noindex` on `/en`.
 

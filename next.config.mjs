@@ -23,6 +23,16 @@ const nextConfig = {
   async redirects() {
     const redirects = [];
 
+    // Host canonicalization: www.utllo.com → utllo.com (single hop, runs first).
+    // Vercel's domain-level redirect handles this in production; this rule is a
+    // defense-in-depth fallback if the dashboard config is ever lost.
+    redirects.push({
+      source: "/:path*",
+      has: [{ type: "host", value: "www.utllo.com" }],
+      destination: "https://utllo.com/:path*",
+      permanent: true,
+    });
+
     // Old English URLs with Polish slugs → canonical English slugs
     redirects.push(
       { source: "/en/kontakt", destination: "/en/contact", permanent: true },
